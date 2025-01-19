@@ -1,0 +1,88 @@
+anaconda distribution:installs python, ide,ML packages all ae installed
+
+
+jupyter notebook creates ipynb - interactive python notebook --not a file -- shift enter runs the file
+
+markdown cell to write documentation
+
+
+python
+print("hello","hii");
+
+variables:
+placeholders for storing values:
+
+rules:
+cannot start with numbers
+keywords cant be variables
+
+
+function to check datatype of a variable is type(variable)
+
+to get address of a variable use id(variable)
+
+python is a dynamic typed language -- datatype of a variable can be changed -- location also will be changed thats why we can change the variable type
+
+
+datatypes in python:
+
+int,float,string,boolean,complex -(real+imaginary),none
+
+none = None -- stores null
+
+
+input() gets the input from a console
+
+input("what to show!!!") -- always return string value
+
+so need of type casting --- conversion :
+
+k = "8" -- string
+
+k= int(k)
+
+
+python statements:
+
+instuctions to python interpreter
+
+\ - denotes that statement is not ended its continued in next line
+
+
+
+output formatting
+
+a=3
+b=4
+
+print("thevalue of a is {} and b is {}".format(a,b) ## default value
+
+a goes in the first {} and b goes in the second by default
+
+
+print("thevalue of a is {1} and b is {0}".format(a,b) ## default value
+
+b will be
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,91 @@
+Dictionary:
+key - value pair
+unordered
+unindexable
+acess with help of keys
+
+synetax
+
+dic = {}
+or
+dic = dict()
+
+with values:
+dic = dict([(1,'abc'),(2,'bcd')]),
+
+
+dict = {"key
+':"value"}
+
+---------------------------------------
+accessing elements
+dict[key] ->  gives the value
+
+unknown key gives error
+
+dict.get(key)-> gives the value handling null key error
+
+#adding new keys:
+
+dicyt[key]=value
+
+
+dictionary does not search sequentially retrieval is in O(1) time -> its hashing
+
+---------------------------------------------
+functions in dictionary
+
+dict.keys() -> prints all keys
+
+dict.values() -> prints all values
+
+dict.items() -> prints everything
+
+
+
+iterarting over elements
+
+for key,val in dict.items():
+	do something
+
+
+for ele in dict:
+	print ele -> keys
+
+rules for dictionary
+immutable elements only can be stored [hashable] r elemet that is hashable only can be kepts as key
+------------------------------
+
+delete elements from dict
+
+dict.pop(key) -> returns deleted value
+
+del dict[key] - > deletes the key in dict
+
+---------------
+nested dictionary
+
+menu = {'dosa': 100, 'fruits':{'mango':35}}
+
+2 level indexing
+menu['fruits]['mango']
+
+----------------------------
+Dictionary comprehension
+
+n = { k:v for k,v in dict.items() if v>=2}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

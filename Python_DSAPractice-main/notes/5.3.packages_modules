@@ -1,0 +1,95 @@
+modules
+any file that has python codehas lot of functions
+ex = main.py is a module -- name is main
+
+
+------
+import module
+
+to use a function 
+module.function(
+
+
+example
+import math
+
+math.pi --> 3.14
+
+
+
+import random
+
+
+random.randint(10,20)-> generates randon number between the given range
+-----------------------------------
+os and sys
+
+import os 
+
+os.getcwd( -> returns current working irectory
+
+os.mkdir("name") -> create  a dir
+os.remove(file) -> deletes the file
+
+
+import sys
+
+sys.version
+sys.path
+
+
+import datetime
+datetime.datetime.now()
+
+-----------------------------
+
+ways to import
+import math as m -> aliasing
+
+
+------
+only to import required functions
+
+from module import function -- dont need to write mod name while calling a funtion
+
+
+from math import * -> everything
+
+---------------------------
+custom modules
+import custompyfile -> runs the whole file
+
+
+-----
+__name__ -> is the like wher it is running from  or the control belongs to 
+
+
+its value is main if ran in main function or __filename__ if called from another file
+
+if __name == __main__:
+	very confidential code
+--------------
+module:python file
+Packages:
+collection of multiple modules -- folder
+
+ inorder to consider it as a package/sub-package it should have __init__.py file empty also ok but should be there
+
+
+importing a package
+
+import package.filename
+from package import package
+
+
+
+
+
+
+
+
+
+
+
+
+

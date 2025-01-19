@@ -1,0 +1,49 @@
+tuples
+similar to lists but its read only
+
+ordered and indexable
+immutable  - can't change
+
+
+syntax
+t = ()
+t = tuple()
+
+creating a sing tuple
+
+t = ('hi',)
+
+, is mandatory
+
+----------------------------------
+slicing is same
+why tuples
+if tried to change gives error in tuple assignment
+
+only two functions count and index
+
+cases like -> constants to be stored 
+only read only part
+
+10X faster than list
+
+
+----------------------is it really immutable
+no
+
+if tuple has one of its elements as  list  elemenst of the list can be changed because tuple stores the addresses which are not editable
+
+------------------------------------------
+
+tuple operations
+concatenate
+delete tuple
+
+.index gives the index of the given element
+
+membership operator 
+
+t=(4,2,1)
+//unpacking
+a,b,c =t
+

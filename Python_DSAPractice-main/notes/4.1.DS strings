@@ -1,0 +1,66 @@
+python inbuilt data structures:
+
+strings
+lists
+tuples
+set
+dictionary
+
+
+
+Strings:
+
+sequence of Unicode  characters
+
+example = "Karthick"
+
+example[0] is K -> we can access like that
+len(example) -> gives size
+
+
+negative indexing :
+
+last character can be accessed by -1,-2,-3
+
+String Slicing- substring:
+
+example[strt index : endindex+1]- given the substr
+
+
+example[1,3] -- returns 
+
+example[strt index : endindex+1 : step size]-
+
+step size is default 1 
+
+
+reversing a string
+
+str =str[::-1]
+Methods in string
+.lower()
+.upper()
+.title() -> capitalizes first character of each word
+.find("set") - > returns the index in string, can give start location also , as second param returns -1 if not exists
+.split('t')-> splits the word based on given char default it is space
+.count('o') -> returns the count of occurances
+.replace('find', 'replacement')
+.lstrip(), .rstrip() -> removes white spaces
+. and shift shows the use of function
+all returns does not store anything
+
+
+looping over strilngs
+
+for ele in string
+	print (ele)
+
+
+
+
+
+
+
+
+
+

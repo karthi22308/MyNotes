@@ -1,0 +1,127 @@
+Lists
+
+ordered collection of elements
+indexable
+mutable
+can store heterogenous elements
+
+ways to create:
+
+lst =list()
+lst = []
+
+type(lst) -> List
+accessing same like arrays
+len(lst)-> gives length
+
+
+slicing is same as strings
+
+
+reversing a list
+lst = lst[::-1]
+
+
+updating an element
+lst[0]=1;
+
+
+strings are not mutable
+-------------------------------------------
+
+methods with list:
+.append(obj)-> adds element to the end of the list
+.insert(index,onj) -> inserts at specified index
+.pop()-> deletes and returns the last element'
+.pop(index) -> deletes the element specified
+.remove(index)-> same as above
+.reverse()=> reverses list
+.sort()
+.sort(reverse=true)
+---------------------------------------------
+
+append vs extend
+
+.append() add only as one object
+
+.extend() is iterable -> adds many elements
+
+another way of etending is ith +
+
+lst + [1,2,3] -> does same as .extend
+
+
+-------------------------------------------
+
+heterogeneous lists
+.sort() wont work in heterogeneous lists
+
+.reverse() is possible
+
+join operator:
+"+".join(lst) -> returns a string joined by +
+
+
+
+------------------------------------
+
+List comprehension
+new_lst = [ele**2 for ele in mylst]
+
+
+creates a list with square elements from mylst
+
+creates a list with square elements from mylst only for even elements
+new_lst = [ele**2 for ele in mylst if ele%2==0]
+
+
+also
+
+new_lst = [ele**2 if ele%2==0 else ele for ele in mylst ]
+
+
+----------------------------------------
+
+multidimensional lists
+
+lst2d=[[1,2,3],[4,5,6]]
+
+
+-------------------------------
+
+more on lists
+
+[1] *10 gives us
+[1,1,1,1,1,1,1,1,1,]
+[[none]*5]*5]
+
+
+
+lst=[1,2,3,4,5]
+
+abc = lst -> abc also points to same list
+abc.append(6)
+
+so it just has[1,2,3,4,5,6]
+
+
+so if copy to a list
+
+abc = lst.copy()
+
+
+-----------------------------------
+N rotated array
+lst =[1,2,3,4,5,6]
+n=4
+
+for i in range(1,n):
+    k=lst.pop()
+    lst.insert(0,k)
+
+print(lst)
+
+
+
+
+

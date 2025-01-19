@@ -1,0 +1,119 @@
+python functions
+
+achieve reusablitity and repetition of code
+
+types:
+builtin
+user-defined
+
+syntax:
+
+def funcname(param)
+	--logic
+	***THIS PART IS FOR DOCUMENTATION***
+
+PRINT(FUNCNAME._doc_) -> prints documenattion
+
+
+def greetings(name):
+	print("hey hai ", name)
+
+return keyword:
+ by default function returns none
+same as cpp
+
+returning multiple variables
+
+
+returning as a tuple if we return a,b,c,d
+
+
+list also possible
+
+
+
+---------------------------------
+
+scope of a variable
+-global variable
+-local variable
+
+
+print(globals()) -> prints all global variables
+
+
+int x = 45
+
+def func():
+	global x
+	x=22
+
+then only global x variable will be changed or else it is a new local variable
+
+----------------------------------------
+
+lambda functions
+
+anonymous functons
+
+syntax
+name = (lambda a,b : a+b)
+
+
+name -> becomes a function to take two param and return sum
+--one line function
+
+----------------------------------------------------
+arguments vs prameters
+
+
+def add (a,b)
+	return a+b
+
+add(3,5) 
+--a,b is parameters
+--3,5 is arguments
+
+----
+positional arguments -- required arguments like a,b ordee should be same as declared
+
+Default arguments --optional params
+
+def (a,b=0) same as c#  it should be at the end
+
+arbitrary arguments -- any no  values are possible
+
+all are in an tuple
+syntax
+def func(*args):
+	--logic 
+
+--takes as an tuple
+
+-----------------------------------------
+
+keyword arguments -- same as arbitarty but it takes in form of dict
+
+syntax
+def func(**kwargs):
+	--logic
+
+
+it should be passed
+
+func(name ="Karthick", age = "25")
+
+--------------------------------------
+
+
+
+	
+
+
+
+
+
+
+
+
+

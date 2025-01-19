@@ -1,0 +1,62 @@
+in built functions:
+print()
+abs - > gives positive value
+round -> round off
+all -> checks all are true in an given iterable
+any-> checks any true is in an given iterable
+
+
+----------------------
+dir()-> gives all functions associated with the given object
+enumerate() -- rerturns with index
+
+example:
+
+for idx, ele in enumerate(fruits, stsrt = 0):
+	print(idx,ele)
+
+--output will be :
+0 apple
+1 mango
+
+aggregate functions
+sum(lst)
+max(lst)
+min(lst)
+len(lst)
+
+---------------------------------------
+map(function , iterable)
+
+if we need to perform an operation in each element in an iterable 
+
+
+
+def addne(a):
+	return a+1
+lst =[1,2,3,4]
+ele =lst( map(addne,lst))
+
+------------------------
+
+filter(function, iterable)
+
+list(filter(lambda x: x%2==0, lst)) -- to filter put only even numbers
+--------------------------------\
+
+reduce(funct, iterble) -> rolling computation
+
+
+out = reduce(lambda x*x
+
+from functools import reduce
+lst =[1,2,3,4,5]
+
+out = reduce(lambda x,y: x*y,lst)
+print(out)
+
+-------------------------------------------------
+
+
+
+

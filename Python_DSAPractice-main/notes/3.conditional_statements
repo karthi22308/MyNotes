@@ -1,0 +1,65 @@
+#conditional ststements
+
+if, else, elif
+
+indentation - 4 spaces
+
+: -> is for a block {}
+
+a=14
+if(age>=14):
+    print()
+elif(age ==15):
+    print()
+else:
+    print()
+
+
+if ladder - multiple if statements
+
+
+loops
+3 components of looping
+
+1.initialization
+2stopping condition
+3.update value
+
+
+while(cnodition):
+    operation
+
+for loop can have else statement which will be executed after looping is over
+
+for i in range(3,13):---from 3 to 12 
+    print(i)
+
+for i in range(2,13,2):---from 3 to 12 
+    print(i)
+third param for the ranges step denotes how much should be incremented
+
+
+for in loop
+
+print('hello', end="\n")
+
+print('*'*3)
+
+prints:
+***
+
+
+break,continue,Pass
+
+break does not print the else statement also
+pass - if a loop block needs to be empty use my this
+
+
+
+
+
+
+
+
+
+

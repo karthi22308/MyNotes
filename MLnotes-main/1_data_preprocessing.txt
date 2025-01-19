@@ -1,0 +1,82 @@
+
+
+Data preprocessing in python
+
+* import libraries
+-numpy - for working with arrays
+-matplotlib for plotting graphs
+- pandas for preprocessing
+---------------------------------------------
+features - columns used to predict the dependent variables
+dependent variables - outcomes
+---read csv 
+ds = pd.read_csv(set)
+x= ds.iloc[:,:-1]
+iloc for locating in an data frame based on indexes  first is rows : indicates range which has values - 1 excludes last column which is a dependent variable
+---------------------------------------------
+---taking care of missing data 
+fill it with avg
+remove the column or fill it with mean
+sample code 
+
+from sklearn.impute import SimpleImputer
+imputer = SimpleImputer(missing_values=np.nan, strategy='mean')
+imputer.fit(X[:, 1:3])
+X[:, 1:3] = imputer.transform(X[:, 1:3])
+---------------------------------------------
+
+Encoding categorical data
+
+from sklearn.compose import ColumnTransformer
+from sklearn.preprocessing import OneHotEncoder
+ct = ColumnTransformer(transformers=[('encoder', OneHotEncoder(), [0])], remainder='passthrough')
+X = np.array(ct.fit_transform(X))
+
+done to categorize the data 
+
+example if there are three countries three columns are created if the row belongs to country a that colun alone will be 1 others will be zero
+
+
+Encoding the Dependent Variable
+
+from sklearn.preprocessing import LabelEncoder
+le = LabelEncoder()
+y = le.fit_transform(y)
+
+yes -1 no -0
+
+---------------------------------------------
+
+feature scaling shoud be applied only after data splitting to avoid data leakage 
+
+
+data splitting:
+
+from sklearn.model_selection import train_test_split
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 1)
+
+---------------------------------------------
+--------------------------------------------------------------------------------------------------
+feature scaling -- applied to columns
+done to find optimal solution:
+
+normalization: works only when data is distributed normally
+cell a = (cell a - column minimum)/(col max- col min) -- range between 0-1
+
+
+standardization works in all scenarios
+cell a = (cell a - col average )/standard deviation
+
+don't apply feature scaling on dummy variables
+
+
+from sklearn.preprocessing import StandardScaler
+sc = StandardScaler()
+X_train = sc.fit_transform(X_train)
+X_test = sc.transform(X_test)
+
+
+
+
+
+

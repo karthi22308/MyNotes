@@ -1,0 +1,76 @@
+
+
+operators:
+
+arithmetic:
+/-- gives float value
+// --floor division  gives int  by removing the decimal
+
+** - exponentiation
+2**3= 8
+rest are almost same
+
+comparison operators - its result is always boolean:
+all are same as cpp
+
+Logical operators
+
+and , or, not;
+
+bitwise operators:
+to find binary of 10
+
+bin(10)
+
+
+bitwise and - &
+
+bitwise or |
+
+bitwise xor ^ 
+
+exclusive or -- only either one should be 1 then return 1
+0 0 - 0
+0 1 - 1
+1 0 - 1
+1 1 - 0
+
+
+Assignment operators
+ same as cpp
+multiple assignement
+
+a,b,c = 1,2,3
+a=b=c=70
+
+
+
+special operators
+membership operator - in
+
+checks for the presence 
+
+example:
+
+mystr= "good morning"
+
+"good" in mystr -> will return true
+
+
+identity operator - checks same location
+
+
+a=1
+b=2
+
+a is b ->returns false
+
+
+
+
+
+
+
+
+
+
