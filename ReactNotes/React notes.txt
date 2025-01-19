@@ -1,0 +1,18 @@
+React notes:
+
+resct  ois a javascript library
+
+
+html tags with js library code
+
+
+react is just a library 
+angular is an entire framework
+
+-------------------------------------------------
+
+
+
+
+
+
