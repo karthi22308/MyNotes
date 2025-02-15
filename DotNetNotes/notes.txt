@@ -3,6 +3,7 @@
 
 
 
+
 Entity framework:
 
 w/o entity framework we need to write sql queries
