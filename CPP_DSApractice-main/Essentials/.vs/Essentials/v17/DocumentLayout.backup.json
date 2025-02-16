@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MyNotes\\CPP_DSApractice-main\\Essentials\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A227E96-DB8A-4E58-8EDD-A4CCB89C2D5F}|Essentials\\Essentials.vcxproj|C:\\MyNotes\\CPP_DSApractice-main\\Essentials\\Essentials\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A227E96-DB8A-4E58-8EDD-A4CCB89C2D5F}|Essentials\\Essentials.vcxproj|solutionrelative:Essentials\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A227E96-DB8A-4E58-8EDD-A4CCB89C2D5F}|Essentials\\Essentials.vcxproj|C:\\MyNotes\\CPP_DSApractice-main\\Essentials\\Essentials\\Essentials.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8A227E96-DB8A-4E58-8EDD-A4CCB89C2D5F}|Essentials\\Essentials.vcxproj|solutionrelative:Essentials\\Essentials.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\MyNotes\\CPP_DSApractice-main\\Essentials\\Essentials\\Source.cpp",
+              "RelativeDocumentMoniker": "Essentials\\Source.cpp",
+              "ToolTip": "C:\\MyNotes\\CPP_DSApractice-main\\Essentials\\Essentials\\Source.cpp*",
+              "RelativeToolTip": "Essentials\\Source.cpp*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-16T16:34:49.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Essentials.cpp",
+              "DocumentMoniker": "C:\\MyNotes\\CPP_DSApractice-main\\Essentials\\Essentials\\Essentials.cpp",
+              "RelativeDocumentMoniker": "Essentials\\Essentials.cpp",
+              "ToolTip": "C:\\MyNotes\\CPP_DSApractice-main\\Essentials\\Essentials\\Essentials.cpp",
+              "RelativeToolTip": "Essentials\\Essentials.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-16T16:31:55.794Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
