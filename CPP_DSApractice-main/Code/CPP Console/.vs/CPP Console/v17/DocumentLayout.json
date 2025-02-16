@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MyNotes\\CPP_DSApractice-main\\Code\\CPP Console\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FDF0EEA-130F-4B76-915A-011DB72463EB}|CPP Console\\CPP Console.vcxproj|C:\\MyNotes\\CPP_DSApractice-main\\Code\\CPP Console\\CPP Console\\CPP Console.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1FDF0EEA-130F-4B76-915A-011DB72463EB}|CPP Console\\CPP Console.vcxproj|solutionrelative:CPP Console\\CPP Console.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CPP Console.cpp",
+              "DocumentMoniker": "C:\\MyNotes\\CPP_DSApractice-main\\Code\\CPP Console\\CPP Console\\CPP Console.cpp",
+              "RelativeDocumentMoniker": "CPP Console\\CPP Console.cpp",
+              "ToolTip": "C:\\MyNotes\\CPP_DSApractice-main\\Code\\CPP Console\\CPP Console\\CPP Console.cpp",
+              "RelativeToolTip": "CPP Console\\CPP Console.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-16T09:22:42.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
