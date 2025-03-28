@@ -1,0 +1,28 @@
+data -> collection of fatcs
+base -> system, foundation
+database -> organized systematic collection of data-> handles more efficiently that would be unmanageable in spreadsheet
+
+
+RDBMS - Relational database management system - two tables can be related by a particular column
+
+SQL - structured query language
+it is a command line language
+
+language to pull data from database
+examples:
+-oracle 
+-mssms
+-MySQL - opensource - oracle to get premium resource
+-PostgreSQL - open source
+-maria db - opensource
+
+editions:
+
+enterprise - premium service
+standard - basic
+web - low cost
+developer - for testing same as enterprise
+express entry leel
+
+
+
