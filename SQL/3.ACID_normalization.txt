@@ -1,0 +1,36 @@
+->RDBMS
+
+based on relational model of data
+tables are also called as relations
+
+RDBMS is a software that allows to do administer db
+
+adv:
+data security - support authorization encryption
+retain data consistency
+flex and scalability
+easy mainatanence
+
+-> ACID properties
+
+
+Transaction -> single logical unit of work
+
+begin transaction
+insert// update
+commit all or all fails
+
+end transaction
+atomicity - all or executed or none should be executed
+
+consistency - data integrity constraints -- correctness of database if column is of int tyoe varchar should not be allowed
+
+Isolation - a transactions will be executed like its the only transaction - ensuring that transaction will not be affected by concurrent transaction -- locks on table to avoid interference
+
+Durability - changes are persisted permanently in database
+
+
+
+share doc
+
+
