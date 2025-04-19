@@ -1,3 +1,2 @@
-﻿  Source.cpp
-Source.obj : error LNK2005: main already defined in Essentials.obj
-C:\MyNotes\CPP_DSApractice-main\Essentials\x64\Debug\Essentials.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  Essentials.cpp
+  Essentials.vcxproj -> C:\MyNotes\CPP_DSApractice-main\Essentials\x64\Debug\Essentials.exe

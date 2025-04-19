@@ -1,0 +1,27 @@
+Creating a Database
+--------------------
+
+Initial Size
+- You can set an initial size for the database when creating it.
+- It automatically grows when it reaches the set limit.
+- This is similar to how a vector expands in C++ when its capacity is exceeded.
+
+--------------------
+
+File Path
+- You can choose custom paths to store:
+  1. Data file (.mdf) — holds database data.
+  2. Log file (.ldf) — records all transactions for recovery.
+
+--------------------
+
+Recovery Model
+- Full Recovery:
+  - Allows restoring the database to any specific point in time.
+  - Suitable for critical systems that need full data protection.
+
+- Other Recovery Models (like Simple or Bulk-Logged):
+  - Do NOT support point-in-time recovery.
+  - They may lose some transaction history.
+
+--------------------
