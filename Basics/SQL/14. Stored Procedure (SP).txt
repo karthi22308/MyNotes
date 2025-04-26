@@ -1,0 +1,74 @@
+Stored Procedure (SP)
+--------------------
+- SP is a batch of statements grouped as a logical unit and stored in the database.
+- Accepts parameters, executes T-SQL statements, and returns a result.
+
+Advantages of SP:
+--------------------
+- Better Performance → Compiled once and stored in executable form.
+- Reduces Network Traffic → Only SP name and params passed, not full query.
+- Reusable → Write once, use many times.
+- Security → Reduces direct access to tables.
+- SP can be encrypted → **Locked, not modifiable**
+
+--------------------
+
+Basic Syntax to Create SP:
+--------------------
+CREATE PROCEDURE sp_name
+AS
+sql_statement
+GO
+
+Syntax to Execute SP:
+--------------------
+EXEC sp_name;
+
+--------------------
+
+Syntax to Create SP with Parameters:
+--------------------
+CREATE PROCEDURE sp_name @param1 datatype
+AS
+sql_statement
+GO
+
+Syntax to Execute SP with Parameters:
+--------------------
+EXEC sp_name param1;
+
+--------------------
+
+Syntax to Drop an SP:
+--------------------
+DROP PROCEDURE sp_name;
+
+--------------------
+
+SET NOCOUNT ON:
+--------------------
+- `SET NOCOUNT ON` → Stops the message that shows the number of rows affected.
+- Improves performance, especially for large SPs.
+
+--------------------
+
+Syntax to Create an Encrypted SP (Locked, Not Modifiable):
+--------------------
+CREATE PROCEDURE sp_name @param1 datatype
+WITH ENCRYPTION
+AS
+sql_statement
+GO
+
+Syntax to Execute Encrypted SP:
+--------------------
+EXEC sp_name param1;
+
+Syntax to Drop Encrypted SP:
+--------------------
+DROP PROCEDURE sp_name;
+
+--------------------
+
+⚡ Pro Tip:
+Always use meaningful names for stored procedures like `spInsertEmployee`, `spUpdateSalary`, etc. for easy maintenance.

@@ -1,0 +1,43 @@
+TRIGGERS IN SQL
+--------------------
+
+Triggers are special stored procedures that are executed automatically in response to database events.
+
+Types of Triggers:
+- DML Triggers: Respond to INSERT, UPDATE, DELETE operations.
+- DDL Triggers: Respond to CREATE, ALTER, DROP operations.
+- LOGON Triggers: Respond to LOGON events.
+
+--------------------
+SYNTAX - DML TRIGGER
+--------------------
+create trigger [trigger_name]
+on [table_name]
+after [insert], [update], [delete]
+[not for replication]
+as
+begin
+    -- SQL statements
+end
+go
+
+--------------------
+EXAMPLE - AFTER INSERT TRIGGER
+--------------------
+create trigger afterinsert
+on workitem
+after insert
+as
+begin
+    insert into audit
+    values (/* values here */)
+end
+go
+
+--------------------
+NOTES
+--------------------
+- Triggers can be disabled if needed.
+- 'AFTER' specifies that the trigger should fire after the triggering action is performed.
+- 'INSTEAD OF' triggers can be used to override the standard action.
+

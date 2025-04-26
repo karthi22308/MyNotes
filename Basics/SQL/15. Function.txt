@@ -1,0 +1,103 @@
+Function
+--------
+
+- A function is a set of SQL statements that perform a specific task.
+- Very similar to Stored Procedure (SP), but with key differences.
+- Accepts only input parameters.
+- Must return a result (single value or a table).
+- Cannot perform INSERT, UPDATE, DELETE directly.
+- Can be used inside a SELECT statement (SP cannot).
+
+Syntax:
+-------
+CREATE FUNCTION [dbo].[functionname] (@param datatype)
+RETURNS datatype
+AS
+BEGIN
+   -- SQL statements
+   RETURN value
+END
+
+----------------------------
+Built-in Functions
+----------------------------
+
+1. Scalar functions - work on a single value and return a single value
+   Example: UPPER(), LOWER(), CONVERT(INT, 15.3)
+
+2. Aggregate functions - work on a collection of values and return a single value
+   Example: MAX(), MIN(), AVG(), COUNT()
+
+3. DateTime functions - used to work with date and time values
+   - GETDATE()      -> returns current date and time
+   - DATEDIFF()     -> difference between two dates
+   - DATEADD()      -> adds specified value to a date
+   - DAY()          -> returns day part
+   - MONTH()        -> returns month part
+   - YEAR()         -> returns year part
+
+----------------------------
+User Defined Functions
+----------------------------
+
+1. Scalar Function - returns single value
+
+2. Inline Table-Valued Function - returns a table, single SELECT statement
+
+3. Multi-statement Table-Valued Function - can have multiple statements and return a table variable
+
+----------------------------
+Difference Between Function and Stored Procedure
+----------------------------
+
+Function                                 ------ Stored Procedure
+--------                                 ------ ------------------
+Must return a value                      ------ Return is optional
+Only input parameters allowed            ------ Can have input/output parameters
+Can be called inside SELECT              ------ Cannot be called inside SELECT
+Allows only SELECT statements            ------ Can have INSERT/UPDATE/DELETE
+Cannot use TRY-CATCH or Transactions     ------ Can use TRY-CATCH and Transactions
+SP cannot be called from Function        ------ Function can be called from SP
+
+----------------------------
+Sample Scalar Function:
+----------------------------
+
+CREATE FUNCTION getfullname
+(@firstname VARCHAR(50), @secondname VARCHAR(50))
+RETURNS VARCHAR(101)
+AS
+BEGIN
+   RETURN (@firstname + ' ' + @secondname)
+END
+
+-- Usage:
+SELECT dbo.getfullname(firstname, lastname) AS fullname, salary FROM employee_table
+
+----------------------------
+Inline Table-Valued Function:
+----------------------------
+
+CREATE FUNCTION fnGetEmployee()
+RETURNS TABLE
+AS
+RETURN (SELECT * FROM employee)
+
+----------------------------
+Multi-Statement Table-Valued Function:
+----------------------------
+
+CREATE FUNCTION funcname()
+RETURNS @emp TABLE (
+   id INT,
+   name VARCHAR(100)
+)
+AS
+BEGIN
+   INSERT INTO @emp VALUES (1, 'A')
+   UPDATE @emp SET name = 'B' WHERE id = 1
+   RETURN
+END
+
+-- Usage:
+SELECT * FROM funcname()

@@ -1,0 +1,16 @@
+basics:
+operating systems
+CNN
+sql
+
+SDE:
+DSA, system design
+
+SE
+dotenet
+c#
+react
+
+New:
+genai
+ml

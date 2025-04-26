@@ -1,0 +1,32 @@
+DELETE vs TRUNCATE
+--------------------
+
+TRUNCATE Statement:
+- Used to remove **all rows** from a table.
+- Performs deletion **without WHERE clause**.
+- Faster than DELETE due to minimal logging.
+
+--------------------
+
+Key Differences Between DELETE and TRUNCATE
+-------------------------------------------------------
+| Feature                        | DELETE                          | TRUNCATE                        |
+|-------------------------------|----------------------------------|---------------------------------|
+| Type                          | DML (Data Manipulation Language) | DDL (Data Definition Language)  |
+| Rollback Support              | Can be rolled back (if in Txn)   | Cannot be rolled back           |
+| WHERE Clause Support          | Yes                              | No                              |
+| Logging                       | Fully logged                     | Minimal logging                 |
+| Speed                         | Slower (row-by-row)              | Faster (bulk operation)         |
+| Identity Column Reset         | No                               | Yes (resets to seed value)      |
+| Permissions Needed            | DELETE permission                | ALTER permission                |
+| Triggers                      | Activates triggers               | Does **not** activate triggers  |
+| Use Case                      | Conditional deletion             | Complete data wipe              |
+-------------------------------------------------------
+
+Example for DELETE:
+DELETE FROM employees WHERE department = 'HR';
+
+Example for TRUNCATE:
+TRUNCATE TABLE employees;
+
+⚠️ Note: Use TRUNCATE carefully — it’s irreversible unless inside a transaction and supported!
