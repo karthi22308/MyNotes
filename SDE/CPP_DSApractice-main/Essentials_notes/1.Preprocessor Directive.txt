@@ -1,0 +1,78 @@
+------------------------------
+Flow Chart
+
+-> Diagrammatic representation illustrating solution to a given problem.
+-> Allows us to break large problems into smaller, manageable parts.
+
+------------------------------
+Pseudocode
+
+-> Human-readable description of an algorithm.
+-> Language-independent.
+-> Fastest way to get a review or logic validation before implementation.
+
+------------------------------
+C++ Boilerplate Code
+
+#include<iostream>      --> For input/output functionality.
+using namespace std;
+
+int main() {
+    // Your logic here
+    return 0;
+}
+
+------------------------------
+Execution of a C++ Program
+
+1. Source File: hello.cpp
+2. Compiler: g++ (or any C++ compiler)
+3. Output: hello.exe (Windows) or a.out (Linux/Mac)
+
+Steps:
+-> Compile:      g++ test.cpp
+-> Run:          ./a.out
+
+To name the output file:
+-> Compile:      g++ -o myprog.out test.cpp
+-> Run:          ./myprog.out
+
+------------------------------
+Important Point
+
+int divided by int => always returns an int
+Example:
+5 / 2 => 2   (Not 2.5)
+
+------------------------------
+Deep Dive into C++
+
+Preprocessor Directives:
+-> Provide instructions to the compiler before actual compilation.
+-> Begin with #
+
+Example:
+#include<iostream>    // Includes standard input-output library
+
+------------------------------
+Macros / Symbolic Constants
+
+-> Defined using #define
+-> Replacement is done **before compilation** (pure text replacement)
+-> Not stored in memory.
+
+Example:
+
+#include <iostream>
+#define PI 3.14
+#define NAME "KARTHI"
+
+using namespace std;
+
+int main() {
+    cout << PI << endl;
+    cout << NAME << endl;
+    return 0;
+}
+
+------------------------------
