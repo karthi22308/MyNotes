@@ -1,0 +1,267 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\controllers\\studentscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\repository\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\repository\\sqlregionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\repository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\repository\\istudentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\data\\studentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\data\\studentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\models\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\models\\student\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\mappings\\automapperproiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\mappings\\automapperproiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\models\\dto\\studentresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\models\\dto\\studentresdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\models\\dto\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\models\\dto\\addstudent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\models\\student\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\models\\student\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|c:\\mynotes\\se\\dotnetnotes\\webapisln\\webapi\\webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A574B639-F22B-4B64-B027-2899465ADB76}|WebApI\\WebApI.csproj|solutionrelative:webapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SQLRegionRepository.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Repository\\SQLRegionRepository.cs",
+              "RelativeDocumentMoniker": "WebApI\\Repository\\SQLRegionRepository.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Repository\\SQLRegionRepository.cs",
+              "RelativeToolTip": "WebApI\\Repository\\SQLRegionRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T13:10:21.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IStudentRepository.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Repository\\IStudentRepository.cs",
+              "RelativeDocumentMoniker": "WebApI\\Repository\\IStudentRepository.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Repository\\IStudentRepository.cs",
+              "RelativeToolTip": "WebApI\\Repository\\IStudentRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T13:02:03.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "studentSController.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Controllers\\studentSController.cs",
+              "RelativeDocumentMoniker": "WebApI\\Controllers\\studentSController.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Controllers\\studentSController.cs",
+              "RelativeToolTip": "WebApI\\Controllers\\studentSController.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAowGAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T15:24:21.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Addstudent.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Models\\DTO\\Addstudent.cs",
+              "RelativeDocumentMoniker": "WebApI\\Models\\DTO\\Addstudent.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Models\\DTO\\Addstudent.cs",
+              "RelativeToolTip": "WebApI\\Models\\DTO\\Addstudent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T14:05:21.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentresDTO.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Models\\DTO\\StudentresDTO.cs",
+              "RelativeDocumentMoniker": "WebApI\\Models\\DTO\\StudentresDTO.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Models\\DTO\\StudentresDTO.cs",
+              "RelativeToolTip": "WebApI\\Models\\DTO\\StudentresDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T07:35:25.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "studentController.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Controllers\\studentController.cs",
+              "RelativeDocumentMoniker": "WebApI\\Controllers\\studentController.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Controllers\\studentController.cs",
+              "RelativeToolTip": "WebApI\\Controllers\\studentController.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAzwB0AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T05:25:09.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApI\\appsettings.json",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\appsettings.json",
+              "RelativeToolTip": "WebApI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-16T15:15:38.049Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "StudentDbContext.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Data\\StudentDbContext.cs",
+              "RelativeDocumentMoniker": "WebApI\\Data\\StudentDbContext.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Data\\StudentDbContext.cs",
+              "RelativeToolTip": "WebApI\\Data\\StudentDbContext.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAgwBIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T15:09:08.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "State.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Models\\Student\\State.cs",
+              "RelativeDocumentMoniker": "WebApI\\Models\\Student\\State.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Models\\Student\\State.cs",
+              "RelativeToolTip": "WebApI\\Models\\Student\\State.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T14:58:57.179Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Models\\Student\\Student.cs",
+              "RelativeDocumentMoniker": "WebApI\\Models\\Student\\Student.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Models\\Student\\Student.cs",
+              "RelativeToolTip": "WebApI\\Models\\Student\\Student.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T14:56:40.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Program.cs",
+              "RelativeDocumentMoniker": "WebApI\\Program.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Program.cs",
+              "RelativeToolTip": "WebApI\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T13:48:38.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AutoMapperProiles.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Mappings\\AutoMapperProiles.cs",
+              "RelativeDocumentMoniker": "WebApI\\Mappings\\AutoMapperProiles.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Mappings\\AutoMapperProiles.cs",
+              "RelativeToolTip": "WebApI\\Mappings\\AutoMapperProiles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T14:12:36.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "WebApI\\WeatherForecast.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\WeatherForecast.cs",
+              "RelativeToolTip": "WebApI\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T10:27:32.408Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "WebApI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "WebApI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-16T13:45:37.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "WebApI.csproj",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\WebApI.csproj",
+              "RelativeDocumentMoniker": "WebApI\\WebApI.csproj",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\WebAPISln\\WebApI\\WebApI\\WebApI.csproj",
+              "RelativeToolTip": "WebApI\\WebApI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-16T13:44:48.086Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

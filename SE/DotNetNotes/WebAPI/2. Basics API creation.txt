@@ -1,0 +1,69 @@
+REST (Representational State Transfer)
+--------------------------------------
+- An architectural style for designing web services.
+- Follows a set of principles (stateless, resource-based, etc.).
+- Resources are identified using URLs.
+
+Key HTTP Verbs & Use Cases:
+---------------------------
+GET     - Retrieve all or a specific resource (e.g., get all employees or employee by ID).
+POST    - Create a new resource.
+PUT     - Update an entire resource by ID.
+DELETE  - Delete a resource by ID.
+PATCH   - Partially update a resource.
+OPTIONS - Returns allowed HTTP methods.
+
+Stateless Nature:
+- Server does not store client state between requests.
+- Each request must contain all necessary data.
+
+--------------------------------------
+
+Routing in ASP.NET Core Web API
+--------------------------------
+- Maps incoming HTTP requests to corresponding action methods.
+
+Route Example:
+URL: https://localhost:1234/api/controller/key  
+Action: Matches controller and invokes correct action based on HTTP verb.
+
+Swagger:
+- Automatically generates interactive API documentation.
+- Useful for testing and visualizing API endpoints.
+
+Postman:
+- External tool for testing API endpoints manually.
+
+--------------------------------------
+
+HTTP Status Codes
+------------------
+200 OK          -> Success
+201 Created     -> New resource created
+204 No Content  -> Success with no body
+400 Bad Request -> Invalid request
+401 Unauthorized-> Auth required
+403 Forbidden   -> Access denied
+404 Not Found   -> Resource not found
+500 Internal Server Error -> Server crashed
+
+--------------------------------------
+
+Creating a Controller in Web API
+--------------------------------
+
+- Controller name must end with `Controller`.
+- Basic attribute routing:
+
+```csharp
+[Route("api/[controller]")]
+[ApiController]
+public class TestController : ControllerBase
+{
+    [HttpGet]
+    public IActionResult GetAll()
+    {
+        string[] arr = { "enddhd", "gdgdgdh" };
+        return Ok(arr); // Returns HTTP 200
+    }
+}

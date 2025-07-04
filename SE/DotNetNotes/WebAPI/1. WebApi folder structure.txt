@@ -1,0 +1,46 @@
+ASP.NET Core Web API – Folder & File Structure
+----------------------------------------------
+
+.sln (Solution File):
+- Used to organize multiple projects in Visual Studio.
+- Acts as a container for your full application.
+
+.csproj (Project File):
+- Defines project settings and dependencies.
+- NuGet package references are added here.
+
+----------------------------------------------
+
+Folders and Key Files
+----------------------
+
+1. Properties/launchSettings.json
+   - Stores profile information (used by IIS Express or Kestrel).
+   - Contains application URLs, environment settings for debug/run.
+
+2. appsettings.json
+   - Used for configuration.
+   - Stores log levels, connection strings, and environment-specific variables.
+
+3. Program.cs
+   - Entry point of the application.
+   - Configures the HTTP request pipeline.
+   - Middleware is added here.
+   - Also used for Dependency Injection setup.
+
+----------------------------------------------
+
+Common Middleware in Program.cs
+-------------------------------
+
+app.UseSwagger();         --> Enables Swagger generation
+app.UseSwaggerUI();       --> Enables Swagger UI interface
+
+app.UseHttpsRedirection(); --> Redirects HTTP requests to HTTPS
+
+app.UseAuthorization();   --> Enables Authorization middleware
+
+app.MapControllers();     --> Maps controller endpoints for the API
+
+----------------------------------------------
+

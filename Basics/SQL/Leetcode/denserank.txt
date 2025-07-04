@@ -1,0 +1,33 @@
+🔹 SQL: Find Second Highest Salary using DENSE_RANK()
+✅ Objective:
+Use the DENSE_RANK() window function to assign ranks to salaries and filter the second highest.
+
+🧾 Sample Query:
+sql
+Copy
+Edit
+SELECT salary, 
+       DENSE_RANK() OVER (ORDER BY salary DESC) AS ranking
+FROM employee;
+🔍 Explanation:
+DENSE_RANK() assigns a unique rank without gaps in case of duplicate salaries.
+
+ORDER BY salary DESC ranks the highest salary as 1, second highest as 2, etc.
+
+Multiple employees with the same salary share the same rank.
+
+🧾 To Get Only the Second Highest Salary:
+sql
+Copy
+Edit
+SELECT salary 
+FROM (
+    SELECT salary, 
+           DENSE_RANK() OVER (ORDER BY salary DESC) AS ranking
+    FROM employee
+) AS ranked_salaries
+WHERE ranking = 2;
+🔍 Explanation:
+Inner query ranks all salaries.
+
+Outer query filters only where rank = 2 (i.e., second highest).
