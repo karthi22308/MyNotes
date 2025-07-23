@@ -1,0 +1,44 @@
+\------------------------------
+AZURE DEVELOPER NOTES
+------------------------------
+
+COMMAND LINE OPTIONS AVAILABLE:
+
+1. BASH (Azure CLI) – Linux-based command-line interface  
+2. PowerShell – Windows-based scripting environment
+
+⚠️ NOTE:
+- You need **PowerShell 7** (also known as PowerShell Core) to work with Azure.
+- The default Windows PowerShell (pre-installed) is not supported for many Azure commands.
+
+------------------------------
+APP SERVICES (PaaS - Platform as a Service)
+------------------------------
+
+Traditional way apps worked before cloud:
+
+- Applications (e.g., written in C++) were **compiled** into executables (.exe)
+- These executables returned HTML responses to clients
+- Ran directly on on-premises servers
+
+Evolution: 3-Tier Web Architecture
+
+1. **Presentation Layer** – UI in browser (HTML, CSS, JS)
+2. **Application Layer** – Business logic (.NET, Java, Node.js)
+3. **Database Layer** – SQL/NoSQL databases
+
+------------------------------
+MODERN HOSTING OPTIONS IN AZURE
+------------------------------
+
+1. **Infrastructure as a Service (IaaS)**  
+   - You choose a Virtual Machine (VM)  
+   - You install & configure everything (e.g., IIS Server, firewall, patches)  
+   - Full control, but also full responsibility for maintenance  
+
+2. **Platform as a Service (PaaS)** – **App Services**
+   - You just choose runtime (e.g., .NET, Java, Node.js)  
+   - Azure handles infrastructure, scaling, patching, and load balancing  
+   - Focus only on code and configuration
+
+------------------------------
