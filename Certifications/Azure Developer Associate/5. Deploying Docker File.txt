@@ -1,0 +1,54 @@
+------------------------------
+AZURE CONTAINER INSTANCE (ACI) & DOCKER SETUP
+------------------------------
+
+AZURE CONTAINER INSTANCE (ACI):
+
+- ACI allows you to **run containers** in Azure **without managing servers**
+- Ideal for lightweight workloads, testing, or quick container runs
+
+------------------------------
+DOCKER SETUP FOR AZURE
+------------------------------
+
+STEP 1: Create a Container Registry
+- Use Azure Container Registry (ACR)
+- Acts like a **GitHub for container images**
+- Stores images to be used across Azure services
+
+STEP 2: Build & Publish Docker Image
+
+Tools Needed:
+- Docker Desktop (Windows/Mac)
+- Visual Studio (with "Container Tools" extension installed)
+
+Steps:
+1. Start Docker Desktop → ensure it's running and switched to correct backend (Linux/WSL)
+2. In Visual Studio, open your app
+3. Right-click project → Add → Docker Support
+   - Choose OS (e.g., Linux)
+   - Dockerfile is created
+4. Build the Docker image locally
+5. Publish to Azure Container Registry (ACR)
+   - Right-click project → Publish → Azure Container Registry
+
+------------------------------
+DEPLOYING ACI APP FROM REGISTRY
+------------------------------
+
+1. Go to Azure Portal → Container Registry
+2. Generate **access keys** (username + password or admin credentials)
+3. Go to Azure Container Instance (ACI)
+   - Create a new container instance
+   - Choose "Image source: Azure Container Registry"
+   - Provide image name, tag, and registry credentials
+4. Review and deploy
+
+✅ The container will now run in ACI
+
+💡 NOTE:
+- The same image can also be deployed to:
+  - Azure Web App (using custom container)
+  - Azure Kubernetes Service (AKS) for production-scale workloads
+
+------------------------------

@@ -1,0 +1,49 @@
+Creating a function:
+------------------------------
+CREATING AN AZURE FUNCTION
+------------------------------
+
+Once the Function App is created:
+
+1. Go to the **Function App** in the Azure Portal
+2. In the left menu, click on **"Functions"** tab
+3. Click **"Create"** to add a new function
+
+You can create the function using:
+- Azure Portal
+- VS Code / Visual Studio
+- Azure CLI
+
+------------------------------
+STEPS TO CREATE A FUNCTION:
+------------------------------
+
+1. **Choose Development Environment**  
+   - Portal  
+   - VS Code  
+   - Local development
+
+2. **Select a Trigger Type**  
+   Triggers determine when your function executes. Examples:
+   - HTTP Trigger → runs on HTTP request
+   - Timer Trigger → runs on schedule (like cron jobs)
+   - Cosmos DB Trigger → runs when something is added/changed in DB
+   - Blob Storage Trigger → runs when file is uploaded
+
+3. **Configure the Trigger**  
+   - Provide a name for the function
+   - Set schedule or event source (depending on the trigger)
+
+4. **Write Code in Portal or Upload from Local**  
+   - Azure provides a built-in code editor
+   - Test directly in the portal (for quick demos or scripts)
+
+------------------------------
+NOTES:
+------------------------------
+
+- Portal is good for quick testing and learning
+- For real apps, prefer local development + CI/CD pipelines
+- Functions can be deployed directly from VS Code or GitHub
+
+------------------------------

@@ -1,0 +1,72 @@
+------------------------------
+AZURE FUNCTION APP
+------------------------------
+
+WHAT IS FUNCTION APP?
+
+- Azure Function App is used for **event-driven code** execution.
+- It is a **serverless** architecture:
+  - No need to manage infrastructure or servers
+  - Azure takes care of provisioning, scaling, and availability
+- You focus solely on writing code
+
+- You only choose a **plan (e.g., Consumption, Premium)** — everything else is managed by Azure
+
+------------------------------
+EVENT-DRIVEN EXECUTION
+------------------------------
+
+- Azure Functions are **not designed for scheduled jobs only**
+- A **trigger** is always required to execute the function:
+
+Common triggers:
+- HTTP Request (REST API)
+- Database Updates (e.g., Cosmos DB)
+- Time-based (CRON expressions / timers)
+- Blob/File added to storage
+
+------------------------------
+BENEFITS & FEATURES
+------------------------------
+
+- **Scalable**: Auto-scales based on number of events
+- **Pay-as-you-consume**: First 1 million executions/month are FREE
+- Part of **Azure App Services platform**
+- Supports multiple languages:
+  - C#, Python, JavaScript, Java, PowerShell, etc.
+
+Integration:
+- Azure Blob Storage
+- Azure Cosmos DB
+- Event Grid
+- Service Bus
+
+------------------------------
+MONITORING & DIAGNOSTICS
+------------------------------
+
+- Azure provides built-in:
+  - Logs (via Application Insights)
+  - Metrics and alerts
+  - Diagnostic tools for performance issues
+
+------------------------------
+DURABLE FUNCTIONS (ADVANCED)
+------------------------------
+
+- Allow orchestration of multiple functions
+- Can **call other functions** and **wait for their response**
+- Useful for:
+  - Long-running workflows
+  - Sequential or parallel function execution
+
+------------------------------
+BEST PRACTICES
+------------------------------
+
+- Keep functions **short** and **single-purpose**
+- Use **environment variables** for configs/secrets
+- Monitor execution time (optimize long-running functions)
+- Use bindings (input/output) to simplify integrations
+
+------------------------------

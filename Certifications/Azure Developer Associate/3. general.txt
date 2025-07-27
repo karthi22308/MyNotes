@@ -39,3 +39,58 @@ To use your own domain:
 - Azure also provides **Free App Service Managed Certificates**
 
 ------------------------------
+
+
+Auto Scaling -> scales automatically based on request
+allocates and deallocates automatically
+two ways to scale:
+
+rules based : like time based or cpu based scaling descaling
+
+auto scaling Microsoft takes care of it
+
+
+
+
+scale out -- adding instances
+scale up - plans increasing tier --increses power of computers 
+-------------------------------------
+ Scaling Up (Vertical Scaling) mostly done manually
+Means increasing the power (CPU, RAM, disk) of a single instance (i.e., one virtual machine or app instance).
+
+🔧 Example:
+You have one Azure VM with 4 GB RAM → You scale up → Now it becomes 8 GB RAM, more CPU, etc.
+
+This is like upgrading your laptop from 4 GB to 16 GB RAM.
+-------------------------------
+Scaling Out (Horizontal Scaling)
+Means increasing the number of instances (clones of the same app or VM).
+
+📈 Example:
+You have one instance of a web app → You scale out → Now you have 3 instances of that same app, sharing the traffic.
+
+This is like adding more laptops to do the same job in parallel.
+-----------------------
+Diagnostic Logs
+
+
+httpp logs and more can be seen here
+
+console logs application logs also
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
