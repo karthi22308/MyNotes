@@ -47,3 +47,48 @@ NOTES:
 - Functions can be deployed directly from VS Code or GitHub
 
 ------------------------------
+------------------------------
+BLOB OUTPUT BINDING
+------------------------------
+
+❓ INTERVIEW / AZ-204 EXAM PERSPECTIVE:
+
+- Blob Output Binding is used to **store function output as a Blob** in Azure Storage
+- It allows serverless functions to **automatically write data** to a blob container
+- Reduces the need to manually write code to interact with Azure Blob Storage SDK
+
+✅ Key Points:
+- Requires an **Azure Storage Account**
+- You configure the **output binding** in `function.json` or via attributes (C#)
+- Function output (like a string, file, or serialized object) is written to a blob file
+
+🧠 Example:
+- A function processes form data and saves the result as a JSON file to a blob
+- Very useful for **data archiving**, **logging**, or **storing transformation results**
+
+------------------------------
+TIMER TRIGGER FUNCTION
+------------------------------
+
+❓ INTERVIEW / AZ-204 EXAM PERSPECTIVE:
+
+- A Timer Trigger allows functions to **run on a schedule** without external input
+- It's based on a **CRON expression** to define when and how often it runs
+
+✅ Key Points:
+- Useful for running scheduled tasks like clean-ups, backups, or data sync
+- Timer trigger must be **defined with a CRON expression**
+- Works well for **stateless** scheduled jobs
+
+🧠 Example CRON Expression:
+- `"0 */5 * * * *"` → Every 5 minutes
+- `"0 0 0 * * *"` → Every day at midnight
+
+🛠️ In `function.json`:
+```json
+{
+  "schedule": "0 */5 * * * *"
+}
+
+
+
