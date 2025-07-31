@@ -1,0 +1,124 @@
+------------------------------
+AZURE BLOB STORAGE & STORAGE ACCOUNTS
+------------------------------
+
+PURPOSE:
+- Used to **store and retrieve unstructured data**, such as:
+  - Files
+  - Images
+  - Videos
+  - Backups
+  - Logs
+
+------------------------------
+CREATING A STORAGE ACCOUNT:
+------------------------------
+Azure Portal → Home → Create a Resource → Storage Account
+
+Choose:
+- Location
+- Redundancy
+- Performance Tier
+- Access Tier (Hot, Cool, Archive)
+
+------------------------------
+REDUNDANCY TYPES (Data Replication)
+------------------------------
+
+1. **LRS (Locally Redundant Storage)**  
+   - 3 copies within a single region  
+   - Cheapest option, no cross-region protection
+
+2. **ZRS (Zone-Redundant Storage)**  
+   - Copies data across availability zones within a region
+
+3. **GRS (Geo-Redundant Storage)**  
+   - LRS + replication to a secondary region (read-only)
+
+4. **GZRS (Geo-Zone-Redundant Storage)**  
+   - ZRS + replication to another geo-region
+
+------------------------------
+ACCESS TIERS:
+------------------------------
+
+1. **Hot** – Frequently accessed data  
+2. **Cool** – Infrequently accessed, but still needed quickly  
+3. **Archive** – Rarely accessed, long-term storage (retrieval takes hours)
+
+------------------------------
+SECURITY & ACCESS
+------------------------------
+
+- **Network access control**: Restrict traffic via firewall or private endpoint  
+- **Microsoft network routing**: Ensures traffic stays on Microsoft’s backbone  
+- **Soft delete**: Deleted data can be restored for up to 7 days (configurable)  
+
+------------------------------
+ENCRYPTION:
+------------------------------
+
+- Data is **encrypted at rest** using Microsoft-managed keys (default)
+- **Infrastructure Encryption**: Adds a second layer of encryption
+- You can also use **customer-managed keys (CMK)** stored in Key Vault
+
+------------------------------
+UPLOADING DATA TO A CONTAINER:
+------------------------------
+
+1. Go to your Storage Account → Data Storage → Containers  
+2. Create a new container  
+3. Upload file(s) via Portal, CLI, or SDK
+
+------------------------------
+ACCESSING FILES WITH SAS (Shared Access Signature):
+------------------------------
+
+- SAS allows controlled access to files without sharing the storage account key
+
+Steps:
+1. Go to blob file → Click on **"Generate SAS"**
+2. Configure permissions (read, write, list, delete)
+3. Copy the **SAS URL** and share/use as needed
+
+------------------------------
+COPYING BLOBS BETWEEN CONTAINERS/STORAGE ACCOUNTS:
+------------------------------
+
+✅ Option 1: **AZCOPY**
+- Command-line tool to move/copy data
+- Reduces data movement cost by avoiding download + upload
+
+✅ Option 2: **Using .NET SDK (Azure.Storage.Blobs)**
+
+SAMPLE C# CODE:
+```csharp
+using Azure.Storage.Blobs;
+using System;
+using System.Threading.Tasks;
+
+class Program
+{
+    static async Task Main()
+    {
+        string sourceBlobUrl = "<SOURCE_BLOB_SAS_URL>";
+        string destConnectionString = "<DEST_STORAGE_CONNECTION_STRING>";
+        string destContainerName = "destination-container";
+        string destBlobName = "copiedfile.txt";
+
+        BlobServiceClient serviceClient = new BlobServiceClient(destConnectionString);
+        BlobContainerClient containerClient = serviceClient.GetBlobContainerClient(destContainerName);
+        BlobClient destBlobClient = containerClient.GetBlobClient(destBlobName);
+
+        await destBlobClient.StartCopyFromUriAsync(new Uri(sourceBlobUrl));
+
+        // Optional: Add metadata
+        await destBlobClient.SetMetadataAsync(new System.Collections.Generic.Dictionary<string, string>
+        {
+            { "copiedBy", "Karthick" },
+            { "purpose", "backup" }
+        });
+
+        Console.WriteLine("Blob copied successfully.");
+    }
+}
