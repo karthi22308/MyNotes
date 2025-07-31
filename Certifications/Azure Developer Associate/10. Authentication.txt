@@ -1,0 +1,135 @@
+------------------------------
+AZURE AUTHENTICATION & MICROSOFT IDENTITY PLATFORM
+------------------------------
+
+ENTRA ID (Previously Azure Active Directory)
+----------------------------------------------
+
+- **Microsoft Entra ID** is the **identity and access management (IAM)** solution on Azure.
+- Used to manage **users**, **groups**, **roles**, and **authentication**.
+
+✅ Key Components:
+- **Users**: Individual accounts (employees, guests)
+- **Groups**: Logical collection of users
+- **Roles**: Define what access a user/group has
+
+🛠 Path to access:
+Azure Portal → All Services → Microsoft Entra ID (Default Directory)
+
+------------------------------
+WHAT IS A TENANT?
+------------------------------
+
+- A **Tenant** represents a dedicated **Azure AD (Entra ID) instance** for an organization.
+- Creating a tenant is like a company setting up its identity system (e.g., Hexaware using `@hexaware.com`).
+- Each tenant is isolated and secure.
+
+**Global Administrator**:
+- The highest privileged role in a tenant.
+- Full control over users, groups, roles, and settings.
+
+------------------------------
+MICROSOFT IDENTITY PLATFORM (MIP)
+------------------------------
+
+🔹 It is a **modern authentication platform** for:
+- Web apps
+- Mobile apps
+- Desktop apps
+- APIs
+
+🔹 It supports:
+- **OpenID Connect** (for authentication)
+- **OAuth 2.0** (for authorization)
+
+🧠 Think of it as:
+> A **middleware** between your app and Entra ID — it handles sign-in, token generation, and access control.
+
+How it works (simplified):
+1. User visits your app.
+2. App redirects to **Microsoft Identity Platform**.
+3. User logs in.
+4. Platform issues an **access token** or **ID token**.
+5. Your app validates the token and grants access.
+
+📍 App Registrations:
+- Navigate to: **Azure Portal → Entra ID → App registrations**
+- Register your app to enable authentication and authorization.
+
+Useful checklist: [aka.ms/identityplatformchecklist](https://aka.ms/identityplatformchecklist)
+
+------------------------------
+CREATING USERS IN ENTRA ID
+------------------------------
+
+Steps:
+1. Azure Portal → Entra ID → Users → + New User
+2. Choose type:
+   - **Member** (internal)
+   - **Guest** (external partner, consultant, etc.)
+
+------------------------------
+REGISTERING AN APPLICATION
+------------------------------
+
+Path:
+Azure Portal → Entra ID → App Registrations → + New Registration
+
+You will need:
+- App Name
+- Redirect URI (where to send the token)
+- Supported Account Types (e.g., Single tenant, Multi-tenant)
+
+Post-registration:
+- You’ll receive:
+  - **Client ID**
+  - **Tenant ID**
+  - Optional: **Client Secret**
+
+------------------------------
+OVERVIEW: MICROSOFT GRAPH API
+------------------------------
+
+✅ What is it?
+- A RESTful API that lets you **programmatically access Microsoft 365 services**.
+- Central interface to work with:
+  - Users
+  - Emails
+  - Files (OneDrive)
+  - Groups
+  - Teams
+  - Devices
+
+🔐 It uses **Azure AD tokens** to authorize requests.
+
+💡 AZ-204 and Interview Tips:
+- Know how to **call Graph API using access tokens**
+- Understand the **permissions model** (Delegated vs Application permissions)
+- Examples:
+  - Get user profile: `GET https://graph.microsoft.com/v1.0/me`
+  - List group members: `GET https://graph.microsoft.com/v1.0/groups/{id}/members`
+
+Libraries:
+- SDK available for C#, JavaScript, Python, etc.
+
+------------------------------
+INTERVIEW & AZ-204 EXAM HIGHLIGHTS
+------------------------------
+
+✅ Know the difference:
+- Entra ID vs Identity Platform
+- OAuth2.0 vs OpenID Connect
+- Access token vs ID token
+
+✅ Key Concepts:
+- App registration flow
+- Role-based access (RBAC)
+- Token validation and scopes
+- Microsoft Graph API usage
+
+✅ Real-world usage:
+- Protect APIs
+- Secure frontend apps (React, Angular)
+- Automate Microsoft 365 tasks using Graph API
+
+------------------------------
