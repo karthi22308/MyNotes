@@ -1,0 +1,152 @@
+------------------------------
+AZURE EVENT-BASED SOLUTIONS
+------------------------------
+
+WHAT IS EVENT-BASED ARCHITECTURE?
+----------------------------------
+
+- **Decouples** producers and consumers of data
+- Useful for real-time and asynchronous communication between apps
+- Improves scalability, fault tolerance, and performance
+
+✅ Common Scenario:
+- Microservices
+- IoT telemetry
+- Notifications
+- Data ingestion pipelines
+
+------------------------------
+INTER-APP COMMUNICATION: SYNC VS ASYNC
+----------------------------------
+
+❌ Non-Asynchronous (Synchronous):
+- App waits for response → tightly coupled
+- Hard to scale
+
+✅ Asynchronous:
+- Event/message is **sent and forgotten**
+- Consumer processes independently
+- Enables scalable event-driven systems
+
+------------------------------
+AZURE EVENT GRID
+------------------------------
+
+✅ **Purpose**:
+- Lightweight, low-latency **event routing service**
+- Delivers **discrete events** to subscribers
+
+✅ Key Features:
+- Push model (HTTP webhook-based)
+- 10M+ events per second
+- Supports retry & dead-lettering
+
+✅ Common Sources:
+- Azure Blob Storage (file added)
+- Azure Resource Group changes
+- Custom sources
+
+✅ Common Handlers:
+- Azure Functions
+- Logic Apps
+- Webhooks
+
+🎯 Best For:
+- Serverless event-driven apps
+- Low latency event distribution
+
+------------------------------
+AZURE EVENT HUB
+------------------------------
+
+✅ **Purpose**:
+- A **big data streaming platform** and **event ingestion service**
+- Can handle **millions of events per second**
+
+✅ Use Cases:
+- Real-time analytics
+- Telemetry ingestion (e.g., IoT, apps, sensors)
+
+✅ Key Features:
+- Partitioning for high throughput
+- Consumer groups
+- Retention windows
+- Compatible with Kafka
+
+🎯 Best For:
+- High-volume data ingestion
+- Streaming telemetry and logs
+
+------------------------------
+MQTT FOR IOT
+------------------------------
+
+- **MQTT** (Message Queuing Telemetry Transport) is a lightweight protocol used for IoT
+- Azure IoT Hub supports MQTT to allow IoT devices to publish messages securely
+
+------------------------------
+APPLICATION MESSAGING
+------------------------------
+
+AZURE STORAGE QUEUE
+------------------------------
+
+✅ Simple message queue for inter-process communication
+
+✅ Features:
+- Max message size: 64 KB
+- Max retention: 7 days
+- No ordering guarantees
+- REST-based access
+- Easy to use with Azure Functions or custom code
+
+🎯 Use Cases:
+- Background task processing
+- Decoupled microservices
+- Email/sms trigger queues
+
+------------------------------
+AZURE SERVICE BUS QUEUE
+------------------------------
+
+✅ Enterprise-grade messaging system
+
+✅ Features:
+- Advanced features like:
+  - **Dead-lettering**
+  - **Scheduled delivery**
+  - **Duplicate detection**
+  - **Session-based messaging**
+- FIFO (First In First Out) support via sessions
+- Supports **topics and subscriptions** (publish/subscribe)
+
+🎯 Use Cases:
+- Enterprise systems with complex messaging needs
+- Workflow orchestration
+- Multi-consumer systems
+
+------------------------------
+AZ-204 & INTERVIEW TIPS
+------------------------------
+
+✅ Know the difference between:
+- Event Grid vs Event Hub vs Service Bus vs Storage Queue
+
+✅ Event Grid:
+- Light eventing, real-time notifications
+
+✅ Event Hub:
+- High-throughput data ingestion
+
+✅ Storage Queue:
+- Simple, cost-effective, basic queueing
+
+✅ Service Bus:
+- Enterprise-ready messaging with advanced reliability
+
+✅ Questions:
+- “When would you use Service Bus over Storage Queue?”
+- “How does Event Grid differ from Event Hub?”
+- “What’s the use of dead-lettering in Service Bus?”
+
+------------------------------

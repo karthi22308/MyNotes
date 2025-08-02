@@ -1,0 +1,97 @@
+------------------------------
+AZURE TROUBLESHOOTING WITH APPLICATION INSIGHTS
+------------------------------
+
+WHAT IS APPLICATION INSIGHTS?
+------------------------------
+
+- Part of **Azure Monitor**
+- A tool for **monitoring and diagnosing app performance**
+- Collects **telemetry data** like:
+  - Exceptions
+  - Request rates
+  - Dependencies
+  - Response times
+  - Custom events and logs
+
+✅ Works with:
+- .NET
+- Java
+- Node.js
+- Python
+- Front-end JavaScript apps
+
+------------------------------
+KEY FEATURES
+------------------------------
+
+1. **Auto Instrumentation** ✅
+   - Automatically collects telemetry **without modifying code**
+   - Enabled by:
+     - Installing the Application Insights SDK or
+     - Enabling from Azure Portal (via App Services or VM Extension)
+   - Captures:
+     - Incoming HTTP requests
+     - Exceptions
+     - Dependency calls (e.g., to databases, APIs)
+     - Performance counters
+
+💡 Interview Tip:
+> Auto instrumentation reduces manual logging effort and provides deep visibility with minimal setup.
+
+2. **Custom Telemetry**
+   - You can manually track:
+     - Custom events (e.g., "User Registered")
+     - Business metrics
+     - Log traces (via `TelemetryClient`)
+
+3. **Live Metrics**
+   - Real-time view of request count, failure rate, and CPU usage
+   - Very useful during **deployment or debugging**
+
+4. **Analytics Queries**
+   - Use **KQL (Kusto Query Language)** to analyze collected telemetry
+   - Example:
+     ```kusto
+     requests
+     | where success == false
+     | summarize count() by operation_Name
+     ```
+
+------------------------------
+AVAILABILITY TESTS
+------------------------------
+
+- Simulate user requests from various Azure regions
+- Used to **test uptime and performance**
+- Supports:
+  - URL ping tests
+  - Multi-step web tests
+- Alerts can be set if test fails
+
+✅ Best for:
+- Monitoring availability of APIs or frontend endpoints
+- Alerting when endpoint is unreachable or too slow
+
+------------------------------
+AZ-204 & INTERVIEW HIGHLIGHTS
+------------------------------
+
+✅ Know what Application Insights provides:
+- Request tracking
+- Exception logging
+- Dependency telemetry
+- Custom metrics
+
+✅ Key Terms:
+- Auto Instrumentation
+- Kusto Query Language (KQL)
+- Availability Tests
+- Application Map (dependency visualization)
+
+✅ Common Questions:
+- "How would you monitor and diagnose a slow API?"
+- "What’s the benefit of using Application Insights vs logs?"
+- "What’s the difference between App Insights and Azure Monitor?"
+
+------------------------------

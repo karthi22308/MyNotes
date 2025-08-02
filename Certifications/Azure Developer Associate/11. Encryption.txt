@@ -1,0 +1,69 @@
+------------------------------
+SECURING AZURE APP SERVICES
+------------------------------
+
+⚠️ RISK:
+- If secrets like DB connection strings or API keys are stored in `appsettings.json`, they can be exposed during deployment or in source control.
+
+✅ SECURE METHODS:
+
+1. **App Service Configuration**
+   - Go to: Azure Portal → App Service → Configuration → Application Settings
+   - Add your secrets as **key-value pairs**
+   - Encrypted at rest and during transmission
+   - Accessible in code via environment variables
+
+2. **Azure Key Vault**
+   - A secure service to **store and manage secrets, keys, and certificates**
+   - Better security than App Settings (e.g., access control, auditing, versioning)
+
+🎯 Key Vault Security:
+- Supports **RBAC** and **Access Policies**
+- Integrates with **Managed Identity** (apps can access vault without credentials)
+- Requires explicit permission to access secrets
+
+------------------------------
+DATA ENCRYPTION IN STORAGE ACCOUNTS
+------------------------------
+
+✅ **Secure Transfer Option**:
+- Ensures all REST API communications are encrypted (HTTPS only)
+
+✅ **Encryption at Rest**:
+- By default, Azure encrypts data using **Microsoft-managed keys**
+- Optionally, use **Customer-managed keys (CMK)** stored in Azure Key Vault
+  - Gives control over key rotation and compliance
+
+------------------------------
+SQL DATABASE ENCRYPTION OPTIONS
+------------------------------
+
+1. **Transparent Data Encryption (TDE)**
+   - Default in Azure SQL
+   - Encrypts the entire database, backups, and transaction logs at rest
+   - No application changes required
+
+2. **Always Encrypted** ✅
+   - Encrypts sensitive columns (e.g., SSN, credit card numbers)
+   - Data is encrypted **client-side** before sending to SQL Server
+   - SQL Server **never sees plaintext data**
+   - Supports deterministic or randomized encryption
+   - Ideal for highly confidential data and compliance (e.g., GDPR)
+
+🧠 Interview & Exam Notes:
+- With **Always Encrypted**, only the **client driver** with access to the encryption key can read/write data.
+- Can use Azure Key Vault to store keys securely
+- Used when **even DBAs shouldn’t be able to view** sensitive data
+
+------------------------------
+AZURE SECURITY BEST PRACTICES (SUMMARY)
+------------------------------
+
+✅ Use **Key Vault** for all secrets, keys, certificates  
+✅ Use **Managed Identities** instead of hardcoding credentials  
+✅ Enable **secure transfer** on all storage accounts  
+✅ Prefer **Customer-managed keys** for regulatory compliance  
+✅ Enable **TDE** and/or **Always Encrypted** on SQL Databases  
+✅ Monitor access using **Azure Defender** and **logging**
+
+------------------------------
