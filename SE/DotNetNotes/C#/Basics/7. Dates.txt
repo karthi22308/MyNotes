@@ -1,0 +1,35 @@
+# Working with Dates
+
+## DateTime
+- `DateTime` struct can be used for storing and manipulating dates and times.
+- DateTime objects are **immutable** (once created, they cannot be modified).
+- Examples:
+    ```csharp
+    DateTime now = DateTime.Now;
+    DateTime newYear = new DateTime(2025, 1, 1);
+    ```
+- Conversions/Formatting:
+    - `.ToLongDateString()` → Full date in long format.
+    - `.ToShortDateString()` → Date in short format.
+    - `.ToString("format")` → Custom formatting using format specifiers.
+        Example:
+        ```csharp
+        now.ToString("dd/MM/yyyy HH:mm");
+        ```
+
+## TimeSpan
+- `TimeSpan` represents a duration (difference between two dates/times).
+- TimeSpan is also **immutable**.
+- Example:
+    ```csharp
+    TimeSpan time = new TimeSpan(1, 2, 3); // 1 hour, 2 minutes, 3 seconds
+    ```
+- Subtracting two `DateTime` values returns a `TimeSpan`:
+    ```csharp
+    TimeSpan diff = date1 - date2;
+    ```
+- Adding/subtracting a `TimeSpan` to/from a `DateTime` returns a **new DateTime**:
+    ```csharp
+    DateTime newDate = now.Add(time);
+    ```
+--------------------

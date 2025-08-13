@@ -1,0 +1,39 @@
+# C# Lists (Generics)
+
+## Overview
+- **List<T>** is a generic collection.
+- Dynamic in size (can grow or shrink at runtime).
+- Belongs to **System.Collections.Generic** namespace.
+
+### Declaration
+var numbers = new List<int>();
+
+---
+
+## Common Methods
+
+- **Add(item)** → Adds a single element.
+- **AddRange(collection)** → Adds multiple elements from another collection.
+- **Remove(item)** → Removes the first occurrence of the element.
+- **RemoveAt(index)** → Removes the element at the specified index.
+- **IndexOf(item)** → Returns the index of the element (or -1 if not found).
+- **Contains(item)** → Checks if the element exists in the list.
+- **Count** (property) → Returns the number of elements.
+
+---
+
+## Example
+var numbers = new List<int>();
+numbers.Add(10);
+numbers.AddRange(new int[] { 20, 30, 40 });
+bool exists = numbers.Contains(20); // true
+int index = numbers.IndexOf(30);     // 2
+numbers.RemoveAt(1);                 // Removes element at index 1
+
+---
+
+## Important Note
+- **Do NOT remove items from a list inside a foreach loop** → causes `InvalidOperationException`.
+- Use a `for` loop or store items to remove in a separate list, then remove them after iteration.
+
+---
