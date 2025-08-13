@@ -1,0 +1,65 @@
+------------------------------
+C# VS .NET
+------------------------------
+
+C#:
+- A programming language developed by Microsoft.
+- Used to write code for applications.
+
+.NET:
+- A software framework for building applications.
+- Consists of two main parts:
+  1. **CLR (Common Language Runtime)** – the run-time environment.
+  2. **Class Library** – reusable code libraries.
+
+------------------------------
+COMMON LANGUAGE RUNTIME (CLR)
+------------------------------
+
+- When you compile C# code, it is first converted into **IL (Intermediate Language)** code.
+- IL is platform-independent code.
+- CLR uses **JIT (Just-In-Time) Compilation** to convert IL to native machine code at runtime.
+- This allows .NET apps to be platform-agnostic.
+
+Contrast:
+- C/C++ compiles directly to machine code (platform-specific).
+- C# compiles to IL, then CLR compiles IL to machine code at runtime.
+
+------------------------------
+ARCHITECTURE OF A .NET APPLICATION
+------------------------------
+
+- **Class**: Container for data (fields) and behavior (methods/functions).
+- **Namespace**: Logical grouping of related classes.
+- **Assembly**: Physical grouping of namespaces and classes, compiled into a DLL or EXE file.
+  - EXE = Executable program
+  - DLL = Library code reused by multiple programs
+
+------------------------------
+FILES IN A .NET APP
+------------------------------
+
+- `AssemblyInfo.cs` — contains metadata about the assembly (version, description).
+- `Program.cs` — entry point of the application.
+- `App.config` — configuration file (e.g., connection strings).
+- `using` statements — import namespaces to access their classes.
+
+------------------------------
+SUMMARY
+------------------------------
+
+- **C#** is the language you write code in.
+- **.NET** is the runtime and framework that executes and supports your C# applications.
+- CLR enables platform independence through IL and JIT compilation.
+- Applications are organized into classes, namespaces, and assemblies.
+
+------------------------------
+NEXT STEPS
+------------------------------
+
+- Learn about C# basics:
+  - Variables and constants
+  - Type conversions
+  - Operators
+
+------------------------------

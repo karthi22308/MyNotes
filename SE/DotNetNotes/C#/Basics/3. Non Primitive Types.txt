@@ -1,0 +1,130 @@
+# C# Non-Primitive Types
+
+## Classes
+- A **class** is a blueprint for creating objects.
+- An **object** is an instance of a class.
+
+### Declaring a Class
+public class ClassName
+{
+}
+
+### Creating an Object
+ClassName obj = new ClassName(); // Memory is allocated for non-primitive type objects.
+
+### Static Methods
+- Can be called without creating an object.
+- Use when:
+  - The method is not dependent on instance data.
+  - The method is common for all objects.
+
+------------------------------------------------------------------------------------------------------
+
+## Structs
+### Declaring a Struct
+public struct RgbColor
+{
+    public int Red;
+}
+
+### Value Type vs Reference Type
+- **Struct (Value Type)**:
+  - Stored directly.
+  - Assigning or passing creates a copy.
+  - Changes to one copy do not affect the other.
+  - Allocated on the stack (for locals) or inline in another object.
+  - No inheritance (cannot inherit from another struct/class).
+- **Class (Reference Type)**:
+  - Stores a reference to the object.
+  - Assigning or passing shares the same object in memory.
+  - Changes from one reference affect the other.
+  - Allocated on the heap.
+  - Supports inheritance.
+
+---------------------------------------------------------------------------------------------------------
+
+## Stack vs Heap
+- **Stack**:
+  - Stores value types, local variables, and method call data.
+  - Follows LIFO (Last-In, First-Out) order.
+  - Fast allocation/deallocation.
+- **Heap**:
+  - Stores reference types (objects).
+  - Allows dynamic memory allocation.
+  - Managed by the garbage collector.
+
+---------------------------------------------------------------------------------------------------------
+
+## Arrays
+### Declaration
+int[] array = new int[5];
+int[] arr = { 1, 2, 3 };
+
+- Default values in an `int` array are `0`.
+
+---------------------------------------------------------------------------------------------------------
+
+## Strings
+- Sequence of characters.
+- Example:
+  string test = "Karthick";
+  string formatted = string.Format("{0} {1}", "one", "two");
+
+- **Strings are immutable**:
+  string test = "Karthi";
+  test[0] = 'e'; // Compilation error
+
+- **Escape Sequences**:
+  - `\n` → new line
+  - `\t` → tab
+- Use `@` to avoid escaping backslashes:
+  string path = @"C:\Folder\SubFolder";
+
+- `string` and `String` are the same (alias).
+
+---------------------------------------------------------------------------------------------------------
+
+## Primitive vs Non-Primitive
+- Primitive data types are **structs** (value types).
+- Non-primitive types are **classes** (reference types).
+
+---------------------------------------------------------------------------------------------------------
+
+## Enums
+- Set of named constants.
+- Useful for related constant values.
+
+### Example
+// Instead of:
+const int Red = 1;
+const int Green = 2;
+const int Blue = 3;
+
+// Use enum:
+public enum Color
+{
+    Red = 1,
+    Green = 2,
+    Blue = 3
+    // If values not set, they start from 0 automatically
+}
+
+### Usage
+int test = (int)Color.Red; // test = 1
+
+---------------------------------------------------------------------------------------------------------
+
+## Value Types
+- Examples: Structs, primitive types.
+- Allocated on stack.
+- Memory allocated automatically.
+- Removed immediately when out of scope.
+
+---------------------------------------------------------------------------------------------------------
+
+## Reference Types
+- Examples: Classes, non-primitive types.
+- Memory must be allocated using `new`.
+- Allocated on heap.
+- Garbage collected automatically.
+------------------------------------------------------------------------------------------------------
