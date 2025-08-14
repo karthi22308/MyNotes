@@ -1,0 +1,39 @@
+# Working with Text
+
+## String Methods
+- `ToLower()` → Converts string to lowercase.
+- `ToUpper()` → Converts string to uppercase.
+- `Trim()` → Removes whitespace from the start and end of the string.
+
+## Searching
+- `IndexOf("value")` → First occurrence index.
+- `LastIndexOf("value")` → Last occurrence index.
+
+## Substring
+- `Substring(startIndex, length)` → Returns part of a string.
+
+## Splitting
+- `Split(' ')` → Returns an array of strings split by space (or any specified delimiter).
+
+## Converting
+```csharp
+string s = "234";
+int i = int.Parse(s);
+int j = Convert.ToInt32(s);
+------------------------------------------------------------
+Static Method Note
+If you call a method from a static method, that method must also be static.
+
+StringBuilder
+Useful for efficient string manipulation (avoids creating multiple string copies).
+
+Example:
+
+var builder = new StringBuilder();
+builder.Append('-', 10);
+builder.AppendLine();
+builder.Append("Header");
+
+Console.WriteLine(builder);
+----------
+Header
