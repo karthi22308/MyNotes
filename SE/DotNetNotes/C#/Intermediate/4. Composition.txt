@@ -1,0 +1,88 @@
+----------------------------------------------------
+CLASS COUPLING
+----------------------------------------------------
+Coupling = Degree of dependency between classes.
+
+- Tightly Coupled:
+  * Classes are highly dependent on each other.
+  * Harder to maintain and test.
+  * Example: Class A creates an object of Class B directly and uses it.
+
+- Loosely Coupled:
+  * Classes are less dependent.
+  * Easier to maintain, test, and extend.
+  * Achieved by interfaces, dependency injection, or composition.
+
+----------------------------------------------------
+INHERITANCE
+----------------------------------------------------
+- Mechanism where one class (child/derived) can reuse the properties & methods of another class (parent/base).
+- UML (Unified Modeling Language) diagrams are often used to represent inheritance relationships.
+
+Benefits:
+- Code Reuse
+- Polymorphic Behavior (same method behaves differently based on object type)
+- Write once, use in multiple places
+
+Syntax:
+public class Father
+{
+    // Shared code
+}
+
+public class Child : Father
+{
+    // Child-specific code
+}
+
+----------------------------------------------------
+COMPOSITION
+----------------------------------------------------
+- A "has-a" relationship between two classes.
+- One class contains another class as a field.
+- Promotes code reuse with more flexibility.
+- Considered loosely coupled compared to inheritance.
+
+Benefits:
+- More flexible than inheritance
+- Easier to change without breaking other classes
+- Encourages modular design
+
+Example:
+public class Engine
+{
+    public void Start()
+    {
+        Console.WriteLine("Engine started...");
+    }
+}
+
+public class Car
+{
+    private Engine _engine = new Engine(); // Composition
+
+    public void StartCar()
+    {
+        _engine.Start(); // Using Engine inside Car
+        Console.WriteLine("Car is running...");
+    }
+}
+
+Car myCar = new Car();
+myCar.StartCar();
+
+----------------------------------------------------
+FAVOR COMPOSITION OVER INHERITANCE
+----------------------------------------------------
+- Inheritance can be misused by beginners → leads to fragile designs.
+- Composition provides:
+  * Looser coupling
+  * Greater flexibility
+  * Better code maintenance
+
+Key Difference:
+- Inheritance → "is-a" relationship  
+  Example: Dog is an Animal
+- Composition → "has-a" relationship  
+  Example: Car has an Engine
+----------------------------------------------------

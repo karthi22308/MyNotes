@@ -1,0 +1,185 @@
+----------------------------------------------------
+INHERITANCE (Second Pillar of OOP)
+----------------------------------------------------
+- Enables code reuse.
+- Base (parent) class → Derived (child) class.
+- Derived classes can extend or override base functionality.
+
+----------------------------------------------------
+ACCESS MODIFIERS
+----------------------------------------------------
+Design principle: Classes should be like a "black box":
+- Hide internal implementation (Encapsulation).
+- Expose only what is needed.
+
+public     -> Accessible everywhere.
+private    -> Accessible only inside the same class.
+protected  -> Accessible inside the class + derived classes.
+              ⚠️ Try to avoid heavy usage; it can break encapsulation.
+internal   -> Accessible within the same assembly (project).
+protected internal -> Accessible within the same assembly OR in derived classes.
+private protected -> Accessible within the containing class OR derived classes in the same assembly.
+
+Best Practice:
+- Default to private.
+- Increase visibility only when required.
+
+----------------------------------------------------
+CONSTRUCTORS & INHERITANCE
+----------------------------------------------------
+- Base class constructors always run first.
+- Constructors are NOT inherited.
+- `base` keyword is used to call parent constructors.
+
+Example:
+public class Vehicle
+{
+    private readonly string registrationNumber;
+
+    public Vehicle(string registrationNumber)
+    {
+        this.registrationNumber = registrationNumber;
+        Console.WriteLine("Vehicle constructor called");
+    }
+}
+
+public class Car : Vehicle
+{
+    public Car(string registrationNumber) : base(registrationNumber)
+    {
+        Console.WriteLine("Car constructor called");
+    }
+}
+
+// Usage:
+Car car = new Car("TN09AB1234");
+// Output:
+// Vehicle constructor called
+// Car constructor called
+
+----------------------------------------------------
+UPCASTING & DOWNCASTING
+----------------------------------------------------
+Upcasting:
+- Converting Derived → Base type.
+- Always safe (implicit conversion).
+- Only base class members are accessible, but the object is still derived.
+
+Example:
+Car car = new Car("123");
+Vehicle vehicle = car;   // Upcasting
+vehicle.Start();         // Works (from Vehicle)
+vehicle.Drive();         // ❌ Not accessible (specific to Car)
+
+Downcasting:
+- Converting Base → Derived type.
+- Explicit conversion required.
+- Unsafe if the object is not actually of the derived type.
+
+Example (unsafe):
+Vehicle vehicle = new Car("123");  // Vehicle reference, Car object
+Car car = (Car)vehicle;            // Downcasting
+car.Drive();                       // Works
+
+Example (safe with 'as'):
+Car safeCar = vehicle as Car;
+if (safeCar != null)
+{
+    safeCar.Drive();
+}
+
+Example (safe with 'is'):
+if (vehicle is Car anotherCar)
+{
+    anotherCar.Drive();
+}
+
+----------------------------------------------------
+TYPE SAFETY
+----------------------------------------------------
+- "Type Safe" means the compiler ensures correct types at compile time.
+- Prevents assigning or accessing incompatible types.
+
+ArrayList (non-generic, old):
+- Stores objects of ANY type.
+- Not type-safe (e.g., can add int, string, etc. into same list).
+
+List<T> (generic, modern):
+- Strongly typed collection.
+- Type-safe (e.g., List<int> only allows integers).
+
+Example:
+ArrayList list = new ArrayList();
+list.Add(1);
+list.Add("Hello"); // Allowed (not type safe)
+
+List<int> numbers = new List<int>();
+numbers.Add(1);
+// numbers.Add("Hello"); ❌ Compile-time error (type safe)
+
+----------------------------------------------------
+
+----------------------------------------------------
+VALUE TYPES & REFERENCE TYPES
+----------------------------------------------------
+Value Types:
+- Stored in the Stack (fast access).
+- Examples: int, float, double, byte, char, struct, bool.
+- Contain the actual value.
+
+Reference Types:
+- Stored in the Heap (slower, requires memory lookup).
+- Examples: class, object, string, arrays, interface, delegate.
+- Contain a reference (address) pointing to the object in the heap.
+
+----------------------------------------------------
+STACK VS HEAP MEMORY
+----------------------------------------------------
+STACK:
+- Stores value types and method call details.
+- Memory is automatically managed (pushed/popped with method calls).
+- Faster but smaller in size.
+- Thread-specific (each thread has its own stack).
+
+HEAP:
+- Stores reference type objects.
+- Garbage Collector manages cleanup.
+- Slower but larger and more flexible.
+- Shared across threads.
+
+----------------------------------------------------
+BOXING
+----------------------------------------------------
+Definition:
+- Converting a Value Type (stack) into a Reference Type (heap).
+- Value is wrapped ("boxed") inside an object.
+
+Example:
+int num = 10;             // Value type (stack)
+object obj = num;         // Boxing (value copied into heap)
+Console.WriteLine(obj);   // Output: 10
+
+----------------------------------------------------
+UNBOXING
+----------------------------------------------------
+Definition:
+- Extracting the Value Type from an Object (reference type).
+- Explicit casting is required.
+- Opposite of boxing.
+
+Example:
+object obj = 20;           // Boxed value in heap
+int num = (int)obj;        // Unboxing (retrieving to stack)
+Console.WriteLine(num);    // Output: 20
+
+----------------------------------------------------
+PERFORMANCE IMPACT
+----------------------------------------------------
+- Both Boxing and Unboxing involve additional memory + CPU overhead.
+- Boxing: Copies value from stack → heap.
+- Unboxing: Copies value from heap → stack.
+- Frequent boxing/unboxing can degrade performance.
+- Best Practice → Use Generics (List<T>, Dictionary<TKey, TValue>, etc.) to avoid boxing/unboxing.
+
+----------------------------------------------------
+
