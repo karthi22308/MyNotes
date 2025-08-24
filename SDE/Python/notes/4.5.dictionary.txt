@@ -1,0 +1,119 @@
+PYTHON DICTIONARIES
+--------------------
+
+Dictionary:
+- Stores data as key-value pairs
+- Unordered (insertion order is preserved in Python 3.7+ but not guaranteed before)
+- Unindexed (cannot access by position)
+- Access using keys
+- Keys must be immutable (hashable)
+
+--------------------
+CREATING A DICTIONARY
+
+# Empty dictionary
+dic = {}
+dic = dict()
+
+# With values
+dic = dict([(1, 'abc'), (2, 'bcd')])
+dic = {"key": "value", "age": 25}
+
+--------------------
+ACCESSING ELEMENTS
+
+dict[key]        -> returns the value of given key
+# Raises KeyError if key not found
+
+dict.get(key)    -> returns the value if key exists
+                  -> returns None (or default value if specified) if key not found
+
+Example:
+dic = {"a": 10, "b": 20}
+print(dic["a"])       # 10
+print(dic.get("c"))   # None
+print(dic.get("c", 0))# 0
+
+--------------------
+ADDING / UPDATING ELEMENTS
+
+dict[key] = value
+
+Example:
+dic = {"a": 10}
+dic["b"] = 20   # Adds new key
+dic["a"] = 15   # Updates existing key
+
+--------------------
+TIME COMPLEXITY
+
+- Dictionary uses Hashing
+- Lookup, insert, update operations are O(1) on average
+
+--------------------
+COMMON FUNCTIONS
+
+dict.keys()     -> returns all keys
+dict.values()   -> returns all values
+dict.items()    -> returns all (key, value) pairs
+
+Example:
+dic = {"a": 1, "b": 2}
+print(dic.keys())    # dict_keys(['a','b'])
+print(dic.values())  # dict_values([1,2])
+print(dic.items())   # dict_items([('a',1),('b',2)])
+
+--------------------
+ITERATING OVER DICTIONARY
+
+# Keys only
+for key in dic:
+    print(key)
+
+# Keys and values
+for key, val in dic.items():
+    print(key, val)
+
+--------------------
+RULES FOR KEYS
+
+- Keys must be immutable (hashable)
+  Examples: int, str, tuple (immutable types)
+- Mutable types like list or dict cannot be keys
+
+--------------------
+DELETING ELEMENTS
+
+dict.pop(key)   -> removes key and returns its value
+del dict[key]   -> deletes the key-value pair (no return)
+
+Example:
+dic = {"a": 1, "b": 2}
+val = dic.pop("a")   # returns 1 and removes "a"
+del dic["b"]         # deletes "b"
+
+--------------------
+NESTED DICTIONARIES
+
+menu = {"dosa": 100, "fruits": {"mango": 35}}
+
+Accessing nested values:
+menu["fruits"]["mango"]  -> 35
+
+--------------------
+DICTIONARY COMPREHENSION
+
+n = {k: v for k, v in dic.items() if v >= 2}
+
+Example:
+dic = {"a": 1, "b": 2, "c": 3}
+filtered = {k: v for k, v in dic.items() if v > 1}
+print(filtered)   # {'b': 2, 'c': 3}
+
+--------------------
+SUMMARY
+
+- Dictionaries are powerful mappings of key-value pairs
+- Keys must be immutable (hashable)
+- Retrieval and updates are O(1) average due to hashing
+- Supports comprehension, nesting, and multiple methods for iteration

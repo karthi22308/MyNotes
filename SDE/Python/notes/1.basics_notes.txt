@@ -1,0 +1,83 @@
+PYTHON REVISION NOTES
+--------------------
+
+ANACONDA DISTRIBUTION
+- Installs Python, IDE, and ML packages (all pre-installed).
+- Comes with Jupyter Notebook for interactive coding.
+
+--------------------
+
+JUPYTER NOTEBOOK
+- Creates `.ipynb` files (Interactive Python Notebooks).
+- Not a normal Python `.py` script file.
+- `Shift + Enter` → runs the selected cell.
+- Supports **Markdown cells** for documentation.
+
+--------------------
+
+BASICS
+print("hello", "hii")   → prints output
+
+VARIABLES
+- Placeholders for storing values.
+- Rules:
+  1. Cannot start with numbers
+  2. Keywords cannot be used as variable names
+- Check datatype → type(variable)
+- Check memory address → id(variable)
+
+DYNAMIC TYPING
+- Python is dynamically typed → datatype of a variable can be changed at runtime.
+- Example:
+    x = 10      # int
+    x = "abc"   # string
+
+--------------------
+
+DATA TYPES
+- int
+- float
+- str (string)
+- bool (boolean)
+- complex (real + imaginary)  
+  Example: 3 + 5j
+- None (null in Python)  
+  Example: x = None
+
+--------------------
+
+INPUT
+- input() → gets input from console
+- Always returns **string**
+- Example:
+    n = input("Enter a number: ")   # string
+    n = int(n)                      # convert to integer
+
+TYPE CASTING
+- str() → to string
+- int() → to integer
+- float() → to float
+
+--------------------
+
+PYTHON STATEMENTS
+- Instructions to the Python interpreter.
+- `\` → line continuation  
+  Example:
+    x = 1 + 2 + 3 + \
+        4 + 5
+
+--------------------
+
+OUTPUT FORMATTING
+a = 3
+b = 4
+
+print("The value of a is {} and b is {}".format(a, b))
+# Default order → a in first {}, b in second {}
+
+print("The value of a is {1} and b is {0}".format(a, b))
+# Index based → {0} = a, {1} = b
+# Output: a=3, b=4 → The value of a is 4 and b is 3
+
+--------------------

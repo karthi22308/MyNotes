@@ -1,0 +1,72 @@
+------------------------------
+CONDITIONAL STATEMENTS
+------------------------------
+
+- Keywords: if, elif, else
+- Indentation: 4 spaces
+- Colon (:) is used to define a block (instead of {})
+
+Example:
+age = 14
+if age >= 14:
+    print("Age is >= 14")
+elif age == 15:
+    print("Age is 15")
+else:
+    print("Age is less than 14")
+
+- "if ladder": Multiple if...elif...else conditions
+
+------------------------------
+LOOPS
+------------------------------
+
+3 Components of looping:
+1. Initialization
+2. Stopping Condition
+3. Update Value
+
+WHILE LOOP:
+while condition:
+    # operation
+
+FOR LOOP:
+for i in range(3, 13):   # from 3 to 12
+    print(i)
+
+for i in range(2, 13, 2):  # from 2 to 12, step = 2
+    print(i)
+
+- 3rd parameter in range() = step (increment value)
+
+FOR LOOP WITH ELSE:
+for i in range(5):
+    print(i)
+else:
+    print("Loop finished")   # executes after loop ends
+
+------------------------------
+PRINTING
+------------------------------
+
+print("hello", end="\n")    # end defines what comes after print
+print('*' * 3)              # prints: ***
+
+------------------------------
+LOOP CONTROL STATEMENTS
+------------------------------
+
+break     -> exits loop immediately
+            (also skips else block in a for loop)
+
+continue  -> skips current iteration, goes to next
+
+pass      -> does nothing (used as a placeholder)
+             if a loop/block must be empty
+
+Example:
+for i in range(5):
+    if i == 3:
+        pass    # placeholder
+    else:
+        print(i)

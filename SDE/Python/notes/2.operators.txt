@@ -1,0 +1,122 @@
+--------------------
+PYTHON OPERATORS
+--------------------
+
+1) Arithmetic Operators
+--------------------
++  : Addition
+-  : Subtraction
+*  : Multiplication
+/  : Division (always returns float)
+// : Floor division (removes decimal part, returns int if both are int)
+%  : Modulus (remainder)
+** : Exponentiation
+
+Examples:
+10 / 3  -> 3.333...
+10 // 3 -> 3
+2 ** 3  -> 8
+
+--------------------
+2) Comparison Operators
+--------------------
+== : Equal to
+!= : Not equal to
+>  : Greater than
+<  : Less than
+>= : Greater than or equal to
+<= : Less than or equal to
+
+- Always returns Boolean (True/False)
+- Same as C++
+
+Example:
+5 > 2  -> True
+5 == 5 -> True
+
+--------------------
+3) Logical Operators
+--------------------
+and : True if both are True
+or  : True if at least one is True
+not : Negates the condition
+
+Examples:
+True and False -> False
+True or False  -> True
+not True       -> False
+
+--------------------
+4) Bitwise Operators
+--------------------
+Works at the binary level.
+
+&  : Bitwise AND
+|  : Bitwise OR
+^  : Bitwise XOR (exclusive OR)
+~  : Bitwise NOT (inverts bits)
+<< : Left shift
+>> : Right shift
+
+Check binary:
+bin(10) -> '0b1010'
+
+XOR truth table:
+0 ^ 0 = 0
+0 ^ 1 = 1
+1 ^ 0 = 1
+1 ^ 1 = 0
+
+Example:
+10 & 7 -> 2
+10 | 7 -> 15
+10 ^ 7 -> 13
+
+--------------------
+5) Assignment Operators
+--------------------
+=   : Assign
++=  : Add and assign
+-=  : Subtract and assign
+*=  : Multiply and assign
+/=  : Divide and assign
+//= : Floor divide and assign
+%=  : Modulus and assign
+**= : Power and assign
+&=, |=, ^=, <<=, >>=  (bitwise assignment operators)
+
+Multiple assignment:
+a, b, c = 1, 2, 3
+
+Chain assignment:
+a = b = c = 70
+
+--------------------
+6) Special Operators
+--------------------
+Membership Operators:
+--------------------
+- in     : True if value exists in sequence
+- not in : True if value does not exist
+
+Example:
+mystr = "good morning"
+"good" in mystr     -> True
+"night" not in mystr -> True
+
+Identity Operators:
+--------------------
+- is     : True if both point to the same object (same memory location)
+- is not : True if they do not
+
+Example:
+a = 1
+b = 2
+a is b   -> False
+a is not b -> True
+
+Note:
+'id()' function gives memory reference
+id(a), id(b)
+
+--------------------

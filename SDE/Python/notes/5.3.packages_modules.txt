@@ -1,0 +1,90 @@
+--------------------
+MODULES & PACKAGES
+--------------------
+
+► MODULES:
+- A Python file (.py) that contains functions, variables, classes, etc.
+- Example: main.py is a module → name is "main"
+
+--------------------
+IMPORTING MODULES
+--------------------
+Syntax:
+    import module
+
+To use:
+    module.function()
+
+Example:
+    import math
+    math.pi  → 3.141592653589793
+
+    import random
+    random.randint(10,20) → generates random integer between 10 and 20
+
+--------------------
+OS & SYS MODULES
+--------------------
+import os
+    os.getcwd()         → returns current working directory
+    os.mkdir("name")    → creates a directory
+    os.remove("file")   → deletes a file
+
+import sys
+    sys.version         → Python version
+    sys.path            → list of paths where Python looks for modules
+
+--------------------
+DATETIME MODULE
+--------------------
+import datetime
+    datetime.datetime.now() → current date & time
+
+--------------------
+WAYS TO IMPORT
+--------------------
+1) import module as alias
+    import math as m
+    m.sqrt(16)
+
+2) from module import function
+    from math import sqrt
+    sqrt(16)
+
+3) import everything (not recommended)
+    from math import *
+
+--------------------
+CUSTOM MODULES
+--------------------
+- Create a .py file with functions.
+- Import it into another file.
+Example:
+    import custompyfile
+    → runs the entire file at import.
+
+--------------------
+__name__ VARIABLE
+--------------------
+- Special built-in variable.
+- Tells where the code is running from.
+
+If run directly → __name__ = "__main__"
+If imported → __name__ = module name
+
+Usage:
+    if __name__ == "__main__":
+        # confidential / test code
+        main()
+
+--------------------
+PACKAGES
+--------------------
+- A collection of multiple modules (a folder).
+- Must contain an __init__.py file (can be empty).
+- Enables hierarchical module structure.
+
+Example:
+    import package.module
+    from package import module
+    from package.module import function

@@ -1,0 +1,52 @@
+--------------------
+TUPLES
+--------------------
+
+- Similar to lists but **read-only**  
+- **Ordered & indexable**  
+- **Immutable** → cannot change elements directly  
+
+SYNTAX:
+    t = ()
+    t = tuple()
+
+Creating a single tuple:
+    t = ('hi',)   ← comma is mandatory
+
+--------------------
+SLICING
+--------------------
+- Same as lists  
+- If tried to change → gives error ("tuple assignment not supported")  
+
+--------------------
+WHY TUPLES?
+--------------------
+- Only 2 functions:
+    1. count()
+    2. index()
+- Used for constants / read-only data  
+- ~10x faster than lists  
+
+--------------------
+IMMUTABILITY - Is it really immutable?
+--------------------
+- Yes, tuple itself cannot be modified  
+- BUT → if a tuple contains a mutable element (like a list),  
+  elements inside that list can be changed  
+  (because tuple stores **addresses**, not raw values)  
+
+--------------------
+TUPLE OPERATIONS
+--------------------
+- Concatenation (+)  
+- Deletion (del tuple)  
+- Membership operators (in, not in)  
+- index() → returns index of element  
+
+--------------------
+UNPACKING
+--------------------
+t = (4, 2, 1)  
+a, b, c = t  
+(print → a=4, b=2, c=1)

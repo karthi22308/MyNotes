@@ -1,0 +1,73 @@
+--------------------------------------------
+PYTHON INBUILT DATA STRUCTURES
+--------------------------------------------
+1. Strings
+2. Lists
+3. Tuples
+4. Sets
+5. Dictionary
+--------------------------------------------
+
+STRINGS:
+--------------------------------------------
+- A string is a sequence of Unicode characters.
+- Strings are immutable (cannot be changed once created).
+
+Example:
+    example = "Karthick"
+
+Accessing characters:
+    example[0] -> 'K'
+    len(example) -> 8  (length of string)
+
+--------------------------------------------
+NEGATIVE INDEXING:
+--------------------------------------------
+- We can access characters from the end using negative indexes.
+    example[-1] -> 'k'   (last character)
+    example[-2] -> 'c'   (second last character)
+
+--------------------------------------------
+STRING SLICING:
+--------------------------------------------
+Syntax:  string[start : end+1 : step]
+
+Example:
+    example[1:4] -> "art"   (from index 1 to 3)
+    example[::2] -> "Krih"  (step of 2, skips characters)
+
+Reversing a string:
+    rev = example[::-1]  -> "kcithraK"
+
+--------------------------------------------
+COMMON STRING METHODS:
+--------------------------------------------
+.lower()       -> converts to lowercase
+.upper()       -> converts to uppercase
+.title()       -> capitalizes first letter of each word
+.find("set")   -> returns index of substring (or -1 if not found)
+.split('t')    -> splits string based on character (default is space)
+.count('o')    -> counts occurrences of a character
+.replace('a','x') -> replaces all occurrences
+.lstrip()      -> removes leading spaces
+.rstrip()      -> removes trailing spaces
+.strip()       -> removes spaces on both sides
+
+⚠️ Note: All methods return a new string (does not modify original).
+
+--------------------------------------------
+LOOPING OVER STRINGS:
+--------------------------------------------
+for ch in example:
+    print(ch)
+
+Output:
+K
+a
+r
+t
+h
+i
+c
+k
+--------------------------------------------

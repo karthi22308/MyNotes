@@ -1,0 +1,92 @@
+Python Built-in Functions & Higher-order Functions
+--------------------------------------------------
+
+📌 Common Built-in Functions:
+print()   -> prints values
+abs(x)    -> returns absolute (positive) value
+round(x)  -> rounds to nearest integer
+all(iter) -> True if ALL elements are True
+any(iter) -> True if ANY element is True
+
+Example:
+nums = [1, 2, 3]
+print(all(nums))   # True
+print(any(nums))   # True
+print(all([0,1]))  # False
+
+
+--------------------------------------------------
+📌 dir()
+- Returns all attributes and functions available for an object
+
+Example:
+print(dir([1,2,3]))
+
+
+--------------------------------------------------
+📌 enumerate()
+- Returns index + value from an iterable
+
+Example:
+fruits = ["apple","mango"]
+for idx, ele in enumerate(fruits, start=0):
+    print(idx, ele)
+
+Output:
+0 apple
+1 mango
+
+
+--------------------------------------------------
+📌 Aggregate Functions:
+sum(lst) -> returns sum of elements
+max(lst) -> returns largest element
+min(lst) -> returns smallest element
+len(lst) -> returns number of elements
+
+
+--------------------------------------------------
+📌 map(function, iterable)
+- Applies a function to each element in an iterable
+
+Example:
+def add_one(a):
+    return a + 1
+
+lst = [1,2,3,4]
+out = list(map(add_one, lst))
+print(out)   # [2,3,4,5]
+
+# Using lambda
+out = list(map(lambda x: x*2, lst))
+print(out)   # [2,4,6,8]
+
+
+--------------------------------------------------
+📌 filter(function, iterable)
+- Filters elements that satisfy a condition
+
+Example:
+lst = [1,2,3,4,5,6]
+out = list(filter(lambda x: x%2==0, lst))
+print(out)   # [2,4,6]
+
+
+--------------------------------------------------
+📌 reduce(function, iterable)
+- Performs a rolling computation (reduces iterable to single value)
+- Must be imported from functools
+
+Example:
+from functools import reduce
+
+lst = [1,2,3,4,5]
+out = reduce(lambda x, y: x*y, lst)
+print(out)   # 120 (1*2*3*4*5)
+
+
+--------------------------------------------------
+⚠️ Notes:
+- map() returns a map object -> convert to list()
+- filter() returns a filter object -> convert to list()
+- reduce() is not built-in (import from functools)
