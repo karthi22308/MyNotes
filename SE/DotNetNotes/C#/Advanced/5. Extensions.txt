@@ -1,0 +1,51 @@
+# Extension Methods in C#
+
+## Definition
+- **Extension Methods** allow us to add new methods to existing classes **without modifying their source code** or using inheritance.  
+- They are defined as **static methods** in a static class, but they appear to be **instance methods** on the type they extend.  
+- This feature is very useful for extending **sealed classes** (e.g., `string`, `DateTime`) where inheritance is not possible.  
+
+---
+
+## Syntax
+```csharp
+public static class StringExtensions
+{
+    public static bool IsCapitalized(this string str)
+    {
+        if (string.IsNullOrEmpty(str))
+            return false;
+
+        return char.IsUpper(str[0]);
+    }
+}
+//
+class Program
+{
+    static void Main()
+    {
+        string word = "Hello";
+        Console.WriteLine(word.IsCapitalized()); // Output: True
+
+        string word2 = "world";
+        Console.WriteLine(word2.IsCapitalized()); // Output: False
+    }
+}
+
+Advantages
+
+✅ Extend sealed classes (like string, DateTime).
+
+✅ Make code cleaner and more readable (method chaining).
+
+✅ Promote reusability without modifying the original class.
+
+✅ Keeps logic organized in helper/utility classes.
+
+Disadvantages
+
+❌ Can sometimes make code confusing if overused, since it's not obvious where methods are coming from.
+
+❌ Name conflicts may occur if an extension method has the same name as an existing method.
+
+❌ Can reduce discoverability — developers may not realize that an extension method is defined in a separate class.

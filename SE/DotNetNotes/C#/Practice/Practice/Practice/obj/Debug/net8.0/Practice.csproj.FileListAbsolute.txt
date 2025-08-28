@@ -1,0 +1,15 @@
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\bin\Debug\net8.0\Practice.exe
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\bin\Debug\net8.0\Practice.deps.json
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\bin\Debug\net8.0\Practice.runtimeconfig.json
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\bin\Debug\net8.0\Practice.dll
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\bin\Debug\net8.0\Practice.pdb
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\Practice.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\Practice.AssemblyInfoInputs.cache
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\Practice.AssemblyInfo.cs
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\Practice.csproj.CoreCompileInputs.cache
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\Practice.sourcelink.json
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\Practice.dll
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\refint\Practice.dll
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\Practice.pdb
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\Practice.genruntimeconfig.cache
+C:\MyNotes\SE\DotNetNotes\C#\Practice\Practice\Practice\obj\Debug\net8.0\ref\Practice.dll

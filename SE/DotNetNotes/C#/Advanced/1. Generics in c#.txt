@@ -1,0 +1,56 @@
+Generics in C#
+
+------------------------------------
+Introduction:
+------------------------------------
+- Generics were introduced to solve the performance penalty caused by non-generic collections like ArrayList.
+- Collections such as ArrayList store elements as objects, which leads to boxing/unboxing for value types and typecasting for reference types.
+- Generics allow us to define classes, methods, delegates, and interfaces with a placeholder type (T), which will be specified when the object is created.
+
+------------------------------------
+Syntax Example:
+------------------------------------
+public class GenericList<T>
+{
+    // Methods and fields using T
+}
+
+- Here, <T> is a type parameter.
+- At runtime, the user can specify any type (e.g., int, string, or a custom class).
+
+------------------------------------
+Example Usage:
+------------------------------------
+GenericList<int> numbers = new GenericList<int>();
+GenericList<string> names = new GenericList<string>();
+
+------------------------------------
+Constraints in Generics:
+------------------------------------
+Constraints are used to restrict the kind of types that can be passed as arguments for type parameters.
+
+Types of constraints:
+1. where T : struct        // T must be a value type
+2. where T : class         // T must be a reference type
+3. where T : new()         // T must have a public parameterless constructor
+4. where T : BaseClass     // T must be or derive from BaseClass
+5. where T : InterfaceName // T must implement a given interface
+
+------------------------------------
+Generics vs Collections in C#:
+------------------------------------
+| Feature                     | Collections (Non-Generic)         | Generics                           |
+|------------------------------|-----------------------------------|------------------------------------|
+| Type Safety                  | Not type-safe (needs casting)    | Type-safe (no casting needed)       |
+| Performance                  | Slower due to boxing/unboxing    | Faster, no boxing/unboxing          |
+| Flexibility                  | Can store any type together      | Strongly typed, prevents errors     |
+| Compile-time checking        | Less strict                     | Strict type checking at compile time|
+| Example                      | ArrayList, Hashtable             | List<T>, Dictionary<TKey, TValue>   |
+
+------------------------------------
+Key Benefits of Generics:
+------------------------------------
+- Better performance (avoids boxing/unboxing).
+- Type safety (compile-time checks).
+- Reusability (one generic class works for multiple types).
+- Cleaner and maintainable code.

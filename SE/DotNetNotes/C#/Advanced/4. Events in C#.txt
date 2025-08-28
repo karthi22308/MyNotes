@@ -1,0 +1,75 @@
+# Events in C#
+
+## What are Events?
+- **Events are a messaging system between objects** → one object (publisher) notifies other objects (subscribers) when something happens.  
+- **Loosely coupled communication** → publisher does not need to know who the subscribers are.  
+- Built **on top of delegates** → delegates point to methods, events wrap delegates with extra safety.  
+- Used to build **extensible and maintainable applications**.  
+- Example: Button click in WinForms/WPF → Button is publisher, your method is subscriber.
+
+---
+
+## Key Points
+- **Publisher**: The class that raises (triggers) the event.  
+- **Subscriber**: The class that responds (listens) to the event.  
+- **Event Handler**: A method that runs when the event occurs.  
+- **Keyword**: `event` (used to declare events safely).  
+
+---
+
+## Simple Example
+
+```csharp
+using System;
+
+public class Video
+{
+    public string Title { get; set; }
+}
+
+public class VideoEncoder
+{
+    // Step 1: Define a delegate
+    public delegate void VideoEncodedEventHandler(object source, EventArgs args);
+
+    // Step 2: Define an event based on that delegate
+    public event VideoEncodedEventHandler VideoEncoded;
+
+    // Step 3: Method to raise the event
+    protected virtual void OnVideoEncoded()
+    {
+        if (VideoEncoded != null)
+            VideoEncoded(this, EventArgs.Empty);
+    }
+
+    public void Encode(Video video)
+    {
+        Console.WriteLine("Encoding video...");
+        // some work
+        OnVideoEncoded(); // event raised here
+    }
+}
+
+public class MailService
+{
+    // Step 4: Event handler
+    public void OnVideoEncoded(object source, EventArgs e)
+    {
+        Console.WriteLine("MailService: Sending an email...");
+    }
+}
+
+public class Program
+{
+    static void Main()
+    {
+        var video = new Video() { Title = "C# Tutorial" };
+        var videoEncoder = new VideoEncoder(); // publisher
+        var mailService = new MailService();   // subscriber
+
+        // Step 5: Subscribe to event
+        videoEncoder.VideoEncoded += mailService.OnVideoEncoded;
+
+        videoEncoder.Encode(video);
+    }
+}
