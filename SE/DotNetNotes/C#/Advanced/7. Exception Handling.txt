@@ -1,0 +1,87 @@
+# Exception Handling
+
+- **Stack trace**: sequence of methods called until an exception is thrown.  
+- `try { } catch { }` blocks allow catching and handling exceptions.  
+- Multiple `catch` blocks are allowed for handling specific exceptions.  
+- `finally` block: executed always, used to dispose/cleanup unmanaged resources (files, DB connections, network streams).  
+- Instead of `finally`, we can use **`using`** for automatic disposal.
+
+---
+main {
+ var streamreader = new streamreader(path) 
+try 
+{ var content = streamreader.readto end();
+ catch(){} //will always be executed
+ finally
+ {streamreder.dispose(); 
+//for databses , network connections file handles } }
+## Example with `using`
+
+```csharp
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        string path = "sample.txt";
+
+        try
+        {
+            using (StreamReader streamReader = new StreamReader(path))
+            {
+                string content = streamReader.ReadToEnd();
+                Console.WriteLine(content);
+            } // streamReader.Dispose() is called automatically here
+        }
+        catch (FileNotFoundException ex)
+        {
+            Console.WriteLine($"File not found: {ex.Message}");
+        }
+        catch (IOException ex)
+        {
+            Console.WriteLine($"IO Exception: {ex.Message}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"General Exception: {ex.Message}");
+        }
+    }
+}
+
+
+✅ using ensures Dispose() is automatically called when the block ends, even if an exception occurs.
+
+using System;
+
+public class NameException : Exception
+{
+    public NameException() { }
+
+    public NameException(string message) : base(message) { }
+
+    public NameException(string message, Exception innerException) 
+        : base(message, innerException) { }
+}
+
+// Usage Example
+class Program
+{
+    static void Main()
+    {
+        string name = "";
+
+        try
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                throw new NameException("Name cannot be empty or whitespace.");
+            }
+        }
+        catch (NameException ex)
+        {
+            Console.WriteLine($"Custom Exception Caught: {ex.Message}");
+        }
+    }
+}

@@ -1,4 +1,5 @@
-﻿using System.Net.NetworkInformation;
+﻿using System.Globalization;
+using System.Net.NetworkInformation;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Practice
@@ -109,10 +110,40 @@ namespace Practice
         public delegate void MyDelegate();
         static void Main(string[] args)
         {
-               
-            MyDelegate myDelegate = delegate { helper1();helper2();helper3(); };
-            myDelegate();
 
+            //MyDelegate myDelegate = delegate { helper1();helper2();helper3(); };
+            //myDelegate();
+
+            string s = "Hello world";
+            //var words = s.Split(" ");
+            //string output="";
+            //for (int i = words.Length - 1; i >= 0; i--) 
+            //{
+            //    output += words[i] +" ";
+            //}
+
+            //Console.WriteLine(output);
+            //Dictionary<char, int > map = new Dictionary<char, int>();
+            //foreach (char c in s)
+            //{
+            //    if (map.ContainsKey(c))
+            //    {
+            //        map[c]++;
+            //    }
+            //    else
+            //    {
+            //        map[c] = 1;
+            //    }
+            //}
+            //foreach( var pair in map)
+            //{
+            //    Console.WriteLine(pair.Key.ToString()+ pair.Value.ToString());
+
+
+            //}
+            int[] ar = new int[] { 5,1,2,8};
+            Array.Sort(ar);
+            Console.WriteLine(ar[ar.Length-2].ToString());
 
         }
 

@@ -1,0 +1,64 @@
+# Synchronous vs Asynchronous Programming in .NET
+
+## Synchronous Programming
+- Program is executed **line by line**, one at a time.  
+- When a function is called, program execution has to **wait until the function returns**.  
+
+### Example:
+```csharp
+Console.WriteLine("Start");
+Thread.Sleep(3000); // waits 3 seconds
+Console.WriteLine("End");
+
+--------------------
+Asynchronous Programming
+--------------------
+
+- Increases responsiveness of applications.  
+- Execution does not block the main thread while waiting for long-running tasks.  
+
+✅ Useful when:
+- Accessing Web APIs / network requests  
+- Working with databases  
+- Processing large files or images  
+
+--------------------
+Traditional Approach
+--------------------
+Before .NET 4.5 developers used:
+- Multithreading  
+- Callbacks  
+- BeginInvoke / EndInvoke  
+
+⚠️ Issues: Often complex and hard to maintain.  
+
+--------------------
+Modern Approach: async / await
+--------------------
+- Introduced in .NET 4.5  
+- Simplifies asynchronous programming  
+
+📌 Keywords:
+- `await` → tells compiler “this operation will be costly, wait without blocking”  
+- `async` → marks a method as asynchronous, usually returns:
+  - Task  
+  - Task<T>  
+
+--------------------
+Example
+--------------------
+```csharp
+public async Task<string> GetDataAsync()
+{
+    using (HttpClient client = new HttpClient())
+    {
+        // Asynchronous call (does not block thread)
+        string result = await client.GetStringAsync("https://example.com");
+        return result;
+    }
+}
+
+// Usage
+Console.WriteLine("Fetching data...");
+string data = await GetDataAsync();
+Console.WriteLine(data);
