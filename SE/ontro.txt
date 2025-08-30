@@ -1,0 +1,7 @@
+I’m currently working as a .NET Developer at Hexaware Technologies. I completed my B.E. in Computer Science in 2022 from SRIT. I joined Hexaware during my final year and since then, I’ve been working in a banking project.
+
+In my role, I handle activities like understanding client requirements, developing and delivering solutions. I have worked on projects such as a Java-to-.NET migration and a digitalization initiative.
+
+I’ve  optimized and built scalable databases, developed DLLs and console applications. My core tech stack includes .NET with C# and SQL, and I’m also comfortable coding in Python.
+
+Recently, I got promoted to Senior Software Engineer, where I’m leading a module in the migration project and also mentoring some freshers. Overall, I enjoy working on scalable backend solutions and learning new technologies."

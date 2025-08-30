@@ -1,6 +1,7 @@
 ﻿using System.Globalization;
 using System.Net.NetworkInformation;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 
 namespace Practice
 {
@@ -110,7 +111,7 @@ namespace Practice
         public delegate void MyDelegate();
         static void Main(string[] args)
         {
-
+            learn.printsome();
             //MyDelegate myDelegate = delegate { helper1();helper2();helper3(); };
             //myDelegate();
 
@@ -141,9 +142,27 @@ namespace Practice
 
 
             //}
-            int[] ar = new int[] { 5,1,2,8};
-            Array.Sort(ar);
-            Console.WriteLine(ar[ar.Length-2].ToString());
+            //int[] ar = new int[] { 5,1,2,8};
+            //Array.Sort(ar);
+            //Console.WriteLine(ar[ar.Length-2].ToString());
+            reverse();
+
+        }
+        public static void reverse()
+        {
+            String s = Console.ReadLine( );
+
+            int  j = s.Length - 1;
+            StringBuilder sb = new StringBuilder();
+            while (j >= 0)
+            {
+                sb.Append( s[j] );
+                j--;
+
+
+            }
+            s = sb.ToString();
+            Console.WriteLine( s );
 
         }
 
