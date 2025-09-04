@@ -1,0 +1,6 @@
+streamlit>=1.36
+openai>=1.40.0
+pydantic>=2.7
+requests>=2.31
+pandas>=2.2
+python-dateutil>=2.9
