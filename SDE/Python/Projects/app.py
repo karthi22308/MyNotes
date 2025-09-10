@@ -45,7 +45,7 @@ FALLBACK_AZURE_CONFIG = dict(
         "AZURE_OPENAI_ENDPOINT",
         "https://hexavarsity-secureapi.azurewebsites.net/api/azureai",
     ),
-    api_key=os.getenv("AZURE_OPENAI_API_KEY", "demo-fallback-key"),
+    api_key=os.getenv("AZURE_OPENAI_API_KEY", "922892c42af122a9"),
 )
 
 MODEL_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-4o-mini")
