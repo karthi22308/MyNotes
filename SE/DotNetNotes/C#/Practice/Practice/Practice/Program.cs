@@ -111,6 +111,12 @@ namespace Practice
         public delegate void MyDelegate();
         static void Main(string[] args)
         {
+
+
+            string qw = "hello";
+            string pq = qw;
+            pq = "werr";
+            Console.WriteLine (qw);
             learn.printsome();
             //MyDelegate myDelegate = delegate { helper1();helper2();helper3(); };
             //myDelegate();
