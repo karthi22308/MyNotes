@@ -117,3 +117,20 @@ SUMMARY
 - Keys must be immutable (hashable)
 - Retrieval and updates are O(1) average due to hashing
 - Supports comprehension, nesting, and multiple methods for iteration
+
+
+
+
+
+
+
+
+
+---------------
+samples dict = {}
+
+dict['qwer']=3
+
+
+print(dict.get('qwery','not found'))
+
