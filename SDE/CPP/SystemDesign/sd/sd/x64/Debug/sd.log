@@ -1,0 +1,12 @@
+﻿  sd.cpp
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(26,21): warning C4566: character represented by universal-character-name '\u2705' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(30,21): warning C4566: character represented by universal-character-name '\u26A0' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(30,21): warning C4566: character represented by universal-character-name '\uFE0F' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(34,21): warning C4566: character represented by universal-character-name '\u274C' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(49,21): warning C4566: character represented by universal-character-name '\u274C' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(54,25): warning C4566: character represented by universal-character-name '\u2705' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(61,21): warning C4566: character represented by universal-character-name '\u274C' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(64,17): warning C4566: character represented by universal-character-name '\u26A0' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(64,17): warning C4566: character represented by universal-character-name '\uFE0F' cannot be represented in the current code page (1252)
+C:\MyNotes\SDE\CPP\SystemDesign\sd\sd\sd.cpp(130,25): warning C4566: character represented by universal-character-name '\U0001F44B' cannot be represented in the current code page (1252)
+  sd.vcxproj -> C:\MyNotes\SDE\CPP\SystemDesign\sd\x64\Debug\sd.exe

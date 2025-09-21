@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MyNotes\\SDE\\CPP\\SystemDesign\\level3zoho\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{027C2BAC-48A5-4545-BC01-7366F1892E62}|level3zoho\\level3zoho.vcxproj|C:\\MyNotes\\SDE\\CPP\\SystemDesign\\level3zoho\\level3zoho\\level3zoho.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{027C2BAC-48A5-4545-BC01-7366F1892E62}|level3zoho\\level3zoho.vcxproj|solutionrelative:level3zoho\\level3zoho.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "level3zoho.cpp",
+              "DocumentMoniker": "C:\\MyNotes\\SDE\\CPP\\SystemDesign\\level3zoho\\level3zoho\\level3zoho.cpp",
+              "RelativeDocumentMoniker": "level3zoho\\level3zoho.cpp",
+              "ToolTip": "C:\\MyNotes\\SDE\\CPP\\SystemDesign\\level3zoho\\level3zoho\\level3zoho.cpp",
+              "RelativeToolTip": "level3zoho\\level3zoho.cpp",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAwJcAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-21T04:10:42.464Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
