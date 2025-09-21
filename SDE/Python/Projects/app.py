@@ -40,15 +40,15 @@ except Exception:
     AzureOpenAI = None
 
 FALLBACK_AZURE_CONFIG = dict(
-    api_version=os.getenv("AZURE_OPENAI_API_VERSION", "2024-06-01"),
+    api_version=os.getenv("AZURE_OPENAI_API_VERSION", "2024-12-01-preview"),
     azure_endpoint=os.getenv(
         "AZURE_OPENAI_ENDPOINT",
-        "https://hexavarsity-secureapi.azurewebsites.net/api/azureai",
+        "https://learningllmmodel.cognitiveservices.azure.com/",
     ),
-    api_key=os.getenv("AZURE_OPENAI_API_KEY", "922892c42af122a9"),
+    api_key=os.getenv("AZURE_OPENAI_API_KEY", "DagkDMkW44hoRl0tn3GvcI0R9HYZze9gJDWSDOAxux13aod5S8RwJQQJ99BIAC77bzfXJ3w3AAAAACOGPc0o"),
 )
 
-MODEL_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-4o-mini")
+MODEL_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT", "gpt-5-mini")
 
 # -----------------------------
 # Data Models
