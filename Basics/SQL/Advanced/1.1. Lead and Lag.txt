@@ -1,0 +1,44 @@
+
+## ⏩ `LEAD()` and ⏪ `LAG()` Functions
+
+- These functions allow you to **access subsequent or previous rows** relative to the current row.
+
+### ✅ `LEAD()` Example:
+```sql
+SELECT customer_id, company_name, contact_name,
+       LEAD(company_name, 1) OVER (ORDER BY customer_id) AS next_comp_name
+FROM customers;
+```
+
+- `LEAD(column, offset)` returns the value from the **next row** (based on `ORDER BY`).
+- Useful for comparing current row with future values.
+
+### ✅ `LAG()` Example:
+
+SELECT customer_id, company_name, contact_name,
+       LAG(company_name, 1) OVER (ORDER BY customer_id) AS prev_comp_name
+FROM customers;
+
+- `LAG(column, offset)` returns the value from the **previous row**.
+
+--------------------------------------------------------------------------------------
+
+## 🎯 Filtering with `WHERE` on Window Function Results
+
+To filter based on the result of a window function like `LEAD()` or `LAG()`, wrap the query in a subquery:
+
+### ✅ Sample Query:
+
+SELECT *
+FROM (
+    SELECT customer_id, company_name, contact_name,
+           LEAD(company_name, 1) OVER (ORDER BY customer_id) AS next_comp_name
+    FROM customers
+) AS sub
+WHERE next_comp_name = 'TCS';
+
+- This returns rows where the **next company name is `'TCS'`**.
+
+---
+
+📝 **Tip**: Always use `ORDER BY` inside `OVER()` to define the row sequence for `LEAD`, `LAG`, and ranking functions. Use `PARTITION BY` to group within a column (like gender or product_code).

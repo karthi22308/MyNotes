@@ -1,0 +1,57 @@
+
+
+## 🥇 `FIRST_VALUE()` Function
+
+- Returns the **first value** from a specified column **within a window**.
+- Useful for comparing each row to the first value in its partition.
+
+### ✅ Example:
+```sql
+SELECT *, 
+       ROW_NUMBER() OVER(PARTITION BY product_code ORDER BY credit_amount DESC) AS credit_rank,
+       FIRST_VALUE(credit_amount) OVER(PARTITION BY product_code ORDER BY credit_amount DESC) AS lowest_credit_for_product
+FROM reference;
+```
+
+--------------------------------------------------------------------------------------------
+
+## 📦 Subqueries
+
+- A **subquery** is a query nested inside another query.
+- Used to filter, transform, or compute intermediate results.
+
+### ✅ Example:
+
+SELECT *
+FROM (
+    SELECT customer_id, company_name, contact_name,
+           LEAD(company_name, 1) OVER (ORDER BY customer_id) AS next_comp_name
+    FROM customers
+) AS sub
+WHERE next_comp_name = 'Antonio Moreno Taquería';
+
+--------------------------------------------------------------------------------------------
+
+## 🔁 `ROWS BETWEEN` Clause
+
+- Defines a **frame of rows** for window functions.
+- Useful for **rolling aggregates** like moving sums or averages.
+
+### ✅ Examples:
+
+#### Rolling sum of previous 2 rows + current:
+```sql
+SELECT *,
+       SUM(discount) OVER (ROWS BETWEEN 2 PRECEDING AND CURRENT ROW) AS rolling_sum
+FROM order_details;
+```
+
+#### Rolling sum of current + next 2 rows:
+```sql
+SELECT *,
+       SUM(discount) OVER (ROWS BETWEEN CURRENT ROW AND 2 FOLLOWING) AS rolling_sum
+FROM order_details;
+```
+
+--------------------------------------------------------------------------------------------
+
