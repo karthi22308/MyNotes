@@ -1,0 +1,63 @@
+# SQL Server Notes – FOR XML PATH & PIVOT
+
+--------------------------------------------------------
+
+## FOR XML PATH
+- **FOR XML PATH** is commonly used to **concatenate multiple rows into a single string**.  
+- Useful when you want to convert multiple row values into a single comma-separated list.  
+- When using `FOR XML PATH('')`, SQL Server treats each row as XML text and concatenates them.  
+- You can use `STUFF` to remove the leading comma or any extra characters.
+
+### Example – Basic FOR XML PATH
+SELECT 
+    ',' + CAST(HackathonId AS VARCHAR) 
+FROM Hackathons 
+WHERE UserId = 10 
+FOR XML PATH('');
+
+### Example – Using STUFF to Clean Up
+SELECT STUFF((
+    SELECT ',' + CAST(HackathonId AS VARCHAR) 
+    FROM Hackathons 
+    WHERE UserId = 10 
+    FOR XML PATH('')
+), 1, 1, '');
+
+-- Output: 1,5,6,78
+
+--------------------------------------------------------
+
+## PIVOT Operator
+- The **PIVOT operator** is used to **transform rows into columns**.  
+- Commonly used for **flattening data** and creating **cross-tab reports**.  
+- Works best when you want to **aggregate values** (e.g., SUM, COUNT) and display them as **separate columns** based on unique values in a field.
+
+### Syntax
+```sql
+SELECT <non-pivoted column>, [PivotColumn1], [PivotColumn2], ...
+FROM 
+(
+    SELECT <columns to pivot>
+    FROM <table>
+) AS SourceTable
+PIVOT
+(
+    <AggregateFunction>(<value column>)
+    FOR <column to turn into headers> IN ([PivotColumn1], [PivotColumn2], ...)
+) AS PivotTable;
+
+
+
+
+sample SELECT Region, [2022], [2023], [2024]
+FROM 
+(
+    SELECT Region, Year, Amount 
+    FROM Sales
+) AS SourceTable
+PIVOT
+(
+    SUM(Amount)
+    FOR Year IN ([2022], [2023], [2024])
+) AS PivotTable;
+

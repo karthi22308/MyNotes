@@ -1,0 +1,70 @@
+# SQL Server Notes – Subqueries
+
+--------------------------------------------------------
+
+## Scalar Subqueries
+- A **scalar subquery** returns a **single value** (one row, one column).  
+- Can be used in the `SELECT`, `WHERE`, or `HAVING` clauses.  
+- **Subqueries in the FROM clause require aliasing**.  
+- Useful for calculations like averages, counts, etc.
+
+### Example – Scalar Subquery in SELECT
+SELECT TOP (1000) 
+      [Id],
+      [DateOfRegister],
+      [resume],
+      [streak],
+      [Points],
+      average = (SELECT AVG(points) FROM Users),
+      averagediff = [Points] - (SELECT AVG(points) FROM Users)
+FROM [MCP].[dbo].[Users];
+
+### Example – Scalar Subquery in WHERE
+SELECT TOP (1000) 
+      [Id],
+      [DateOfRegister],
+      [resume],
+      [streak],
+      [Points],
+      average = (SELECT AVG(points) FROM Users),
+      averagediff = [Points] - (SELECT AVG(points) FROM Users)
+FROM [MCP].[dbo].[Users]
+WHERE Points >= (SELECT AVG(points) FROM Users);
+
+--------------------------------------------------------
+
+## Correlated Subqueries
+- A **correlated subquery** runs **once for each row** of the outer query.  
+- It references columns from the outer query.  
+- Returns scalar values (or boolean checks) for each row.  
+
+### Example – Correlated Subquery in SELECT
+SELECT TOP (1000) 
+      u.[Id],
+      u.[Username],
+      u.[resume],
+      u.[streak],
+      u.[Points],
+      hackathonsparticipated = (
+          SELECT COUNT(h.Id) 
+          FROM Hackathons h 
+          WHERE h.UserId = u.Id
+      )
+FROM [MCP].[dbo].[Users] u;
+
+--------------------------------------------------------
+
+## EXISTS
+- **EXISTS** checks whether the subquery returns **at least one row**.  
+- Returns `TRUE` if rows exist; `FALSE` otherwise.  
+- Commonly used for **existence checks** rather than returning data.
+
+### Example – EXISTS
+SELECT * 
+FROM Users u 
+WHERE EXISTS (
+    SELECT 1 
+    FROM Hackathons h 
+    WHERE h.Score > 60 
+      AND h.UserId = u.Id
+);
