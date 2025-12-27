@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+courses introduction
+
+Microservies - these compose of individual api
+-- its a communication between APIs
+
+
+indendently deployablw
+
+scalable independently
+
+
+no bulky code
+
+
+reduced downtime becase one is for one functionality
+
+
+microservices architecture:
+
+independently deployable
+---------------------------------------------------------------
+
+
+template - asp . net core empty project

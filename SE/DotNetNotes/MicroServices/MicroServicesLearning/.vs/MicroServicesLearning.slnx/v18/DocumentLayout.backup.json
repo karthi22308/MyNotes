@@ -1,114 +1,94 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Projects\\MicroServicesLearning\\",
+  "WorkspaceRootPath": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\views\\coupon\\couponindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\views\\coupon\\couponindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\models\\coupons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\models\\coupons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.couponapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\models\\coupons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\models\\coupons.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\services\\couponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\services\\couponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\controllers\\couponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\models\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\models\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\models\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\models\\responsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\services\\iservice\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\services\\iservice\\ibaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\services\\iservice\\icouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\services\\iservice\\icouponservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.couponapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\20251023133910_test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mango.AuthAPI\\Migrations\\20251023133910_test2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\views\\shared\\_layout.cshtml.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\migrations\\20251023114812_test.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\migrations\\20251023114812_test.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\models\\requestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\models\\requestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\models\\dto\\registerationrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\models\\dto\\registerationrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\models\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\models\\dto\\loginresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\models\\dto\\loginrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.couponapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\models\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\models\\constants.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\20251023114812_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Mango.AuthAPI\\Migrations\\20251023114812_test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.authapi\\mango.authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{82290824-B920-42F5-B49E-F6AED6276EB5}|Mango.AuthAPI\\Mango.AuthAPI.csproj|solutionrelative:mango.authapi\\mango.authapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\mynotes\\se\\dotnetnotes\\microservices\\microserviceslearning\\mango.couponapi\\mango.couponapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\mango.couponapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|c:\\projects\\microserviceslearning\\mango\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{932D8A77-4380-4931-A591-67D0413D8449}|Mango\\Mango.csproj|solutionrelative:mango\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Data\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthAPI\\Data\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\mango.couponapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\mango.couponapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\AuthAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthAPI\\AuthAPI.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\mango.couponapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\mango.couponapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|c:\\projects\\microserviceslearning\\mango.couponapi\\migrations\\20251012141308_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77C8E2E3-610C-4EE2-994B-BFBF2FD90C9E}|Mango.CouponAPI\\Mango.CouponAPI.csproj|solutionrelative:mango.couponapi\\migrations\\20251012141308_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:AuthAPI\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -118,7 +98,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 16,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,348 +110,297 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{de1fc918-f32e-4dd7-a915-1792a051f26b}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CouponIndex.cshtml",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Views\\Coupon\\CouponIndex.cshtml",
-              "RelativeDocumentMoniker": "Mango\\Views\\Coupon\\CouponIndex.cshtml",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Views\\Coupon\\CouponIndex.cshtml*",
-              "RelativeToolTip": "Mango\\Views\\Coupon\\CouponIndex.cshtml*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-21T07:10:41.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appDbcontext.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Data\\appDbcontext.cs",
-              "RelativeDocumentMoniker": "Mango.CouponAPI\\Data\\appDbcontext.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Data\\appDbcontext.cs",
-              "RelativeToolTip": "Mango.CouponAPI\\Data\\appDbcontext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T13:53:14.696Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ResponseDto.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\ResponseDto.cs",
-              "RelativeDocumentMoniker": "Mango\\Models\\ResponseDto.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\ResponseDto.cs",
-              "RelativeToolTip": "Mango\\Models\\ResponseDto.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:56:28.832Z",
+              "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Mango.CouponAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Mango.CouponAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAABQAAAAAAAAAAAAkwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-24T10:38:18.366Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "BaseService.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Services\\BaseService.cs",
-              "RelativeDocumentMoniker": "Mango\\Services\\BaseService.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Services\\BaseService.cs",
-              "RelativeToolTip": "Mango\\Services\\BaseService.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAEQAAAAMAAAAAAAAAA==",
+              "Title": "20251023133910_test2.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\20251023133910_test2.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Migrations\\20251023133910_test2.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\20251023133910_test2.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\Migrations\\20251023133910_test2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:10:22.534Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CouponController.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Controllers\\CouponController.cs",
-              "RelativeDocumentMoniker": "Mango\\Controllers\\CouponController.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Controllers\\CouponController.cs",
-              "RelativeToolTip": "Mango\\Controllers\\CouponController.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBMAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T17:16:13.704Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Coupons.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Models\\Coupons.cs",
-              "RelativeDocumentMoniker": "Mango.CouponAPI\\Models\\Coupons.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Models\\Coupons.cs",
-              "RelativeToolTip": "Mango.CouponAPI\\Models\\Coupons.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T13:50:49.753Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Coupons.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\Coupons.cs",
-              "RelativeDocumentMoniker": "Mango\\Models\\Coupons.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\Coupons.cs",
-              "RelativeToolTip": "Mango\\Models\\Coupons.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:35:03.586Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CouponController.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Controllers\\CouponController.cs",
-              "RelativeDocumentMoniker": "Mango.CouponAPI\\Controllers\\CouponController.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Controllers\\CouponController.cs",
-              "RelativeToolTip": "Mango.CouponAPI\\Controllers\\CouponController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T15:36:36.298Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CouponService.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Services\\CouponService.cs",
-              "RelativeDocumentMoniker": "Mango\\Services\\CouponService.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Services\\CouponService.cs",
-              "RelativeToolTip": "Mango\\Services\\CouponService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBUAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:58:29.187Z",
+              "WhenOpened": "2025-10-23T13:39:10.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ResponseDto.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Models\\ResponseDto.cs",
-              "RelativeDocumentMoniker": "Mango.CouponAPI\\Models\\ResponseDto.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Models\\ResponseDto.cs",
-              "RelativeToolTip": "Mango.CouponAPI\\Models\\ResponseDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Title": "appDbcontextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\appDbcontextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Migrations\\appDbcontextModelSnapshot.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\appDbcontextModelSnapshot.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\Migrations\\appDbcontextModelSnapshot.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwA0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-21T07:02:10.326Z",
+              "WhenOpened": "2025-10-23T13:26:49.51Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IBaseService.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Services\\IService\\IBaseService.cs",
-              "RelativeDocumentMoniker": "Mango\\Services\\IService\\IBaseService.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Services\\IService\\IBaseService.cs",
-              "RelativeToolTip": "Mango\\Services\\IService\\IBaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "20251023114812_test.Designer.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\20251023114812_test.Designer.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Migrations\\20251023114812_test.Designer.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\20251023114812_test.Designer.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\Migrations\\20251023114812_test.Designer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAwA0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:08:41.29Z",
+              "WhenOpened": "2025-10-23T13:26:32.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Service\\AuthService.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Service\\AuthService.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\Service\\AuthService.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAgwFkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:16:31.674Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "ICouponService.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Services\\IService\\ICouponService.cs",
-              "RelativeDocumentMoniker": "Mango\\Services\\IService\\ICouponService.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Services\\IService\\ICouponService.cs",
-              "RelativeToolTip": "Mango\\Services\\IService\\ICouponService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAAjAAAAAAAAAA==",
+              "Title": "RegisterationRequestDto.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\models\\Dto\\RegisterationRequestDto.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\models\\Dto\\RegisterationRequestDto.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\models\\Dto\\RegisterationRequestDto.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\models\\Dto\\RegisterationRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:54:54.82Z",
+              "WhenOpened": "2025-10-23T12:07:41.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Program.cs",
-              "RelativeDocumentMoniker": "Mango.CouponAPI\\Program.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Program.cs",
-              "RelativeToolTip": "Mango.CouponAPI\\Program.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAYwBsAAAARAAAAAAAAAA==",
+              "Title": "LoginResponseDto.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\models\\Dto\\LoginResponseDto.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\models\\Dto\\LoginResponseDto.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\models\\Dto\\LoginResponseDto.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\models\\Dto\\LoginResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T13:06:35.555Z",
+              "WhenOpened": "2025-10-23T12:07:40.739Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Program.cs",
-              "RelativeDocumentMoniker": "Mango\\Program.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Program.cs",
-              "RelativeToolTip": "Mango\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Title": "LoginRequestDto.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\models\\Dto\\LoginRequestDto.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\models\\Dto\\LoginRequestDto.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\models\\Dto\\LoginRequestDto.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\models\\Dto\\LoginRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:43:09.974Z",
+              "WhenOpened": "2025-10-23T12:07:38.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAmwA8AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T12:04:57.341Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\appsettings.json",
-              "RelativeDocumentMoniker": "Mango\\appsettings.json",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\appsettings.json",
-              "RelativeToolTip": "Mango\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "Mango.CouponAPI\\appsettings.json",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\appsettings.json",
+              "RelativeToolTip": "Mango.CouponAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-20T16:40:32.166Z",
+              "WhenOpened": "2025-10-23T11:49:55.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Mango\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Mango\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAB0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-20T17:04:21.102Z",
+              "Title": "20251023114812_test.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\20251023114812_test.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Migrations\\20251023114812_test.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Migrations\\20251023114812_test.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\Migrations\\20251023114812_test.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T11:48:12.842Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "Mango\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "Mango\\Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-20T17:05:32.77Z",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\appsettings.json",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\appsettings.json",
+              "RelativeToolTip": "Mango.AuthAPI\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T11:18:26.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Mango.AuthAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T11:18:16.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Program.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Program.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T11:17:02.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Mango.AuthAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAgAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T11:15:42.002Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "bootstrap.css",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeDocumentMoniker": "Mango\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "RelativeToolTip": "Mango\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-              "ViewState": "AgIAAIE2AAAAAAAAAAAiwJU2AAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-10-20T17:12:04.811Z",
+              "Title": "Mango.AuthAPI",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Mango.AuthAPI.csproj",
+              "RelativeDocumentMoniker": "Mango.AuthAPI\\Mango.AuthAPI.csproj",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.AuthAPI\\Mango.AuthAPI.csproj",
+              "RelativeToolTip": "Mango.AuthAPI\\Mango.AuthAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T11:13:47.114Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AuthAPI.csproj",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\AuthAPI.csproj",
+              "RelativeDocumentMoniker": "AuthAPI\\AuthAPI.csproj",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\AuthAPI.csproj",
+              "RelativeToolTip": "AuthAPI\\AuthAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-23T11:08:24.646Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Mango.CouponAPI\\Program.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\Program.cs",
+              "RelativeToolTip": "Mango.CouponAPI\\Program.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-23T11:00:41.069Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
-              "Title": "Constants.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\Constants.cs",
-              "RelativeDocumentMoniker": "Mango\\Models\\Constants.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\Constants.cs",
-              "RelativeToolTip": "Mango\\Models\\Constants.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Program.cs",
+              "RelativeToolTip": "AuthAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:05:44.822Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "Mango.CouponAPI\\appsettings.json",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\appsettings.json",
-              "RelativeToolTip": "Mango.CouponAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-12T13:11:15.804Z"
+              "WhenOpened": "2025-10-23T11:00:32.596Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Requestdto.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\Requestdto.cs",
-              "RelativeDocumentMoniker": "Mango\\Models\\Requestdto.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\Requestdto.cs",
-              "RelativeToolTip": "Mango\\Models\\Requestdto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAoAAAAAAAAAA==",
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "AuthAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:02:59.665Z"
+              "WhenOpened": "2025-10-23T10:04:56.803Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Mango\\Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Mango\\Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:02:02.558Z"
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AuthAPI\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\AuthAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AuthAPI\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-23T10:04:12.253Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Mango.CouponAPI",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.csproj",
+              "DocumentIndex": 17,
+              "Title": "Mango.CouponAPI.csproj",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.csproj",
               "RelativeDocumentMoniker": "Mango.CouponAPI\\Mango.CouponAPI.csproj",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.csproj",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.csproj",
               "RelativeToolTip": "Mango.CouponAPI\\Mango.CouponAPI.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-10-15T06:22:43.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "Mango\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "Mango\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-15T16:44:03.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Mango\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Mango\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T16:51:31.655Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "20251012141308_first.cs",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Migrations\\20251012141308_first.cs",
-              "RelativeDocumentMoniker": "Mango.CouponAPI\\Migrations\\20251012141308_first.cs",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Migrations\\20251012141308_first.cs",
-              "RelativeToolTip": "Mango.CouponAPI\\Migrations\\20251012141308_first.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T14:13:09.115Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Mango.CouponAPI.http",
-              "DocumentMoniker": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.http",
-              "RelativeDocumentMoniker": "Mango.CouponAPI\\Mango.CouponAPI.http",
-              "ToolTip": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.http",
-              "RelativeToolTip": "Mango.CouponAPI\\Mango.CouponAPI.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-10-12T13:11:14.403Z"
+              "WhenOpened": "2025-10-23T10:03:22.7Z",
+              "EditorCaption": ""
             }
           ]
         }

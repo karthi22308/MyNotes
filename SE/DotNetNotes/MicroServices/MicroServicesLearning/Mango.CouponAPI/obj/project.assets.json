@@ -5712,11 +5712,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.csproj",
+      "projectUniqueName": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.csproj",
       "projectName": "Mango.CouponAPI",
-      "projectPath": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.csproj",
+      "projectPath": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\Mango.CouponAPI.csproj",
       "packagesPath": "C:\\Users\\karth\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\MicroServicesLearning\\Mango.CouponAPI\\obj\\",
+      "outputPath": "C:\\MyNotes\\SE\\DotNetNotes\\MicroServices\\MicroServicesLearning\\Mango.CouponAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
