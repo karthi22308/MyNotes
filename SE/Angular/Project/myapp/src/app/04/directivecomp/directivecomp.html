@@ -1,0 +1,15 @@
+<p>ngfor example</p>
+
+
+<ul>
+
+    <li *ngFor=" let x of movies; let i = index; let isodd = odd; let iseven=even;"
+    [ngClass]="{even:iseven,odd:isodd}"
+    >{{i+1}} {{x}}</li>
+</ul>
+
+<input type="checkbox"[(ngModel)]="showme">
+<p *ngIf = "showme">u checked it!!!</p>
+<p [high]="">this is a custom directive</p>
+
+
