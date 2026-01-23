@@ -1,0 +1,233 @@
+ANGULAR NOTES – FUNDAMENTALS (v1 → v2+)
+======================================
+
+--------------------------------------------------
+1. Node.js
+--------------------------------------------------
+
+Node.js:
+• Runtime environment for executing JavaScript
+• Allows JavaScript to run outside the browser
+• Mandatory for Angular development
+
+Check Node version:
+node --version
+(or)
+node -v
+
+
+--------------------------------------------------
+2. Angular Overview
+--------------------------------------------------
+
+Angular:
+• A front-end framework built on top of Node.js ecosystem
+• Uses TypeScript
+• Used for building Single Page Applications (SPA)
+
+Note:
+• AngularJS (v1) is different from Angular (v2+)
+• Angular v2+ is a complete rewrite and not backward compatible
+
+
+--------------------------------------------------
+3. Installing Angular CLI
+--------------------------------------------------
+
+Install Angular CLI globally:
+npm install -g @angular/cli
+
+Check Angular CLI version:
+ng --version
+
+Angular CLI is used to:
+• Create projects
+• Generate components, services, modules
+• Build and serve applications
+
+
+--------------------------------------------------
+4. Node Modules
+--------------------------------------------------
+
+node_modules:
+• Contains all third-party libraries
+• Installed using npm
+• Not deployed to production
+• Can be regenerated using package.json
+
+Command to install dependencies:
+npm install
+
+
+--------------------------------------------------
+5. Angular Project Structure
+--------------------------------------------------
+
+src/
+• Contains complete source code of the application
+
+src/app/
+• Contains components and modules
+• Core business logic lives here
+
+src/assets/
+• Images, fonts, static files
+
+src/environments/
+• Configuration files for different environments
+• Example: dev, production
+
+main.ts:
+• Entry point of the Angular application
+• Bootstraps the root module
+
+polyfills.ts:
+• Imports JavaScript libraries needed for browser compatibility
+• Ensures Angular works in older browsers
+
+
+--------------------------------------------------
+6. Configuration Files
+--------------------------------------------------
+
+angular.json:
+• Main Angular configuration file
+• Build, serve, assets, styles configuration
+
+karma.conf.js:
+• Configuration file for unit testing
+
+package.json:
+• Lists project dependencies
+• npm scripts
+• Application metadata
+
+tsconfig.json:
+• TypeScript compiler configuration
+• Controls transpilation rules
+
+
+--------------------------------------------------
+7. Build Process
+--------------------------------------------------
+
+• All TypeScript files are compiled into JavaScript
+• Output is bundled into optimized JS files
+• Bundles are deployed to the server/browser
+
+
+--------------------------------------------------
+8. Angular v2+ Essentials
+--------------------------------------------------
+
+TypeScript:
+• Superset of JavaScript
+• Adds static typing
+• Improves maintainability and tooling
+
+Typing:
+• Optional but recommended
+• Helps catch errors at compile time
+
+Transpilation:
+• TypeScript compiler converts TS → JS
+
+Command:
+tsc main.ts
+
+
+--------------------------------------------------
+9. Variables in TypeScript
+--------------------------------------------------
+
+Using var:
+var count = 4;
+• Function scoped
+• Avoided in modern TypeScript
+
+Using let:
+let count = 3;
+• Block scoped
+• Similar to C# variable scope
+
+Type Safety:
+• Once a type is assigned, it cannot change
+
+Example:
+let count: number;
+count = 10;      // valid
+count = "ten";   // error
+
+Without type:
+let value;
+• Type is any
+• Can change to any data type
+
+
+--------------------------------------------------
+10. Arrow Functions
+--------------------------------------------------
+
+Arrow Functions:
+• Equivalent to C# lambda expressions
+• Shorter syntax for functions
+
+Example:
+let doLog = (message) => console.log(message);
+
+Or:
+let doLog = (message) => {
+  console.log(message);
+};
+
+
+--------------------------------------------------
+11. Access Modifiers in TypeScript
+--------------------------------------------------
+
+public:
+• Accessible everywhere (default)
+
+private:
+• Accessible only within the class
+
+protected:
+• Accessible within class and derived classes
+
+
+--------------------------------------------------
+12. Angular Building Blocks
+--------------------------------------------------
+
+Component:
+• Heart of every Angular application
+• Controls a part of the UI
+• Example: Navbar component
+
+Component encapsulates:
+• Data
+• HTML Template
+• Logic
+
+Module:
+• Container for a group of related components
+• Organizes application into logical units
+
+
+--------------------------------------------------
+13. Creating a Component (Flow)
+--------------------------------------------------
+
+Steps:
+1. Create a component
+2. Register it in a module
+3. Add the selector in HTML
+
+CLI Command:
+ng generate component component-name
+(or)
+ng g c component-name
+
+Usage in HTML:
+<app-component-name></app-component-name>
