@@ -1,0 +1,70 @@
+TypeScript is a syntactic superset of JavaScript which adds static typing.
+
+This basically means that TypeScript adds syntax on top of JavaScript, allowing developers to add types.
+JavaScript is a loosely typed language.
+
+It can be difficult to understand what types of data are being passed around in JavaScript.
+
+In JavaScript, function parameters and variables don't have any information!
+
+TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.
+
+For example, TypeScript will report an error when passing a string into a function that expects a number.
+
+A common way to use TypeScript is to use the official TypeScript compiler, which transpiles TypeScript code into JavaScript.
+--------------------------------------------
+TypeScript Compiler
+TypeScript is transpiled into JavaScript using a compiler.
+to install ts:
+npm install typescript --save-dev
+------------------------------------------------
+sample to run:
+
+To Initialize:
+npx tsc --init
+
+
+sample code:
+function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+
+const message: string = greet("World");
+console.log(message);
+
+
+To compile the code:
+npx tsc hello.ts
+
+and then we can run the complied file as:
+node hello.js
+
+----------------------------------------------------------------------
+TypeScript Simple Types
+TypeScript enhances JavaScript by adding static types.
+
+Boolean
+number
+string
+bigint
+Symbol - Guid in c#
+
+
+sample code:
+let isActive: boolean = true;
+let hasPermission = false; // TypeScript infers 'boolean' type
+let decimal: number = 6;
+let hex: number = 0xf00d;  
+let color: string = "blue";
+let fullName: string = 'John Doe';
+let age: number = 30;
+let sentence: string = `Hello, my name is ${fullName} and I'll be ${age + 1} next year.`;
+const bigNumber: bigint = 9007199254740991n;
+
+//symbol sample:
+const uniqueKey: symbol = Symbol('description');
+const obj = {
+  [uniqueKey]: 'This is a unique property'
+};
+console.log(obj[uniqueKey]); // "This is a unique property"
+------------------------------------------------------------------------

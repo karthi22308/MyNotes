@@ -1,0 +1,88 @@
+Type Annotations and Inference
+TypeScript offers two ways to work with types:
+
+Explicit Typing: You explicitly declare the type of a variable
+Type Inference: TypeScript automatically determines the type based on the assigned value
+When to Use Each Approach
+
+Use explicit types for:
+Function parameters and return types
+Object literals
+When the initial value might not be the final type
+
+Use type inference for:
+Simple variable declarations with immediate assignment
+When the type is obvious from the context
+
+--------------------------------------------------------------
+
+explicit sample:
+
+explicit typing:
+// String
+greeting: string = "Hello, TypeScript!";
+
+// Number
+userCount: number = 42;
+
+// Boolean
+isLoading: boolean = true;
+
+// Array of numbers
+scores: number[] = [100, 95, 98];
+
+sample Function:
+// Function with explicit parameter and return types
+function greet(name: string): string {
+return `Hello, ${name}!`;
+}
+
+// TypeScript will ensure you pass the correct argument type
+greet("Alice"); // OK
+greet(42);     // Error: Argument of type '42' is not assignable to parameter of type 'string'
+
+--------------------------------------------------------
+
+Type Inference:
+
+// TypeScript infers 'string'
+let username = "alice";
+
+// TypeScript infers 'number'
+let score = 100;
+
+// TypeScript infers 'boolean[]'
+let flags = [true, false, true];
+
+// TypeScript infers return type as 'number'
+function add(a: number, b: number) {
+return a + b;
+}
+
+object literal Inference:
+
+// TypeScript infers the shape of the object
+const user = {
+name: "Alice",
+age: 30,
+isAdmin: true
+};
+
+// TypeScript knows these properties exist
+console.log(user.name);  // OK
+console.log(user.email); // Error: Property 'email' does not exist
+---------------------------------------------------------------------------
+When TypeScript Can't Infer Types
+While TypeScript's type inference is powerful, there are cases where it can't determine the correct type.
+
+In these situations, TypeScript falls back to the any type, which disables type checking.
+
+Common Cases for any
+// 1. JSON.parse returns 'any' because the structure isn't known at compile time
+const data = JSON.parse('{ "name": "Alice", "age": 30 }');
+
+// 2. Variables declared without initialization
+let something;  // Type is 'any'
+something = 'hello';
+something = 42;  // No error
+
