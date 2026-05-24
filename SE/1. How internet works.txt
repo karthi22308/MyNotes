@@ -1,0 +1,21 @@
+How internet works?
+
+ client (searches google.com) -> ISP -> DNS(domain name system) similar to phone directory that has ip addresses of all domains and it returns the ip
+then theclient will be able to make req to that address
+
+example nslookup.io can be used to find the ip directly 
+
+https://www.submarinecablemap.com/ -- internet is actually connected through bunch of wires
+
+
+How websites work?
+normally 3 types of files are received from server html,css,js
+
+html - content/ raw materials
+css - styling
+js - functionality 
+
+what is react?
+
+library for building user interfaces -- javascript library
+

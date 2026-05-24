@@ -1,0 +1,146 @@
+Dependency Injection
+A design pattern that allows a class to receive its dependencies from an external source rather than creating them itself.
+
+Difference between .NET Framework, .NET Core, and .NET 5/6+
+
+Answer:
+
+.NET Framework – Windows-only, older apps (WinForms, ASP.NET WebForms, MVC).
+
+.NET Core – Cross-platform, open-source, high-performance (ASP.NET Core).
+
+.NET 5/6/7+ (.NET Unified Platform) – Single platform merging .NET Core & Framework features.
+Boxing
+The process of converting a value type into an object type.
+
+Unboxing
+The process of extracting a value type from an object.
+
+Abstract Class
+A class that cannot be instantiated and may contain abstract methods that must be implemented in derived classes.
+
+Interface
+A contract that defines a set of methods, properties, or events without implementation, to be implemented by classes.
+
+Class
+A blueprint for creating objects, containing fields, properties, methods, and constructors.
+
+Web API
+A framework for building HTTP-based services that can be consumed by different clients like browsers, mobile apps, and other services.
+
+ASP.NET Core
+A cross-platform, open-source framework for building modern, cloud-based, internet-connected applications.
+
+Entity Framework (EF Core)
+An Object-Relational Mapper (ORM) that enables developers to work with a database using .NET objects, eliminating most SQL code.
+
+Encapsulation
+The process of bundling data (fields) and methods (functions) into a single unit and restricting direct access using access modifiers.
+
+OOP (Object-Oriented Programming)
+A programming paradigm based on concepts of objects, classes, and principles like encapsulation, inheritance, and polymorphism.
+
+Polymorphism
+The ability of an object to take many forms, typically through method overriding (runtime) and method overloading (compile time).
+
+Partial Classes
+A feature that allows a class definition to be split into multiple files but compiled as a single class.
+
+🔹 SQL Definitions
+
+View
+A virtual table based on the result of an SQL query, storing only the query and not the data.
+
+Trigger
+A special stored procedure that automatically executes in response to specific events (INSERT, UPDATE, DELETE) on a table.
+
+Index
+A database object that improves query performance by creating a fast lookup path for rows in a table.
+
+Types of Indexes
+
+Clustered Index: Sorts and stores rows of data physically in the table based on key values (one per table).
+
+Non-Clustered Index: Creates a separate structure from the data rows that points back to the original table (multiple allowed).
+
+Constructor – A special method that is called automatically when an object is created. Used to initialize fields.
+
+Destructor – A special method that is automatically invoked when an object is being destroyed, used for cleanup.
+
+Sealed Class – A class that cannot be inherited.
+
+Static Class – A class that cannot be instantiated, and all members must be static.
+
+Namespace – A way to organize classes and avoid naming conflicts.
+
+Assembly – A compiled code library (.dll or .exe) used by .NET applications.
+
+CLR (Common Language Runtime) – The execution engine of .NET, responsible for memory management, garbage collection, and security.
+
+CTS (Common Type System) – Defines how data types are declared and used across .NET languages.
+
+CLS (Common Language Specification) – A set of rules to ensure interoperability between .NET languages.
+
+Delegate – A type that represents references to methods with a specific parameter list and return type.
+
+Events – A way for a class to notify other classes or objects when something occurs.
+
+Generics – Allow you to define classes, methods, and data structures with a placeholder for the data type.
+
+LINQ (Language Integrated Query) – A syntax for querying collections and databases in C#.
+
+Garbage Collection – Automatic memory management by .NET to reclaim unused objects.
+
+🔹 ASP.NET / Web Concepts
+
+MVC (Model-View-Controller) – A design pattern that separates application into Model (data), View (UI), and Controller (logic).
+
+REST API – An API that follows REST principles using HTTP methods (GET, POST, PUT, DELETE).
+
+Entity Framework – An ORM tool in .NET used to interact with databases using LINQ and objects instead of raw SQL.
+
+Middleware (in ASP.NET Core) – Components that are assembled into an application pipeline to handle requests and responses.
+
+Session – A server-side storage for user-specific data across multiple requests.
+
+Cookies – Small data stored on the client-side and sent with each request.
+
+Authentication – Verifying the identity of a user.
+
+Authorization – Determining what a user is allowed to access.
+
+🔹 OOP Concepts (must have definitions ready)
+
+Encapsulation – Wrapping data and methods together, and restricting direct access to internal state.
+
+Abstraction – Showing only essential details and hiding implementation.
+
+Inheritance – One class can acquire the properties and behaviors of another class.
+
+Polymorphism – Ability of a method, class, or operator to behave differently based on the context (overloading/overriding).
+
+🔹 SQL Concepts
+
+Primary Key – A unique identifier for a row in a table.
+
+Foreign Key – A field that creates a relationship between two tables.
+
+Unique Key – Ensures all values in a column are unique, but allows one NULL.
+
+Clustered Index – Sorts and stores the data rows in the table based on key values. Only one per table.
+
+Non-Clustered Index – A separate structure that stores pointers to the data. Multiple allowed per table.
+
+View – A virtual table created from a SQL query.
+
+Stored Procedure – A precompiled group of SQL statements stored in the database.
+
+Trigger – A SQL code that automatically executes in response to certain events (INSERT, UPDATE, DELETE).
+
+Normalization – Process of organizing data to reduce redundancy and improve integrity.
+
+Denormalization – Opposite of normalization; adding redundancy for faster read performance.
+
+ACID Properties – Atomicity, Consistency, Isolation, Durability (guarantees reliability of DB transactions).
+
+Joins (Inner, Left, Right, Full) – Used to combine rows from two or more tables.

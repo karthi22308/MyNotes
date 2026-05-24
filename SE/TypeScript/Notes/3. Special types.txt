@@ -1,0 +1,42 @@
+special types
+
+Type: any
+The any type is the most flexible type in TypeScript.
+
+It essentially tells the compiler to skip type checking for a particular variable.
+
+While this can be useful in certain situations, it should be used sparingly as it bypasses TypeScript's type safety features.
+-----------------------------
+Type: unknown
+The unknown type is a type-safe counterpart of any.
+
+It's the type-safe way to say "this could be anything, so you must perform some type of checking before you use it".
+Key differences between unknown and any:
+
+unknown must be type-checked before use
+You can't access properties on an unknown type without type assertion
+You can't call or construct values of type unknown
+---------------------------------
+Type: never
+The never type represents the type of values that never occur.
+
+It's used to indicate that something never happens or should never happen.
+
+function that never returns that always throws an error:
+function throwError(message: string): never {
+  throw new Error(message);
+}
+
+--- it throws error when assigned
+-----------------------------------------
+Type: undefined & null
+In TypeScript, both undefined and null have their own types, just like string or number.
+
+By default, these types can be assigned to any other type, but this can be changed with TypeScript's strict null checks.
+
+Key points about undefined and null:
+
+undefined means a variable has been declared but not assigned a value
+null is an explicit assignment that represents no value or no object
+
+-----------------------------------------
