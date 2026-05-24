@@ -1,0 +1,113 @@
+SQL Statements
+--------------------
+
+- SQL is used to communicate with databases.
+- It helps update, retrieve, insert, and delete data.
+- Most RDBMS (Relational Database Management Systems) use SQL.
+- Common SQL commands: SELECT, INSERT, UPDATE, DELETE, CREATE, DROP.
+
+--------------------
+
+Types of SQL Statements
+--------------------
+
+1. DML – Data Manipulation Language  
+2. DDL – Data Definition Language  
+3. DCL – Data Control Language  
+4. TCL – Transaction Control Language  
+
+--------------------
+
+DML – Data Manipulation Language
+--------------------
+
+- Used to manipulate data in the database.
+- Commands: SELECT, INSERT, UPDATE, DELETE.
+- Allows storing, modifying, retrieving, and deleting data.
+
+INSERT Syntax  
+INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+
+--------------------
+
+DDL – Data Definition Language
+--------------------
+
+- Used to define and manage database structure (schemas).
+- Commands: CREATE, ALTER, DROP, TRUNCATE.
+
+CREATE Example  
+CREATE TABLE Students (Rank INT, StudentName VARCHAR(50));
+
+ALTER Example  
+ALTER TABLE Students ADD Age INT;
+
+- ALTER can add/modify/drop columns or rename tables and objects.
+
+DROP Example  
+DROP TABLE Students;
+
+- Completely deletes the table, its data, schema, indexes, triggers, and permissions.
+
+TRUNCATE Example  
+TRUNCATE TABLE Students;
+
+- Deletes all rows from a table WITHOUT logging individual row deletions.
+- Cannot use WHERE clause.
+- Faster than DELETE.
+- Not recoverable (no logs).
+
+DELETE vs TRUNCATE  
+- DELETE: Logs each row deleted, can use WHERE, recoverable.  
+- TRUNCATE: No logging, deletes everything, not recoverable, faster.
+
+--------------------
+
+DCL – Data Control Language
+--------------------
+
+- Used to control access to data.
+- Commands: GRANT, REVOKE.
+
+GRANT Example  
+GRANT UPDATE ON Students TO John WITH GRANT OPTION;
+
+- Gives John permission to update data and also grant that permission to others.
+
+REVOKE Example  
+REVOKE DELETE ON Students FROM Anderson;
+
+- Removes previously given DELETE permission from Anderson.
+
+--------------------
+
+TCL – Transaction Control Language
+--------------------
+
+- Used to manage transactions (group of SQL statements treated as a unit).
+- Commands: COMMIT, ROLLBACK, SAVEPOINT.
+
+COMMIT Example  
+BEGIN TRANSACTION;
+UPDATE Students SET Rank = 1 WHERE StudentName = 'John';
+COMMIT;
+
+- Saves the transaction permanently.
+
+ROLLBACK Example  
+BEGIN TRANSACTION;
+UPDATE Students SET Rank = 1 WHERE StudentName = 'John';
+ROLLBACK;
+
+- Cancels changes made in the transaction (only before COMMIT).
+
+SAVEPOINT Example  
+BEGIN TRANSACTION;
+UPDATE Students SET Rank = 1 WHERE StudentName = 'John';
+SAVE TRANSACTION SavePoint1;
+UPDATE Students SET Rank = 2 WHERE StudentName = 'Alice';
+ROLLBACK TRANSACTION SavePoint1;
+
+- Goes back to SavePoint1, keeps earlier updates.
+
+--------------------

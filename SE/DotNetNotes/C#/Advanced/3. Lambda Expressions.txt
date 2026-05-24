@@ -1,0 +1,52 @@
+Lambda Expressions
+--------------------
+
+Definition:
+- A lambda expression is a short block of code (function) that can be used wherever a delegate is required.  
+- They are anonymous functions (no name), often used to write cleaner and more concise code.  
+- Provide benefits like reduced boilerplate code, inline usage, and readability.  
+
+Benefits:
+- Concise syntax compared to normal method declaration.
+- Useful with LINQ queries.
+- Can be assigned to delegates (Func, Action, Predicate).
+- Improves readability and maintainability.
+
+------------------------------------------------
+
+Example 1: Basic Lambda Expression
+
+Func<int, int> square = number => number * number;
+Console.WriteLine(square(25));  // Output: 625
+
+Here:
+- `Func<int, int>` means input type is int, return type is int.
+- `number => number * number` is the lambda expression.
+
+------------------------------------------------
+
+Example 2: Normal Method vs Lambda Expression
+
+// Normal method
+public bool LessThan10(Book bk)
+{
+    if (bk.Price < 10)
+        return true;
+    return false;
+}
+
+// Using delegate reference
+var book = books.Find(LessThan10);
+
+This can be simplified using a lambda expression:
+
+var book = books.Find(x => x.Price < 10);
+
+------------------------------------------------
+
+Notes:
+- Lambdas are often used with LINQ (Where, Select, OrderBy).
+- Syntax:  
+   (parameters) => expression  
+   (parameters) => { statements }  
+- Single-line expressions don’t need `{}` or `return`.

@@ -1,0 +1,89 @@
+------------------------------
+AZURE WEB APP - CREATION & DEPLOYMENT
+------------------------------
+
+CREATING AN AZURE WEB APP:
+
+1. Go to Azure Portal → Home → "Create a Resource" → Choose "Web App"
+
+2. Required Settings:
+
+- **Subscription**:  
+  How you're billed (e.g., Pay-As-You-Go)  
+
+- **Resource Group**:  
+  Logical container for resources (like a folder)
+
+- **App Service Plan**:  
+  Choose your pricing tier  
+  Example:  
+  - B1 (Basic Tier)  
+  - P1 (Premium Tier)  
+  → P1 can offer up to **95% better performance** than B1
+
+- **GitHub Actions (CI/CD)**:  
+  - Continuous Deployment (CD) can be enabled  
+  - Code is deployed automatically as soon as you push to GitHub
+
+- **Public Access**:  
+  Can be configured as required
+
+- **Tags**:  
+  Metadata to organize resources  
+  Example: `Owner: Karthick`, `Project: MyApp`
+
+------------------------------
+DEPLOYMENT
+------------------------------
+
+After creating the web app:
+
+→ Code can be deployed directly  
+→ Azure handles hosting, scaling, and monitoring
+
+------------------------------
+MANUAL SCALING OF WEB APPS
+------------------------------
+
+In **App Service Plan (PaaS)**:
+
+- You can **manually scale** the number of instances (servers)  
+- Example: Set "Instance Count" to 3 → Azure will auto-balance load across 3 servers
+
+In **Infrastructure as a Service (IaaS)**:
+
+- Much harder:  
+  You’d have to spin up new VMs manually, configure load balancers, etc.
+
+------------------------------
+PUBLISHING FROM VISUAL STUDIO 2022
+------------------------------
+
+1. Build your project in Visual Studio  
+2. Click `Publish`  
+3. Select `Azure` as the target  
+4. Choose your Web App  
+5. Done — your app is live!
+
+------------------------------
+DEPLOYMENT SLOTS (Premium Plan Feature)
+------------------------------
+
+Purpose:
+- Deploy and test code **without affecting production**
+- Examples:  
+  - Pre-production (Staging)  
+  - QA environment  
+  - A/B testing
+
+Key Features:
+
+- **Separate slot** for testing (e.g., `staging.myapp.azurewebsites.net`)
+- Different configurations allowed (e.g., connect to staging DB)
+- Swap slots with production anytime
+- Use for blue-green deployment or gradual rollout
+
+→ Create a new publish profile for the slot  
+→ You can also direct a percentage of traffic to the staging slot for A/B testing
+
+------------------------------

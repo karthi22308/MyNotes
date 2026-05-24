@@ -1,0 +1,41 @@
+# C# Conditional Statements & Random Class
+
+## Conditional Statements
+
+### if / if-else
+Basic control flow statements to execute code conditionally.
+
+### switch
+Used when multiple conditions are based on the same variable.
+Syntax:
+switch (role)
+{
+    case "Admin":
+        // code
+        break;
+    case "User":
+        // code
+        break;
+    default:
+        // default code
+        break;
+}
+
+---
+
+## Loops and Keywords
+
+- Any type that is **enumerable** (implements IEnumerable) can be used in a `foreach` loop.
+- **break** → immediately exits the loop.
+- **continue** → skips to the next iteration of the loop.
+
+---
+
+## Random Class
+- Used to generate random numbers.
+
+Example:
+Random random = new Random();
+int value = random.Next(1, 5); // Generates a random number between 1 (inclusive) and 5 (exclusive)
+
+---

@@ -1,0 +1,109 @@
+# Entity Framework Core with ASP.NET Core Web API
+
+## Installing EF Core in a Web API Project
+
+1. Right-click on "Dependencies" > "Manage NuGet Packages"
+2. Install the following packages:
+
+   * Microsoft.EntityFrameworkCore.SqlServer → SQL Server support
+   * Microsoft.EntityFrameworkCore.Tools → For migrations
+
+## Creating a DbContext Class
+
+* Represents a session with the database.
+* Handles CRUD operations and tracks changes.
+* Inherits from `DbContext`.
+
+### Architecture:
+
+```
+Controller <--> DbContext <--> Database
+```
+
+### Sample Code:
+
+```csharp
+public class StudentDbContext : DbContext
+{
+    public StudentDbContext(DbContextOptions dbContextOptions)
+        : base(dbContextOptions) { }
+
+    public DbSet<Student> Students { get; set; }
+}
+```
+
+## Flow to Connect to DB and Create Table
+
+### Step 1: Create Model Classes (e.g., `Student.cs`)
+
+* Define your table structure using properties.
+
+### Step 2: Create DbContext Class (e.g., `StudentDbContext`)
+
+* Include all `DbSet<>` properties for your models.
+
+### Step 3: Add Connection String in `appsettings.json`
+
+```json
+"ConnectionStrings": {
+  "studentConnectionString":
+    "Server=FRIDAY;Database=studentapi;Trusted_Connection=True;TrustedServerCertificate=True"
+}
+```
+
+### Step 4: Register DbContext via Dependency Injection in `Program.cs`
+
+```csharp
+builder.Services.AddDbContext<StudentDbContext>(options =>
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("studentConnectionString")));
+```
+
+## Explanation of the DI Setup Above
+
+* `builder.Services.AddDbContext<>` registers the `StudentDbContext` with ASP.NET Core’s built-in DI container.
+* `UseSqlServer(...)` configures EF Core to use SQL Server with the specified connection string.
+* This allows you to inject `StudentDbContext` into your controllers using constructor injection.
+
+### Example Controller Constructor
+
+```csharp
+private readonly StudentDbContext _context;
+
+public StudentsController(StudentDbContext context)
+{
+    _context = context;
+}
+```
+
+## What is Dependency Injection (DI)?
+
+* Design pattern for injecting required objects rather than creating them manually.
+* Improves maintainability, testability, and loose coupling.
+* ASP.NET Core has built-in support for DI.
+
+### DI Lifetime Options:
+
+* Scoped → One instance per HTTP request (default for DbContext)
+* Transient → New instance each time
+* Singleton → One instance throughout app lifecycle
+
+## Running Migrations (via NuGet Console)
+
+### Step-by-step:
+
+1. **Add Migration**
+
+   ```bash
+   Add-Migration "InitialCreate"
+   ```
+
+   * Generates a migration file (C# code) representing schema changes.
+
+2. **Update Database**
+
+   ```bash
+   Update-Database
+   ```
+
+   * Applies the migration and creates actual tables in SQL Server.

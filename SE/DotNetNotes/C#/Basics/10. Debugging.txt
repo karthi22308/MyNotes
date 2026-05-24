@@ -1,0 +1,24 @@
+# Debugging Tools in Visual Studio
+
+## Watch Window
+- Used to monitor the values of variables while debugging.
+- Saves time by avoiding the need to hover the mouse over variables.
+- Path: Debug -> Windows -> Watch
+
+----------------------------------
+## Call Stack Window
+- Shows the history of method calls and the sequence of execution.
+- Helps trace how the program reached the current point.
+- Path: Debug -> Windows -> Call Stack
+
+----------------------------------
+## Locals and Autos Windows
+- **Autos Window**: Similar to the Watch Window, but automatically shows variables related to the current and previous statements.
+- **Locals Window**: Displays all variables in the current local scope.
+
+----------------------------------
+# Defensive Programming
+- Concept of validating user input before using it.
+- Checking conditions before performing operations.
+- Aim: Prevent errors, crashes, or unexpected behavior.
+- Involves handling **all edge cases** to ensure program robustness.

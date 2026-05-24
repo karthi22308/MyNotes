@@ -1,0 +1,17 @@
+<p>pipescomp works!</p>
+
+<p>unformated date: {{date}}</p>
+
+<p>formated date: {{date| date}}</p>
+<p>formated time date: {{date| date:'medium'}}</p>
+<p>formated time date: {{date| date:'short'}}</p>
+
+<p>sliced hello world : {{word| slice:0:5}}</p>
+
+<p>{{word|uppercase}}</p>
+<p>{{word|lowercase}}</p>
+<ul>
+<li *ngFor="let item of movies | slice:0:2">{{item}}</li>
+
+</ul>
+

@@ -1,0 +1,78 @@
+# C# Primitive Types & Basics
+
+## Variables and Constants
+- Variable: Can be changed.
+- Constant: Cannot be changed. Use the `const` keyword.
+- Hungarian Notation: Prefix variable name with its data type in PascalCase.
+  Example:
+    int iCount;
+    string sName;
+
+## Overflowing
+- Occurs when a variable exceeds its type boundary.
+- Use checked to detect overflow:
+    checked
+    {
+        byte number = 255;
+        number += 1; // Throws OverflowException
+    }
+
+## Type Inference
+- var lets the compiler infer the type based on assignment.
+    var num = 10; // inferred as int
+
+## Printing Variables
+- Use format specifiers:
+    int i = 10;
+    Console.WriteLine("{0}", i); // {0} is a placeholder
+---------------------------------------------------------------------------
+## Type Conversion
+
+### Implicit Conversion
+- Safe conversion, no data loss.
+    byte b = 10;
+    int i = b; // implicit
+
+### Explicit Conversion (Casting)
+- May cause data loss; must use (type).
+    int i = 300;
+    byte b = (byte)i; // explicit cast
+
+### Non-Compatible Types
+- Example: string → int
+- Use Convert or Parse:
+    string s = "123";
+    int i = int.Parse(s);
+    int j = Convert.ToInt32(s);
+------------------------------------------------------------------------------------------
+## Operators in C#
+
+### Arithmetic Operators
++, -, *, /, %
+    int a = 10, b = 3;
+    int c = a + b; // 13
+
+### Relational Operators
+==, !=, >, <, >=, <=
+    bool isGreater = a > b; // true
+
+### Logical Operators
+&&, ||, !
+    bool result = (a > b) && (b > 0); // true
+
+### Assignment Operators
+=, +=, -=, *=, /=, %=
+    int x = 5;
+    x += 2; // x = 7
+
+### Unary Operators
+++, --, -, +, !
+    int y = 5;
+    y++; // y = 6
+
+## Operator Precedence
+- Follows BODMAS rules.
+
+## Commenting
+- Single-line comment: //
+- Multi-line comment: /* comment */

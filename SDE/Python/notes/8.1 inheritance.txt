@@ -1,0 +1,106 @@
+------------------------
+INHERITANCE
+------------------------
+- Inheritance allows a class (derived/subclass) to acquire properties and methods of another class (base/superclass)
+
+Basic syntax:
+
+    class Vehicle:
+        def __init__(self, brand):
+            self.brand = brand
+
+    class Car(Vehicle):
+        pass
+
+- If the derived class has no constructor, the base class constructor is used:
+
+    car = Car("Toyota")
+    print(car.brand)   # Output: Toyota
+
+- If you want to explicitly call the base class constructor, use `super()`:
+
+    class Car(Vehicle):
+        def __init__(self, brand, model):
+            super().__init__(brand)   # Calls Vehicle.__init__
+            self.model = model
+
+    car = Car("Toyota", "Corolla")
+    print(car.brand, car.model)   # Output: Toyota Corolla
+
+------------------------
+TYPES OF INHERITANCE
+------------------------
+1. **Single Inheritance:** One base class -> one derived class
+    - Example above (Vehicle -> Car)
+
+2. **Multi-Level Inheritance:** Chain of inheritance
+    - Example: A -> B -> C
+    - Allowed in Python with no depth limit
+
+3. **Multiple Inheritance:** One class inherits from multiple classes
+    - Syntax:
+
+        class C(A, B):
+            pass
+
+------------------------
+METHOD RESOLUTION ORDER (MRO)
+------------------------
+- Determines the order in which base class methods are searched when calling a method
+- All Python classes implicitly inherit from `object`
+- First method executed: `__new__` → calls constructor (`__init__`)
+- Check MRO using:
+
+        class C(A, B):
+            pass
+
+        print(C.mro())   # Shows the order Python searches for methods
+
+- Example priority:
+
+        class A:
+            def show(self):
+                print("A method")
+
+        class B:
+            def show(self):
+                print("B method")
+
+        class C(A, B):
+            pass
+
+        obj = C()
+        obj.show()   # Output: A method (A comes first in C(A, B))
+
+------------------------
+POLYMORPHISM
+------------------------
+- One function/method with different behavior depending on context
+- Types:
+
+1. **Operator Level Polymorphism (Operator Overloading):**
+    - Example: `+` operator works for numbers, strings, lists
+
+        print(5 + 3)       # Output: 8
+        print("Hi " + "Bro") # Output: Hi Bro
+
+2. **Function Level Polymorphism (Function Overloading/Overriding):**
+    - Python does not support traditional overloading, but can use default arguments or variable-length arguments
+    - Example: `len()` works on strings, lists, tuples
+
+        print(len("Python"))   # Output: 6
+        print(len([1,2,3]))   # Output: 3
+
+- **Method Overriding:** Redefining a method in the derived class
+    - Example:
+
+        class Vehicle:
+            def info(self):
+                print("This is a vehicle")
+
+        class Car(Vehicle):
+            def info(self):          # Overrides Vehicle.info
+                print("This is a car")
+
+        obj = Car()
+        obj.info()   # Output: This is a car

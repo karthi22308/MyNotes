@@ -1,0 +1,174 @@
+ANGULAR NOTES
+====================
+
+--------------------
+1. Prerequisites
+--------------------
+
+Node.js
+• Node.js is a JavaScript runtime environment.
+• It allows JavaScript to run outside the browser.
+• Required to run Angular development tools.
+
+Check Node version:
+node -v
+
+npm (Node Package Manager)
+• npm is used to install and manage JavaScript packages.
+• Angular CLI is installed using npm.
+
+Check npm version:
+npm -v
+(or)
+npm --version
+
+
+--------------------
+2. Angular CLI Installation
+--------------------
+
+Install Angular CLI globally:
+npm install -g @angular/cli
+
+Verify installation:
+ng version
+
+Angular CLI is used to:
+• Create Angular projects
+• Generate components, services, modules
+• Build and serve applications
+
+
+--------------------
+3. Creating First Angular Application
+--------------------
+
+Create a new Angular project:
+ng new myapp
+
+During setup:
+• Choose routing if needed
+• Select CSS / SCSS based on preference
+
+Navigate to project folder:
+cd myapp
+
+
+--------------------
+4. Running Angular Application
+--------------------
+
+Start development server:
+ng serve
+
+Default URL:
+http://localhost:4200
+
+Note:
+• `ng serve` internally runs npm scripts
+• Equivalent to running npm start (if configured)
+
+If PowerShell blocks ng commands, run once:
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+This allows Angular CLI commands like ng serve to execute.
+
+
+--------------------
+5. Angular Project Structure (Basic)
+--------------------
+
+Important folders/files:
+• src/app – Application logic
+• app.component.ts – Component logic (TypeScript)
+• app.component.html – Component template (HTML)
+• app.component.css – Component styles
+• app.module.ts – Root module
+
+Angular uses:
+TypeScript (.ts) + HTML (.html) + CSS (.css)
+
+
+--------------------
+6. Component Basics
+--------------------
+
+Each component consists of:
+• TypeScript file (.ts) – logic
+• HTML file (.html) – view
+• CSS file (.css) – styling
+
+Flow:
+TypeScript → HTML (data flows from component to template)
+
+
+--------------------
+7. Data Binding in Angular
+--------------------
+
+Data binding connects TypeScript and HTML.
+
+Types of Data Binding:
+
+1. One-Way Data Binding
+• Data flows from component (.ts) to template (.html)
+• HTML can display data but cannot modify it
+
+Examples:
+• String Interpolation
+• Property Binding
+
+2. Two-Way Data Binding
+• Data flows both ways
+• HTML can modify component data
+• Commonly used in forms
+
+Uses:
+[(ngModel)]
+
+
+--------------------
+8. String Interpolation
+--------------------
+
+Syntax:
+{{ variable }}
+
+Purpose:
+• Display data from component (.ts) into template (.html)
+
+Example:
+{{ username }}
+
+Notes:
+• Expressions inside {{ }} are evaluated
+• Can use simple expressions (not statements)
+
+
+--------------------
+9. Safe Navigation Operator
+--------------------
+
+Operator:
+?
+
+Purpose:
+• Prevents runtime errors when accessing null or undefined objects
+
+Example:
+user?.name
+
+Use case:
+• When data is loaded asynchronously
+• When object may not be initialized yet
+
+
+--------------------
+10. Key Points to Remember
+--------------------
+
+• Angular uses TypeScript
+• Components control views
+• Data binding connects logic and UI
+• ng serve runs the application
+• Safe navigation avoids null reference errors

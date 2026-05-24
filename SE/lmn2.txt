@@ -1,0 +1,182 @@
+.NET Interview Questions & Answers (Basic to Mid-level)
+1. What is .NET Framework?
+
+Answer:
+
+A software development framework from Microsoft for building desktop, web, and mobile apps.
+
+Provides runtime (CLR), base class libraries (BCL), and tools for multiple languages (C#, VB.NET, F#).
+
+Supports managed code execution, memory management, exception handling, and security.
+
+2. What is CLR (Common Language Runtime)?
+
+Answer:
+
+Execution engine of .NET.
+
+Handles memory management (GC), JIT compilation, type safety, exception handling, and security.
+
+Converts MSIL (Intermediate Language) → Native code.
+
+3. What is CTS (Common Type System)?
+
+Answer:
+
+Defines how types are declared and used in .NET (int, string, custom classes).
+
+Ensures data types are consistent across languages (C#, VB.NET, F#).
+
+4. What is CLS (Common Language Specification)?
+
+Answer:
+
+A subset of CTS that defines rules for language interoperability.
+
+Example: If you create a library in C#, it should use CLS-compliant features so it can be used in VB.NET too.
+
+5. Difference between .NET Framework, .NET Core, and .NET 5/6+
+
+Answer:
+
+.NET Framework – Windows-only, older apps (WinForms, ASP.NET WebForms, MVC).
+
+.NET Core – Cross-platform, open-source, high-performance (ASP.NET Core).
+
+.NET 5/6/7+ (.NET Unified Platform) – Single platform merging .NET Core & Framework features.
+
+6. What is ASP.NET?
+
+Answer:
+
+A web framework in .NET for building web apps and APIs.
+
+ASP.NET WebForms – Event-driven, page-based model (older).
+
+ASP.NET MVC – Model-View-Controller, testable, clean separation of concerns.
+
+ASP.NET Core – Cross-platform, modern web framework.
+
+7. Difference between ADO.NET and Entity Framework
+
+Answer:
+
+ADO.NET: Low-level data access (uses SqlConnection, SqlCommand, DataSet). Fast but more coding.
+
+Entity Framework (EF): ORM (Object Relational Mapper) → Works with LINQ, maps DB tables to classes. Less code, but slightly slower.
+
+8. What is Managed Code vs Unmanaged Code?
+
+Answer:
+
+Managed Code – Runs under CLR (C#, VB.NET). CLR manages memory and execution.
+
+Unmanaged Code – Code outside CLR (C++, COM objects). Requires manual memory handling.
+
+9. What is JIT Compiler in .NET?
+
+Answer:
+
+Just-In-Time compiler translates MSIL (Intermediate Language) into native machine code when the method is invoked.
+
+Types: Pre-JIT, Econo-JIT, Normal JIT.
+
+10. Difference between Value Type and Reference Type in .NET
+
+Answer:
+
+Value Types: Stored in stack, contain actual value (int, float, struct).
+
+Reference Types: Stored in heap, stack holds reference (class, array, string).
+
+11. What is Garbage Collection in .NET?
+
+Answer:
+
+CLR feature to automatically reclaim memory of unused objects.
+
+Works in generations (Gen 0, 1, 2).
+
+12. Explain .NET MVC Architecture
+
+Answer:
+
+Model – Business logic, data.
+
+View – UI (HTML, Razor).
+
+Controller – Handles user input, calls model, returns view.
+
+Helps in separation of concerns + testability.
+
+13. What is Web API in .NET?
+
+Answer:
+
+Framework for building RESTful services over HTTP.
+
+Returns data in JSON/XML format.
+
+Used for mobile, SPA, and integration with other apps.
+
+14. Difference between .NET Core and .NET Framework
+
+Answer:
+
+.NET Core: Cross-platform, high-performance, microservices-friendly.
+
+.NET Framework: Windows-only, legacy enterprise apps.
+
+.NET 5+: Unified, recommended going forward.
+
+15. What are Assemblies in .NET?
+
+Answer:
+
+Deployment unit (DLL or EXE).
+
+Contains MSIL code, metadata, manifest.
+
+Two types: Private assemblies (used by single app), Shared assemblies (GAC).
+
+16. What is the difference between Interface and Abstract Class?
+
+Answer:
+
+Interface: Only declarations, no implementation. Supports multiple inheritance.
+
+Abstract Class: Can have both abstract (no body) and concrete (with body) methods. Supports single inheritance.
+
+17. What is Dependency Injection in .NET Core?
+
+Answer:
+
+Design pattern to achieve loose coupling.
+
+Objects are injected instead of being hardcoded.
+
+ASP.NET Core has built-in DI container.
+
+18. What is Middleware in ASP.NET Core?
+
+Answer:
+
+Components in pipeline that handle requests and responses.
+
+Example: Authentication, Routing, Logging.
+
+19. Difference between Session and ViewState in ASP.NET
+
+Answer:
+
+ViewState: Stores data in page itself (hidden field), used for persisting data across postbacks.
+
+Session: Stores data on server per user session.
+
+20. What is LINQ in .NET?
+
+Answer:
+
+Language Integrated Query – query syntax in C# to access collections, DB, XML.
+
+Example:

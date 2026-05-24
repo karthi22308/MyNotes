@@ -1,0 +1,95 @@
+-------------------- PYTHON FUNCTIONS --------------------
+
+✅ Functions → achieve reusability and avoid repetition of code  
+
+TYPES:
+1. Built-in
+2. User-defined  
+
+--------------------
+SYNTAX:
+
+def funcname(params):
+    """This is documentation"""   # docstring
+    # logic
+
+print(funcname.__doc__)   # prints documentation
+
+--------------------
+EXAMPLE:
+
+def greetings(name):
+    print("Hey hai", name)
+
+--------------------
+RETURN KEYWORD:
+- By default → function returns None
+- Can return multiple values (returns as a tuple)
+    return a, b, c
+- Can also return a list
+
+-------------------- SCOPE OF VARIABLES --------------------
+
+- Global variable → accessible everywhere
+- Local variable → accessible only inside function
+
+print(globals())   # prints all global variables
+
+Example:
+
+x = 45
+
+def func():
+    global x
+    x = 22   # modifies global x
+
+Without 'global', a new local x is created.
+
+-------------------- LAMBDA FUNCTIONS --------------------
+
+- Anonymous (one-line) functions
+- Syntax:
+    name = lambda a, b: a + b
+
+- Works as:
+    name(3,5) → 8
+
+-------------------- ARGUMENTS vs PARAMETERS --------------------
+
+def add(a, b):
+    return a + b
+
+add(3, 5)
+
+- a, b → Parameters (placeholders in function definition)
+- 3, 5 → Arguments (values passed during call)
+
+-------------------- TYPES OF ARGUMENTS --------------------
+
+1. Positional arguments  
+   - Required, order must match function definition
+
+2. Default arguments  
+   - Optional parameters with default values
+   - Example:
+       def func(a, b=0):
+           return a+b
+   - Default params must be at the end
+
+3. Arbitrary arguments (*args)  
+   - Any number of values, received as a tuple
+   - Example:
+       def func(*args):
+           for i in args:
+               print(i)
+
+4. Keyword arguments (**kwargs)  
+   - Received as a dictionary
+   - Example:
+       def func(**kwargs):
+           print(kwargs)
+
+   Calling:
+       func(name="Karthick", age=25)
+
+--------------------

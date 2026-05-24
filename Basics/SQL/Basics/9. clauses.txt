@@ -1,0 +1,126 @@
+SQL Clauses
+--------------------
+
+WHERE Clause
+--------------------
+- Used to filter records based on a condition.
+- Comes **after FROM** and **before GROUP BY**.
+
+Syntax:
+SELECT column1, column2  
+FROM table_name  
+WHERE condition;
+
+Example:
+SELECT * FROM Employees  
+WHERE Department = 'HR';
+
+--------------------
+
+ORDER BY Clause
+--------------------
+- Used to sort the result in **ascending** (default) or **descending** order.
+- Comes **after WHERE or GROUP BY** clause.
+
+Syntax:
+SELECT column1, column2  
+FROM table_name  
+ORDER BY column1 ASC|DESC;
+
+Example:
+SELECT * FROM Products  
+ORDER BY Price DESC;
+
+--------------------
+
+GROUP BY Clause
+--------------------
+- Used to group rows that have the same values in specified columns.
+- Often used with aggregate functions: COUNT(), SUM(), MAX(), MIN(), AVG().
+- Comes **after WHERE** and **before HAVING**.
+- You can only **group by columns that appear in SELECT**.
+
+Syntax:
+SELECT column1, COUNT(*)  
+FROM table_name  
+GROUP BY column1;
+
+Example:
+SELECT COUNT(*), PostalCode  
+FROM Customers  
+GROUP BY PostalCode;
+
+💡 More columns in GROUP BY = more detailed grouping.
+
+--------------------
+
+HAVING Clause
+--------------------
+- Used to filter records **after GROUPING**.
+- Similar to WHERE, but used with **GROUP BY**.
+
+Syntax:
+SELECT column1, COUNT(*)  
+FROM table_name  
+GROUP BY column1  
+HAVING COUNT(*) > 5;
+
+Example:
+SELECT COUNT(1) AS Count, Color, Size  
+FROM Products  
+GROUP BY Color, Size  
+HAVING Size >= '44';
+
+--------------------
+
+LIMIT Clause (used in MySQL, SQLite)
+--------------------
+- Used to restrict the number of rows returned.
+
+Syntax:
+LIMIT [row_count];  
+LIMIT [offset], [row_count];  
+OR  
+LIMIT [row_count] OFFSET [offset];
+
+Example:
+-- Get top 3 records:
+SELECT * FROM Employees  
+LIMIT 3;
+
+-- Get second highest salary:
+Option 1 (Using OFFSET):
+SELECT DISTINCT Salary  
+FROM Employee  
+ORDER BY Salary DESC  
+LIMIT 1 OFFSET 1;
+
+Option 2 (Using subquery):
+SELECT MAX(Salary)  
+FROM Employee  
+WHERE Salary < (SELECT MAX(Salary) FROM Employee);
+
+--------------------
+
+Common Notes
+--------------------
+
+- **VARCHAR** values in WHERE clause must be in **single quotes**.  
+  Example: `WHERE FirstName = 'John'`
+
+- **LIKE operator** is used for pattern matching.
+
+Examples:
+WHERE FirstName LIKE 'Mat%'    -- Starts with Mat  
+WHERE Name LIKE '%son'         -- Ends with son  
+WHERE Name LIKE '%al%'         -- Contains 'al'
+
+- **MAX value** of a column:
+SELECT MAX(Salary) FROM Employees;
+
+- **Aggregate functions** (like MAX, COUNT) return results without column names — use **aliasing** for clarity.
+
+Example:
+SELECT MAX(Salary) AS HighestSalary FROM Employees;
+
+--------------------

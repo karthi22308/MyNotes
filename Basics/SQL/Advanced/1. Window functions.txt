@@ -1,0 +1,84 @@
+# 🧠 SQL Window Functions & Ranking – TST Notes
+
+---------------------------------------------------------------------------------------
+
+## 📌 `OVER()` Clause
+
+- The `OVER()` clause is used with **window functions** to perform calculations across a set of table rows that are related to the current row.
+- Unlike `GROUP BY`, it **does not collapse rows**—it retains the original row structure.
+
+### ✅ Example:
+
+SELECT first_name, last_name, gender, 
+       MAX(height) OVER() AS max_height
+FROM patients;
+
+- This returns the **maximum height** across **all rows**, while keeping each row intact.
+
+---------------------------------------------------------------------------------------
+## 📊 `GROUP BY` Clause
+
+- `GROUP BY` **aggregates** rows based on one or more columns.
+- It **merges rows** with the same values in the grouped columns.
+
+### ✅ Example:
+
+SELECT gender, SUM(height) 
+FROM patients
+GROUP BY gender;
+
+- This returns **one row per gender**, with the total height summed.
+
+---------------------------------------------------------------------------------------
+
+## 🧩 `PARTITION BY` Clause
+
+- Used with `OVER()` to **group rows within a window**—similar to `GROUP BY`, but without collapsing rows.
+- Enables **group-wise calculations** while preserving row-level detail.
+
+### ✅ Example:
+
+SELECT *, 
+       MAX(height) OVER(PARTITION BY gender) AS max_height
+FROM patients;
+
+- This returns the **maximum height per gender**, but keeps all rows.
+
+---------------------------------------------------------------------------------------
+
+## 🔢 Row Numbering & Ranking Functions
+
+### 1. `ROW_NUMBER()`
+
+- Assigns a **unique sequential number** to each row **within a partition**.
+- Requires `ORDER BY` inside the `OVER()` clause.
+- **No ties**—even duplicate values get different row numbers.
+
+### ✅ Example:
+
+SELECT *, 
+       ROW_NUMBER() OVER(PARTITION BY product_code ORDER BY credit_amount DESC) AS credit_rank
+FROM reference;
+
+---------------------------------------------------------------------------------------
+
+### 2. `RANK()`
+
+- Assigns the **same rank** to tied values.
+- **Skips ranks** after ties (like school rankings).
+
+### 3. `DENSE_RANK()`
+
+- Similar to `RANK()`, but **does not skip** ranks after ties.
+
+### ✅ Combined Example:
+
+SELECT *, 
+       ROW_NUMBER() OVER(PARTITION BY product_code ORDER BY credit_amount DESC) AS row_num,
+       RANK() OVER(PARTITION BY product_code ORDER BY credit_amount DESC) AS rank,
+       DENSE_RANK() OVER(PARTITION BY product_code ORDER BY credit_amount DESC) AS dense_rank
+FROM reference;
+
+---------------------------------------------------------------------------------------
+
+📝 **Tip**: Use `PARTITION BY` to group within a column (like gender or product_code), and `ORDER BY` to define how ranking or numbering should be applied within that group.

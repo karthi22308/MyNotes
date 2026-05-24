@@ -1,0 +1,65 @@
+-------------------------------------
+Procedural Programming
+-------------------------------------
+- Programming paradigm based on **procedure calls** (functions/methods).
+- Main idea: Break the program into small reusable procedures.
+- **Best practice**: Separate the core business logic from the `Main` method so it can be reused in multiple places.
+
+-------------------------------------
+Working with Files
+-------------------------------------
+Namespace: System.IO
+
+1. **File vs FileInfo**
+   - File:
+     - Provides **static methods**.
+     - Security check is performed at every access by the OS → affects performance.
+   - FileInfo:
+     - Provides **instance methods**.
+     - Better for repeated operations on the same file because the OS security check is done only once.
+
+2. **Directory vs DirectoryInfo**
+   - Directory:
+     - Static methods.
+   - DirectoryInfo:
+     - Instance methods.
+
+   Common methods:
+   - `CreateDirectory()`
+   - `GetCurrentDirectory()`
+
+3. **Path Class**
+   - Used to work with strings that represent file or directory paths.
+   - Helps avoid manual string manipulation for paths.
+
+-------------------------------------
+Demo Example
+-------------------------------------
+using System;
+using System.IO;
+
+class Program
+{
+    static void Main()
+    {
+        // Using File class
+        string filePath = "test.txt";
+        File.WriteAllText(filePath, "Hello World!");
+
+        string content = File.ReadAllText(filePath);
+        Console.WriteLine(content);
+
+        // Using FileInfo
+        FileInfo fi = new FileInfo(filePath);
+        Console.WriteLine($"File exists: {fi.Exists}");
+        Console.WriteLine($"File size: {fi.Length} bytes");
+
+        // Directory methods
+        string currentDir = Directory.GetCurrentDirectory();
+        Console.WriteLine($"Current Directory: {currentDir}");
+
+        // Path methods
+        string fullPath = Path.Combine(currentDir, "subfolder", "file.txt");
+        Console.WriteLine($"Combined Path: {fullPath}");
+    }
+}

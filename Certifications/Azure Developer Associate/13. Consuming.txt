@@ -1,0 +1,110 @@
+------------------------------
+AZURE API MANAGEMENT (APIM)
+------------------------------
+
+WHAT IS AZURE API MANAGEMENT?
+------------------------------
+
+- A **fully managed service** for publishing, securing, analyzing, and monitoring APIs.
+- Acts as a **gateway** between backend services (APIs) and consumers (apps, users, third parties).
+- Useful when exposing APIs publicly or internally with rate limits, authentication, and logging.
+
+------------------------------
+KEY BENEFITS
+------------------------------
+
+✅ **Security**  
+- Protect APIs from abuse via:
+  - **Rate limiting** (calls per minute)
+  - **IP restrictions** (block suspicious IPs)
+  - **Subscription keys** (API keys per user)
+  - **OAuth2/JWT validation**
+
+✅ **Monitoring & Analytics**  
+- View usage reports, request logs, and errors
+
+✅ **Versioning & Revisions**  
+- Supports **multiple versions** of the same API
+- Revisions allow non-breaking changes without downtime
+
+✅ **Developer Portal**  
+- Auto-generated, customizable portal for developers to:
+  - Discover APIs
+  - Read documentation
+  - Try out endpoints using built-in "Try it" functionality
+
+------------------------------
+API MANAGEMENT URL STRUCTURE
+------------------------------
+
+- Azure gives you a **new public URL** (proxy endpoint) that points to your backend API.
+- Example:
+https://<your-apim-name>.azure-api.net/<api-route>
+
+
+------------------------------
+POLICIES: INBOUND & OUTBOUND PROCESSING
+------------------------------
+
+✅ **Inbound Processing**  
+- Runs **before** the request reaches your backend
+- Examples:
+- Validate headers
+- Modify query parameters
+- Add rate-limiting rules
+- Check authentication tokens
+
+✅ **Outbound Processing**  
+- Runs **after** your backend sends the response
+- Examples:
+- Modify response body
+- Remove headers
+- Add CORS headers
+
+✅ **On-error Section**  
+- Define custom logic when an error occurs (e.g., return custom error messages)
+
+------------------------------
+OPENAPI (Swagger) INTEGRATION
+------------------------------
+
+- You can **import OpenAPI definitions (Swagger.json)** into API Management
+- Makes it easier to expose existing APIs with full documentation
+- Supports:
+- REST APIs
+- SOAP APIs (via WSDL import)
+
+🧠 OpenAPI helps **developers test, understand, and consume** your APIs.
+
+------------------------------
+DEVELOPER PORTAL
+------------------------------
+
+- A front-end portal exposed to API consumers
+- Developers can:
+- Browse available APIs
+- Sign up for access
+- View rate limits, keys, and usage
+- Try APIs directly from the browser
+
+✅ Editable: You can customize branding, content, and layout  
+✅ Must **publish** changes to make them visible to users
+
+------------------------------
+AZ-204 & INTERVIEW TIPS
+------------------------------
+
+✅ Know these:
+- How APIM helps in securing APIs (throttling, auth, keys)
+- Difference between Inbound and Outbound processing
+- What OpenAPI is and how it helps
+- What the Developer Portal is used for
+- Rate-limiting and subscription key models
+
+✅ Possible questions:
+- “How do you expose a backend API securely to external users?”
+- “What is the purpose of inbound policies in Azure API Management?”
+- “How do you enable user-friendly API documentation?”
+
+------------------------------
+

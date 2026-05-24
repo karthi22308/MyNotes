@@ -1,0 +1,99 @@
+UPDATE STATEMENT
+--------------------
+- Used to modify existing records in a table.
+- You can use either `WHERE` or `FROM` clause to filter rows for update.
+
+Basic Syntax:
+UPDATE table_name  
+SET column_name = value  
+WHERE condition;
+
+💡 Always use WHERE clause to avoid updating all rows accidentally.
+
+Example:
+UPDATE employees  
+SET salary = 50000  
+WHERE emp_id = 101;
+
+Additional Example (increment value):
+UPDATE employees  
+SET salary = salary + 1000  
+WHERE department = 'Sales';
+
+--------------------
+UPDATE FROM ANOTHER TABLE
+--------------------
+- Useful when updating values based on another table.
+
+Syntax:
+UPDATE target_table  
+SET target_table.col = source_table.value  
+FROM target_table  
+INNER JOIN source_table  
+ON target_table.id = source_table.id;
+
+Example:
+UPDATE e  
+SET e.salary = s.new_salary  
+FROM employees e  
+INNER JOIN salary_updates s  
+ON e.emp_id = s.emp_id;
+
+--------------------
+UPDATING A VIEW
+--------------------
+- Views can be updated like tables **if**:
+  - View is based on a single table.
+  - No aggregate/grouping/joins in view.
+  - No DISTINCT or computed columns.
+
+Example:
+UPDATE view_name  
+SET column = value  
+WHERE condition;
+
+--------------------
+
+DELETE STATEMENT
+--------------------
+- Used to remove existing records from a table.
+- DELETE removes entire rows; no specific columns.
+
+Basic Syntax:
+DELETE FROM table_name  
+WHERE condition;
+
+💡 Use WHERE clause carefully to avoid deleting all rows.
+
+Example:
+DELETE FROM employees  
+WHERE department = 'HR';
+
+Deleting TOP rows:
+DELETE TOP (2)  
+FROM employees  
+WHERE department = 'Finance';
+
+Delete using JOIN:
+DELETE e  
+FROM employees e  
+INNER JOIN terminated t  
+ON e.emp_id = t.emp_id;
+
+Delete using Subquery:
+DELETE FROM employees  
+WHERE emp_id IN (SELECT emp_id FROM terminated_list);
+
+⚠️ `UPDATE` works at the **column level**, `DELETE` works at the **row level**.
+
+
+
+
+---using transaction to delete
+
+begin transact
+delete * from table
+
+
+
+rollback transact 

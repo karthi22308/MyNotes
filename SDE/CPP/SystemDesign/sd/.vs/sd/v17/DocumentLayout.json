@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MyNotes\\SDE\\CPP\\SystemDesign\\sd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{06E2F7F4-F4FF-4DF1-8CE0-0990F9F96352}|sd\\sd.vcxproj|C:\\MyNotes\\SDE\\CPP\\SystemDesign\\sd\\sd\\sd.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{06E2F7F4-F4FF-4DF1-8CE0-0990F9F96352}|sd\\sd.vcxproj|solutionrelative:sd\\sd.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sd.cpp",
+              "DocumentMoniker": "C:\\MyNotes\\SDE\\CPP\\SystemDesign\\sd\\sd\\sd.cpp",
+              "RelativeDocumentMoniker": "sd\\sd.cpp",
+              "ToolTip": "C:\\MyNotes\\SDE\\CPP\\SystemDesign\\sd\\sd\\sd.cpp",
+              "RelativeToolTip": "sd\\sd.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-20T14:33:29.658Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

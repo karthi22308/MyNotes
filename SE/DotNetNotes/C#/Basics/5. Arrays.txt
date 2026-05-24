@@ -1,0 +1,53 @@
+# C# Arrays
+
+## 1. Two-Dimensional Arrays
+
+### Rectangular Array
+- Has fixed rows and columns (e.g., 3×5 matrix).
+- Syntax:
+    var matrix = new int[3, 5]; // 3 rows, 5 columns
+
+### Three-Dimensional Array
+- Extends to 3 dimensions.
+- Syntax:
+    var matrix3D = new int[3, 5, 6];
+
+---
+
+## 2. Jagged Array
+- An array of arrays (rows can have different lengths).
+- Syntax:
+    var array = new int[3][]; // 3 rows, each row will be an array
+- Example:
+    array[0] = new int[5];
+    array[1] = new int[3];
+    array[2] = new int[7];
+
+---
+
+## 3. Array Properties
+
+### Instance Properties
+- **Length** → Gets the total number of elements in all dimensions.
+  Example:
+    int length = matrix.Length;
+
+---
+
+## 4. Static Methods in Array Class
+(All accessed as `Array.MethodName(array, ...)`)
+
+- **IndexOf(array, value)** → Finds the index of a value.
+- **Reverse(array)** → Reverses the elements in the array.
+- **Sort(array)** → Sorts the array in ascending order.
+- **Copy(sourceArray, destinationArray, length)** → Copies elements.
+- **Clear(array, startIndex, length)** → Clears elements (sets to default).
+
+Example:
+    int[] numbers = { 5, 2, 8, 1 };
+    Array.Sort(numbers);       // Sort ascending
+    Array.Reverse(numbers);    // Reverse order
+    int index = Array.IndexOf(numbers, 8); // Find index
+    Array.Clear(numbers, 0, numbers.Length); // Clear all
+
+---

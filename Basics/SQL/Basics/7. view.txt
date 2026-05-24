@@ -1,0 +1,24 @@
+View
+--------------------
+
+- A **view** is like a **virtual table** that displays data from one or more tables.
+- It does **not store data physically** in the database — just stores the SQL query.
+- A view must have a **unique name** in the database (just like a table).
+- A view contains a **predefined SQL query** used to fetch data.
+- Views can combine data from **multiple tables** and even **multiple databases** (if supported).
+
+Syntax to create a view:
+CREATE VIEW ViewName AS
+SELECT Column1, Column2
+FROM TableName
+WHERE SomeCondition;
+
+Example:
+CREATE VIEW EmployeeView AS
+SELECT ID, Name, Department
+FROM Employees
+WHERE Status = 'Active';
+
+- You can also use SSMS GUI to create a view easily (Right-click on "Views" → New View...).
+
+--------------------

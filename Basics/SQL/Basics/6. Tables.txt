@@ -1,0 +1,63 @@
+Create Table and Temporary Table
+--------------------
+
+Table
+--------------------
+- A table is a database object that holds data in the database.
+- Max limit: Up to 1024 columns per table.
+- Tables are stored permanently in the database.
+
+Schema
+--------------------
+- A schema is a logical collection of database objects.
+- By default, the schema is "dbo".
+
+Primary Key
+--------------------
+- If there's only one primary key:
+  - It can be declared inline (with the column definition), or
+  - Declared at the end using a table-level constraint.
+
+Sample Syntax:
+CREATE TABLE Students (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Age INT
+);
+
+-- With schema and database name:
+CREATE TABLE [DatabaseName].[SchemaName].[TableName] (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(50),
+    Age INT
+);
+
+--------------------
+
+Temporary Table
+--------------------
+- Temporary tables exist temporarily for the session only.
+- Stored in the system database: tempdb.
+- Automatically deleted when the session (tab) is closed or SSMS is restarted.
+- Temp table name must start with #: e.g., #TempStudents
+
+Method 1: Copy Method
+SELECT Column1, Column2 
+INTO #TempTable 
+FROM OriginalTable 
+WHERE Column = Value;
+
+Method 2: Create and Insert
+CREATE TABLE #TempTable (
+    ID INT,
+    Name VARCHAR(50)
+);
+
+INSERT INTO #TempTable
+SELECT ID, Name 
+FROM OriginalTable 
+WHERE Column = Value;
+
+-- Note: Temp tables are session-specific and can't be accessed outside the session/tab they are created in.
+
+--------------------

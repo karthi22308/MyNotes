@@ -1,0 +1,151 @@
+----------------------------------------------------
+INTERFACES
+----------------------------------------------------
+Definition:
+- An interface defines a "contract" that implementing classes must fulfill.
+- Contains method/property signatures only (no implementation).
+- Promotes loose coupling and flexibility.
+
+Syntax:
+public interface ICalculator
+{
+    int Calculate();
+}
+
+public class Calculator : ICalculator
+{
+    public int Calculate()
+    {
+        return 42;
+    }
+}
+
+----------------------------------------------------
+INTERFACES & LOOSE COUPLING
+----------------------------------------------------
+- Interfaces reduce direct dependency between classes.
+- Helps in Dependency Injection (DI).
+- Makes applications more testable (can mock interfaces in unit tests).
+- Increases flexibility and maintainability.
+
+----------------------------------------------------
+INTERFACES & ACCESS MODIFIERS
+----------------------------------------------------
+- Members of an interface cannot have access modifiers.
+- They are always public by default.
+
+----------------------------------------------------
+INTERFACES & EXTENSIBILITY
+----------------------------------------------------
+- Interfaces allow systems to be extended without modifying existing code.
+- Example: Repository Pattern
+  * Defines an abstraction (interface) for data access.
+  * Concrete classes implement the interface (SQLRepo, InMemoryRepo, etc.).
+  * Application code depends on the interface, not the implementation.
+  * Promotes loose coupling + testability.
+
+Example:
+public interface IRepository<T>
+{
+    void Add(T item);
+    T Get(int id);
+}
+
+public class SqlRepository<T> : IRepository<T>
+{
+    public void Add(T item) { /* SQL Insert */ }
+    public T Get(int id) { /* SQL Fetch */ return default; }
+}
+
+----------------------------------------------------
+OPEN/CLOSED PRINCIPLE (OCP)
+----------------------------------------------------
+Definition:
+- A class should be **Open for extension, Closed for modification**.
+- Meaning: Add new functionality by extending existing code (via inheritance, interfaces, composition) without modifying the original class.
+
+Example:
+Bad Design:
+class Shape { public int Type; }
+class AreaCalculator { if(Type==1)... }
+
+Good Design:
+interface IShape { double Area(); }
+class Circle : IShape { public double Area(){ return ...; } }
+class Square : IShape { public double Area(){ return ...; } }
+
+Now new shapes can be added without changing AreaCalculator.
+
+----------------------------------------------------
+SOLID PRINCIPLES
+----------------------------------------------------
+1. **S - Single Responsibility Principle (SRP)**
+   - A class should have only one reason to change.
+   - Each class should do one thing only.
+
+2. **O - Open/Closed Principle (OCP)**
+   - Classes should be open for extension but closed for modification.
+
+3. **L - Liskov Substitution Principle (LSP)**
+   - Derived classes should be substitutable for their base classes without breaking functionality.
+
+4. **I - Interface Segregation Principle (ISP)**
+   - No client should be forced to depend on methods it does not use.
+   - Better to create multiple small interfaces than one large one.
+
+5. **D - Dependency Inversion Principle (DIP)**
+   - High-level modules should not depend on low-level modules.
+   - Both should depend on abstractions (interfaces).
+   - Example: Use dependency injection with interfaces.
+
+----------------------------------------------------
+MULTIPLE INTERFACES
+----------------------------------------------------
+- In C#, a class cannot inherit from multiple classes (no multiple inheritance).
+- But a class CAN implement multiple interfaces.
+
+Example:
+public interface IReader { void Read(); }
+public interface IWriter { void Write(); }
+
+public class FileManager : IReader, IWriter
+{
+    public void Read() { Console.WriteLine("Reading file..."); }
+    public void Write() { Console.WriteLine("Writing file..."); }
+}
+
+----------------------------------------------------
+INTERFACES AS CONTRACTS
+----------------------------------------------------
+- Interfaces define rules that classes must follow.
+- Classes implementing the interface MUST provide implementation for all members.
+
+----------------------------------------------------
+INTERFACES & POLYMORPHISM
+----------------------------------------------------
+- Interfaces enable polymorphism: a single interface reference can point to multiple implementations.
+
+Example:
+public interface IPayment
+{
+    void Pay();
+}
+
+public class CreditCard : IPayment
+{
+    public void Pay() { Console.WriteLine("Paid with Credit Card"); }
+}
+
+public class UPI : IPayment
+{
+    public void Pay() { Console.WriteLine("Paid with UPI"); }
+}
+
+// Usage
+IPayment payment = new CreditCard();
+payment.Pay();   // Output: Paid with Credit Card
+
+payment = new UPI();
+payment.Pay();   // Output: Paid with UPI
+
+----------------------------------------------------

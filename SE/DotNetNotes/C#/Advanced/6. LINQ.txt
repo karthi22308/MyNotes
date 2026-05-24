@@ -1,0 +1,91 @@
+----------------------------------------
+LINQ (Language Integrated Query)
+
+-- Unified query syntax in C# to query collections, DB, XML, etc.
+-- Brings SQL-like querying directly into C#
+-- Strongly typed and IntelliSense supported
+
+Common LINQ Methods:
+    .Where()        -> filter data based on condition
+    .OrderBy()      -> sort ascending
+    .OrderByDescending() -> sort descending
+    .Select()       -> project/transform data into new form
+    .Skip(n)        -> skip first n items
+    .Take(n)        -> take first n items
+    .Max()          -> returns maximum value
+    .Min()          -> returns minimum value
+    .Sum()          -> returns sum of values
+    .Average()      -> returns average value
+    .Distinct()     -> remove duplicates
+    .GroupBy()      -> group elements by a key
+    .Join()         -> join 2 sequences
+    .Any()          -> returns true if any element matches
+    .All()          -> returns true if all match
+    .First()        -> returns first element (throws if empty)
+    .FirstOrDefault() -> first element or default(null/0)
+
+Note: 
+-- LINQ queries can be chained (fluent style)
+-- Works on in-memory collections (LINQ to Objects) and external data sources (LINQ to SQL, LINQ to XML)
+
+Sample:
+var result = students
+                .Where(s => s.Age > 18)
+                .OrderBy(s => s.Name)
+                .Select(s => s.Name);
+
+----------------------------------------
+Nullable Types
+
+-- By default, value types (int, bool, struct) cannot be null.
+-- Using "?" we can make them nullable.
+
+Example:
+    int? age = null;
+    if (age.HasValue)
+        Console.WriteLine(age.Value);
+    else
+        Console.WriteLine("No age provided");
+
+Properties/Usage:
+    .HasValue  -> returns true if value is not null
+    .Value     -> gets the actual value (throws if null)
+    Null-Coalescing Operator (??) -> provides default value if null
+
+Example:
+    int? x = null;
+    int y = x ?? 0; // y = 0
+
+Advantages:
+-- Useful for representing "no value" cases (like DB nulls)
+-- Helps in avoiding InvalidOperationException when value missing
+
+----------------------------------------
+Dynamic
+
+-- Introduced in C# 4.0
+-- Keyword: dynamic
+-- Type resolution is deferred until runtime (late binding)
+-- Can change type at runtime
+
+Example:
+    dynamic name = "Karthi";
+    Console.WriteLine(name.ToUpper());  // works
+    name = 4;
+    Console.WriteLine(name + 2);        // also works, no compile error
+
+Difference:
+-- Static languages (C#, Java): type checked at compile time
+-- Dynamic languages (Python, Ruby, JS): type checked at runtime
+-- Dynamic in C# was built on DLR (Dynamic Language Runtime)
+
+Pros:
+-- Easier interop with COM, reflection, and dynamic APIs (e.g., Office automation, JSON, XML)
+-- Faster prototyping, flexible coding
+
+Cons:
+-- No compile-time checking (errors only at runtime)
+-- Performance cost (slower than static)
+-- Harder to maintain for large projects
+
+----------------------------------------

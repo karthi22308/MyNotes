@@ -1,0 +1,128 @@
+----------------------------------------------------
+POLYMORPHISM (Third Pillar of OOP)
+----------------------------------------------------
+Definition:
+- "Many forms" → Same method behaves differently depending on the object.
+- Achieved in C# through:
+  * Method Overloading (Compile-time polymorphism)
+  * Method Overriding (Runtime polymorphism)
+
+Encapsulation Reminder:
+- Keeping data (fields) and behavior (methods) inside one class, hiding complexity.
+
+----------------------------------------------------
+VIRTUAL FUNCTIONS & METHOD OVERRIDING
+----------------------------------------------------
+- A base class method marked as `virtual` can be overridden in derived classes.
+- Derived class uses the `override` keyword to provide a new implementation.
+
+Example:
+public class Animal
+{
+    public virtual void Speak()
+    {
+        Console.WriteLine("Animal makes a sound");
+    }
+}
+
+public class Dog : Animal
+{
+    public override void Speak()
+    {
+        Console.WriteLine("Dog barks");
+    }
+}
+
+Animal a = new Animal();
+a.Speak();   // Output: Animal makes a sound
+
+Animal b = new Dog();
+b.Speak();   // Output: Dog barks (runtime polymorphism)
+
+----------------------------------------------------
+ABSTRACT CLASSES & MEMBERS
+----------------------------------------------------
+- `abstract` keyword: Defines a member with no implementation.
+- Abstract methods MUST be implemented by derived classes.
+- If a class contains abstract methods, the class itself must be abstract.
+- Abstract methods are inherently virtual.
+- Abstract classes can have:
+  * Abstract methods (no body).
+  * Non-abstract methods (with implementation).
+- Abstract classes cannot be instantiated.
+
+Example:
+public abstract class Shape
+{
+    public abstract void Draw();  // No implementation
+    public void Info()
+    {
+        Console.WriteLine("This is a shape.");
+    }
+}
+
+public class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a Circle");
+    }
+}
+
+// Usage:
+Shape s = new Circle();
+s.Draw();   // Output: Drawing a Circle
+s.Info();   // Output: This is a shape.
+
+----------------------------------------------------
+ABSTRACT CLASS vs INTERFACE
+----------------------------------------------------
+Abstract Class:
+- Can have abstract + non-abstract methods.
+- Can have fields, constructors, access modifiers.
+- Supports single inheritance only.
+- Provides base functionality + polymorphism.
+
+Interface:
+- All members are abstract (by default).
+- Cannot contain fields or constructors (until C# 8 default interface methods).
+- A class can implement multiple interfaces (multiple inheritance of type).
+- Provides a contract only (no implementation, unless default methods in newer C#).
+
+----------------------------------------------------
+SEALED CLASSES & MEMBERS
+----------------------------------------------------
+- `sealed` prevents inheritance of a class OR overriding of a method.
+- Opposite of `abstract`.
+- Sealed classes are slightly faster (runtime optimizations).
+- Useful when:
+  * Class is complete and should not be extended.
+  * Preventing further method overriding.
+
+Example (sealed class):
+public sealed class FinalClass
+{
+    public void Show()
+    {
+        Console.WriteLine("This class cannot be inherited");
+    }
+}
+
+// Example (sealed method):
+public class Base
+{
+    public virtual void Display()
+    {
+        Console.WriteLine("Base display");
+    }
+}
+
+public class Derived : Base
+{
+    public sealed override void Display()
+    {
+        Console.WriteLine("Derived display (sealed, no further override allowed)");
+    }
+}
+
+----------------------------------------------------

@@ -1,0 +1,15 @@
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\bin\Debug\net8.0\ConsoleApplication.exe
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\bin\Debug\net8.0\ConsoleApplication.deps.json
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\bin\Debug\net8.0\ConsoleApplication.runtimeconfig.json
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\bin\Debug\net8.0\ConsoleApplication.dll
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\bin\Debug\net8.0\ConsoleApplication.pdb
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ConsoleApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ConsoleApplication.AssemblyInfoInputs.cache
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ConsoleApplication.AssemblyInfo.cs
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ConsoleApplication.sourcelink.json
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ConsoleApplication.dll
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\refint\ConsoleApplication.dll
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ConsoleApplication.pdb
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ConsoleApplication.genruntimeconfig.cache
+C:\MyNotes\SE\DotNetNotes\C#\Intermediate\Console app\ConsoleApplication\ConsoleApplication\obj\Debug\net8.0\ref\ConsoleApplication.dll

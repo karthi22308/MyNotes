@@ -1,0 +1,78 @@
+SELECT Statement in Detail
+--------------------
+
+Basic Syntax (Execution Order)
+--------------------
+SELECT [columns or expressions]
+FROM [table_name]
+WHERE [conditions]
+GROUP BY [columns]
+HAVING [group_condition]
+ORDER BY [columns];
+
+-- This is the correct logical order of execution in SQL
+
+--------------------
+
+SELECT TOP Records
+--------------------
+- Used to limit the number of records returned.
+- Useful when you need only the first few results.
+
+Example:
+SELECT TOP 10 * FROM Employees;
+
+--------------------
+
+Operators, Expressions, and Conditions
+--------------------
+
+Types of Operators:
+--------------------
+1. Arithmetic Operators:  
+   + (Add), - (Subtract), * (Multiply), / (Divide), % (Modulus)
+
+2. Relational Operators:  
+   =, >, <, >=, <=, != or <>
+
+3. Logical Operators:  
+   AND, OR, NOT,  
+   BETWEEN,  
+   IN, NOT IN,  
+   IS NULL, IS NOT NULL,  
+   LIKE, UNIQUE
+
+--------------------
+
+Expressions
+--------------------
+- An expression is a combination of operators, values, and fields.
+- Often used in the WHERE clause or SELECT list.
+
+Examples:
+
+Boolean Expression:
+SELECT * FROM Students  
+WHERE Age = 24;
+
+Numerical Expression:
+SELECT * FROM Employees  
+WHERE Age * 2 > 50;
+
+Date Expression:
+SELECT * FROM Employees  
+WHERE DOB > '1996-01-01';
+
+--------------------
+
+Conditions
+--------------------
+- A condition is a combination of one or more expressions using logical operators.
+- It evaluates to either TRUE or FALSE.
+- Used mainly in WHERE and HAVING clauses to filter records.
+
+Example:
+SELECT * FROM Employees  
+WHERE Salary > 50000 AND Department = 'IT';
+
+--------------------

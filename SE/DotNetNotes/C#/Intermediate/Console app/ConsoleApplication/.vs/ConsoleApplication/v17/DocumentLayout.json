@@ -1,0 +1,57 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MyNotes\\SE\\DotNetNotes\\C#\\Intermediate\\Console app\\ConsoleApplication\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF6DDB9-B496-4B52-A6ED-53F7C0E157F9}|ConsoleApplication\\ConsoleApplication.csproj|c:\\mynotes\\se\\dotnetnotes\\c#\\intermediate\\console app\\consoleapplication\\consoleapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4AF6DDB9-B496-4B52-A6ED-53F7C0E157F9}|ConsoleApplication\\ConsoleApplication.csproj|solutionrelative:consoleapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4AF6DDB9-B496-4B52-A6ED-53F7C0E157F9}|ConsoleApplication\\ConsoleApplication.csproj|c:\\mynotes\\se\\dotnetnotes\\c#\\intermediate\\console app\\consoleapplication\\consoleapplication\\consoleapplication.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{4AF6DDB9-B496-4B52-A6ED-53F7C0E157F9}|ConsoleApplication\\ConsoleApplication.csproj|solutionrelative:consoleapplication\\consoleapplication.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConsoleApplication",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\C#\\Intermediate\\Console app\\ConsoleApplication\\ConsoleApplication\\ConsoleApplication.csproj",
+              "RelativeDocumentMoniker": "ConsoleApplication\\ConsoleApplication.csproj",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\C#\\Intermediate\\Console app\\ConsoleApplication\\ConsoleApplication\\ConsoleApplication.csproj",
+              "RelativeToolTip": "ConsoleApplication\\ConsoleApplication.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-08-23T06:59:46.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\MyNotes\\SE\\DotNetNotes\\C#\\Intermediate\\Console app\\ConsoleApplication\\ConsoleApplication\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication\\Program.cs",
+              "ToolTip": "C:\\MyNotes\\SE\\DotNetNotes\\C#\\Intermediate\\Console app\\ConsoleApplication\\ConsoleApplication\\Program.cs",
+              "RelativeToolTip": "ConsoleApplication\\Program.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAwwB4AAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T05:51:57.151Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

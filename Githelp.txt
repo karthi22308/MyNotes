@@ -1,0 +1,9 @@
+git add . ->to add all files
+git commit -> opens vim
+
+give some commit message and the give:
+:wq
+to save and close
+
+
+git push -u origin main

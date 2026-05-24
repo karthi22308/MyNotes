@@ -1,0 +1,46 @@
+Classes - Building Block of Applications
+----------------------------------------
+
+Anatomy:
+- Data is represented by fields.
+- Object is an instance of a class.
+
+Syntax to declare a class:
+public class Name
+{
+}
+
+- Use camelCase for parameters and variables.
+
+Creating Objects:
+var obj = new ClassName();
+
+Instance vs Static Methods:
+- Instance methods -> Need objects to call them.
+- Static methods -> Can be called without objects (example: Console).
+
+Constructors:
+- Called when an instance of a class is created.
+- No return type (not even void).
+- If user does not specify, the compiler creates a default constructor during compilation.
+- Default constructor assigns default values.
+
+Constructor Overloading:
+- Possible by changing parameters.
+
+Shortcut:
+- cw + Tab -> Console.WriteLine()
+
+Example:
+public class Test
+{
+    public Test()
+    {
+        // default constructor
+    }
+
+    public Test(int id) : this()
+    {
+        // calls the default constructor before execution
+    }
+}

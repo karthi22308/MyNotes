@@ -1,0 +1,111 @@
+--------------------------------------------
+LISTS
+--------------------------------------------
+- Ordered collection of elements
+- Indexable
+- Mutable (can be changed after creation)
+- Can store heterogeneous elements
+
+Ways to create:
+    lst = list()
+    lst = []
+
+    type(lst) -> <class 'list'>
+
+Accessing elements:
+    lst[0] -> first element
+    len(lst) -> length of list
+
+Slicing:
+    lst[1:4] -> elements from index 1 to 3
+    lst[::-1] -> reversed list
+
+Updating elements:
+    lst[0] = 100   # updates first element
+
+⚠️ Note: Strings are immutable, but lists are mutable.
+
+--------------------------------------------
+COMMON LIST METHODS
+--------------------------------------------
+.append(obj)        -> adds element at end
+.insert(index,obj)  -> inserts element at given index
+.pop()              -> removes & returns last element
+.pop(index)         -> removes & returns element at index
+.remove(obj)        -> removes first occurrence of element
+.reverse()          -> reverses list in place
+.sort()             -> sorts list (ascending)
+.sort(reverse=True) -> sorts list (descending)
+
+--------------------------------------------
+APPEND vs EXTEND
+--------------------------------------------
+.append(x) -> adds `x` as a single element
+    lst = [1,2]
+    lst.append([3,4])
+    # [1, 2, [3,4]]
+
+.extend(iterable) -> adds each element individually
+    lst = [1,2]
+    lst.extend([3,4])
+    # [1,2,3,4]
+
+Alternative:
+    lst = lst + [5,6]   # same as extend
+
+⚠️ .sort() doesn’t work on heterogeneous lists.
+
+--------------------------------------------
+JOIN OPERATOR
+--------------------------------------------
+lst = ["a","b","c"]
+"-".join(lst) -> "a-b-c"
+
+--------------------------------------------
+LIST COMPREHENSIONS
+--------------------------------------------
+Basic:
+    new_lst = [x**2 for x in lst]
+
+With condition:
+    new_lst = [x**2 for x in lst if x % 2 == 0]
+
+With if-else:
+    new_lst = [x**2 if x%2==0 else x for x in lst]
+
+--------------------------------------------
+MULTI-DIMENSIONAL LISTS
+--------------------------------------------
+lst2d = [[1,2,3],[4,5,6]]
+
+--------------------------------------------
+LIST MULTIPLICATION
+--------------------------------------------
+[1] * 5 -> [1,1,1,1,1]
+
+[[None]*5]*5 -> creates 5 references of same list
+⚠️ Changes in one row affect all rows.
+
+--------------------------------------------
+COPYING LISTS
+--------------------------------------------
+lst = [1,2,3]
+abc = lst      # both point to same list
+abc.append(4)
+print(lst)     # [1,2,3,4]
+
+Copy correctly:
+    abc = lst.copy()
+
+--------------------------------------------
+N-ROTATED ARRAY
+--------------------------------------------
+lst = [1,2,3,4,5,6]
+n = 4
+
+for i in range(n):
+    k = lst.pop()
+    lst.insert(0, k)
+
+print(lst)  # rotated list
+--------------------------------------------

@@ -1,0 +1,92 @@
+--------------------
+FILE HANDLING
+--------------------
+
+Steps:
+1. Open a file
+2. Perform actions (read/write/append)
+3. Close the file
+
+--------------------
+OPENING FILES
+--------------------
+f = open("filename")      # default mode = "r" (read)
+
+Modes:
+    "r"  → read (error if file doesn’t exist)
+    "w"  → write (creates new, overwrites if exists)
+    "a"  → append (creates if not exists, writes at end)
+    "t"  → text mode (default)
+    "b"  → binary mode
+
+Examples:
+    f = open("data.txt", 'a')   # append mode
+    f = open("data.txt", 'w')   # write mode (overwrites)
+
+f.close() → closes file (important to prevent memory leaks)
+
+--------------------
+CONTEXT MANAGER
+--------------------
+with open("file.txt", "r") as f:
+    data = f.read()
+# file is automatically closed
+
+--------------------
+WRITING TO FILE
+--------------------
+with open("file.txt", "w") as f:
+    f.write("Hello Python!")
+
+with open("file.txt", "a") as f:
+    f.write("\nAppended line.")
+
+--------------------
+READING FROM FILE
+--------------------
+with open("file.txt", "r") as f:
+    data = f.read()      # reads entire file
+    data = f.read(10)    # reads 10 characters
+
+f.seek(5) → moves file pointer to position 5
+
+--------------------
+READING LINE BY LINE
+--------------------
+Method 1:
+with open("file.txt", "r") as f:
+    for line in f:
+        print(line.strip())   # strip removes \n
+
+Method 2:
+with open("file.txt", "r") as f:
+    lines = f.readlines()
+print(lines)  # returns list of lines
+
+--------------------
+APPENDING TO FILE
+--------------------
+with open("file.txt", "a") as f:
+    f.write("New data...")
+
+--------------------
+UPDATING CONTENT
+--------------------
+import os
+
+filename = "test.txt"
+
+# read content
+with open(filename, "r") as f:
+    data = f.readlines()
+
+# modify last line
+data[-1] = "Python is FUN!!\n"
+
+# write to temp file
+with open("temp.txt", "w") as f:
+    f.writelines(data)
+
+# replace old file
+os.remove(filename)
+os.rename("temp.txt", filename)

@@ -1,0 +1,15 @@
+C:\MyNotes\CPP_DSApractice-main\interview\interview\bin\Debug\net8.0\interview.exe
+C:\MyNotes\CPP_DSApractice-main\interview\interview\bin\Debug\net8.0\interview.deps.json
+C:\MyNotes\CPP_DSApractice-main\interview\interview\bin\Debug\net8.0\interview.runtimeconfig.json
+C:\MyNotes\CPP_DSApractice-main\interview\interview\bin\Debug\net8.0\interview.dll
+C:\MyNotes\CPP_DSApractice-main\interview\interview\bin\Debug\net8.0\interview.pdb
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\interview.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\interview.AssemblyInfoInputs.cache
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\interview.AssemblyInfo.cs
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\interview.csproj.CoreCompileInputs.cache
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\interview.sourcelink.json
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\interview.dll
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\refint\interview.dll
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\interview.pdb
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\interview.genruntimeconfig.cache
+C:\MyNotes\CPP_DSApractice-main\interview\interview\obj\Debug\net8.0\ref\interview.dll

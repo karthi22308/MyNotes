@@ -1,0 +1,117 @@
+Program.cs
+
+The app starts.
+
+Services and dependencies are registered.
+
+Middlewares are configured.
+
+The HTTP request pipeline is built and executed.
+--------------------------------------------------------------
+Dependency Injection:
+
+builder.Services.AddScoped<ICouponService, CouponService>();
+
+
+AddSingleton → same instance reused for the whole app lifetime.
+
+AddScoped → one instance per HTTP request (most common in web apps).
+
+AddTransient → new instance every time it’s requested.
+
+--------------------------------------------------------
+ Middlewares — what are they?
+
+Middlewares are components that process HTTP requests and responses in a pipeline.
+
+Every incoming HTTP request passes through a sequence of middlewares — each can:
+
+Modify the request,
+
+Handle it directly,
+
+Or pass it on to the next middleware.
+
+Each middleware can also do something after the next one finishes (on the way back out).
+
+Think of it as a chain of responsibility.
+
+Middlewares in your program
+
+Let’s look at what you have:
+
+if (!app.Environment.IsDevelopment())
+{
+    app.UseExceptionHandler("/Home/Error");
+    app.UseHsts();
+}
+
+app.UseHttpsRedirection();
+app.UseRouting();
+app.UseAuthorization();
+
+app.MapStaticAssets();
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}")
+    .WithStaticAssets();
+
+app.Run();
+
+
+Let’s break that down in order (because the order matters):
+
+Middleware	What it does
+UseExceptionHandler("/Home/Error")	Handles exceptions globally, redirecting to /Home/Error for user-friendly error pages in production.
+UseHsts()	Adds HTTP Strict Transport Security headers — enforces HTTPS.
+UseHttpsRedirection()	Redirects all HTTP traffic to HTTPS.
+UseRouting()	Enables endpoint routing — allows mapping routes to controllers.
+UseAuthorization()	Enforces authorization rules. (You’d use [Authorize] attributes in controllers.)
+MapStaticAssets()	Serves static files (CSS, JS, images) from wwwroot or similar folders.
+MapControllerRoute(...)	Defines MVC route pattern (/controller/action/id).
+app.Run()	Starts the pipeline and listens for incoming HTTP requests.
+
+Each UseXYZ() is a middleware.
+-------------------------------------------------------------
+
+
+D Injection Techniques (Ways to Inject Dependencies)
+
+a. Constructor Injection (most common ✅)
+
+Dependencies are passed through the class constructor.
+
+public class CouponController
+{
+    private readonly ICouponService _couponService;
+
+    public CouponController(ICouponService couponService)
+    {
+        _couponService = couponService;
+    }
+}
+
+b. Method Injection
+
+Dependencies are passed into a method parameter.
+
+public void ApplyDiscount(ICouponService couponService)
+{
+    couponService.UseCoupon();
+}
+
+
+Used rarely — mainly for one-time or optional dependencies.
+
+c. Property Injection
+
+Dependencies are set through public properties.
+
+public class CouponController
+{
+    public ICouponService CouponService { get; set; }
+}
+
+
+Used less frequently — not supported automatically by the built-in DI unless done manually.
+

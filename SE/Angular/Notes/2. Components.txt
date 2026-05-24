@@ -1,0 +1,171 @@
+ANGULAR NOTES – COMPONENTS, SIGNALS, DIRECTIVES, PIPES
+======================================================
+
+--------------------
+11. Components
+--------------------
+
+Component:
+• A component is the basic building block of an Angular application
+• Controls a portion of the UI (view)
+• Consists of:
+  - TypeScript (logic)
+  - HTML (template)
+  - CSS (styles)
+
+Create a component using Angular CLI:
+ng generate component component-name
+(or)
+ng g c component-name
+
+This creates:
+• component-name.component.ts
+• component-name.component.html
+• component-name.component.css
+• component-name.component.spec.ts
+
+
+--------------------
+12. Angular Signals
+--------------------
+
+Signals:
+• Signals are a reactive state management feature in Angular
+• Used to track and react to state changes efficiently
+• UI automatically updates when signal values change
+• More predictable and performant than traditional change detection
+
+Definition:
+A Signal is a wrapper around a value that notifies Angular when the value changes.
+
+Example:
+
+component.ts
+------------
+import { signal } from '@angular/core';
+
+count = signal(0);
+
+increment() {
+  this.count.set(this.count() + 1);
+}
+
+component.html
+--------------
+<p>Count: {{ count() }}</p>
+<button (click)="increment()">Increase</button>
+
+Key Points:
+• Signals are functions → accessed using ()
+• UI reacts automatically to state changes
+• Ideal for reactive UI updates
+
+
+--------------------
+13. Directives
+--------------------
+
+Directive:
+• A directive is used to manipulate the DOM
+• Changes appearance, behavior, or structure of elements
+
+Types of Directives:
+
+--------------------
+a) Component Directive
+--------------------
+• Every component is a directive with a template
+• Uses @Component decorator
+
+Example:
+<app-header></app-header>
+
+This is a component directive rendered in HTML.
+
+
+--------------------
+b) Structural Directives
+--------------------
+• Change the structure of the DOM
+• Add or remove elements
+
+Common Structural Directives:
+• *ngIf
+• *ngFor
+• *ngSwitch
+
+Examples:
+
+ngIf:
+<div *ngIf="isLoggedIn">Welcome User</div>
+
+ngFor:
+<li *ngFor="let item of items">
+  {{ item }}
+</li>
+
+
+--------------------
+c) Attribute Directives
+--------------------
+• Change appearance or behavior of an existing element
+• Do not add/remove elements
+
+Common Attribute Directives:
+• ngClass
+• ngStyle
+
+Example – ngClass:
+<div [ngClass]="{'active': isActive}">
+  Status
+</div>
+
+Example – ngStyle:
+<div [ngStyle]="{'color': 'red'}">
+  Error Message
+</div>
+
+
+--------------------
+14. Pipes
+--------------------
+
+Pipe:
+• A pipe is used to transform data in the template
+• Converts data into a required format
+• Applied using the pipe (|) symbol
+
+Definition:
+Pipes take an input value and return a transformed output.
+
+Syntax:
+{{ value | pipeName }}
+
+Common Built-in Pipes:
+
+Uppercase Pipe:
+{{ name | uppercase }}
+
+Lowercase Pipe:
+{{ name | lowercase }}
+
+Currency Pipe:
+{{ amount | currency:'INR' }}
+
+Date Pipe:
+{{ today | date:'shortDate' }}
+
+Key Points:
+• Pipes are used only in templates
+• Pipes do not modify original data
+• Custom pipes can also be created
+
+
+--------------------
+15. Summary
+--------------------
+
+• Components control UI sections
+• Signals manage reactive state efficiently
+• Directives manipulate DOM behavior and structure
+• Pipes transform data for display

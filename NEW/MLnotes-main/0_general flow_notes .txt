@@ -1,0 +1,39 @@
+data science notes
+
+the machine learning process :
+*data preprocessing
+-import the data
+-clean the data
+-split into training ad test sets
+
+* modelling 
+-build the model
+-train the model
+-make predictions
+
+*evaluation
+-calculate performance metrics
+--------------------------------------------------------------------------------------------------
+split into training ad test sets
+
+train the model with 80% data and test it against 20% data 
+
+
+--------------------------------------------------------------------------------------------------
+feature scaling -- applied to columns
+done to find optimal solution:
+
+normalization:
+cell a = (cell a - column minimum)/(col max- col min) -- range between 0-1
+
+
+standardization 
+cell a = (cell a - col average )/standard deviation
+
+--------------------------------------------------------------------------------------------------
+
+
+example if there are three countries three columns are created if the row belongs to country a that colun alone will be 1 others will be zero
+
+
+

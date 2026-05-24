@@ -1,0 +1,96 @@
+------------------------------
+AZURE APP SERVICE - GENERAL SETTINGS & CUSTOM DOMAIN
+------------------------------
+
+GENERAL SETTINGS:
+
+- **Environment Variables**:
+  - Use App Settings to store secrets and configuration like:
+    - Database connection strings
+    - API keys
+    - Feature flags
+
+- These environment variables:
+  - Are available at runtime inside the application
+  - Can be unique for each **deployment slot** (e.g., staging slot can use staging DB)
+
+------------------------------
+CUSTOM DOMAIN SETUP FOR APP SERVICE
+------------------------------
+
+By default:
+- App runs at a domain like `yourapp.azurewebsites.net`
+
+To use your own domain:
+
+1. Go to your Web App → **Settings → Custom Domains**
+
+2. You can:
+   - Buy a custom domain directly from **Azure**
+   - Or link a domain purchased from another provider
+
+3. Steps to link external domain:
+   - Add **CNAME** or **A Record** in your domain provider's DNS settings
+   - Verify ownership through Azure portal
+   - Bind the domain to your app
+
+⚠️ Tip:
+- For HTTPS (SSL/TLS), enable **TLS/SSL binding** and attach a certificate
+- Azure also provides **Free App Service Managed Certificates**
+
+------------------------------
+
+
+Auto Scaling -> scales automatically based on request
+allocates and deallocates automatically
+two ways to scale:
+
+rules based : like time based or cpu based scaling descaling
+
+auto scaling Microsoft takes care of it
+
+
+
+
+scale out -- adding instances
+scale up - plans increasing tier --increses power of computers 
+-------------------------------------
+ Scaling Up (Vertical Scaling) mostly done manually
+Means increasing the power (CPU, RAM, disk) of a single instance (i.e., one virtual machine or app instance).
+
+🔧 Example:
+You have one Azure VM with 4 GB RAM → You scale up → Now it becomes 8 GB RAM, more CPU, etc.
+
+This is like upgrading your laptop from 4 GB to 16 GB RAM.
+-------------------------------
+Scaling Out (Horizontal Scaling)
+Means increasing the number of instances (clones of the same app or VM).
+
+📈 Example:
+You have one instance of a web app → You scale out → Now you have 3 instances of that same app, sharing the traffic.
+
+This is like adding more laptops to do the same job in parallel.
+-----------------------
+Diagnostic Logs
+
+
+httpp logs and more can be seen here
+
+console logs application logs also
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+# CRUD Operations in ASP.NET Core Web API
+
+## Sample Controller: Student
+
+```csharp
+namespace WebApI.Controllers
+{
+    [Route("api/[controller]")]
+    [ApiController]
+    public class StudentController : ControllerBase
+    {
+        // Constructor injection of database DbContext
+        private readonly StudentDbContext dbcontext;
+
+        public StudentController(StudentDbContext dbContext)
+        {
+            this.dbcontext = dbContext;
+        }
+
+        // GET all students
+        [HttpGet]
+        public IActionResult GetStudents()
+        {
+            var students = dbcontext.Students.ToList();
+            return Ok(students);
+        }
+
+        // GET student by ID
+        [HttpGet]
+        [Route("{id:Guid}")]
+        public IActionResult GetStudent([FromRoute] Guid id)
+        {
+            var student = dbcontext.Students.Find(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+            return Ok(student);
+        }
+    }
+}
+```
+
+## DTOs (Data Transfer Objects)
+
+* Used to transfer data between different layers
+* Represent a subset of the domain models
+* Only DTOs should be sent to the client
+
+### Flow:
+
+```
+Client <-> DTO <-> API <-> Domain Model <-> Database
+```
+
+### Advantages of DTOs:
+
+* Separation of concerns
+* Improved performance
+* Enhanced security
+* Easier versioning
+* Decouples domain models from client results
+
+## Attribute Usage:
+
+* `[FromRoute]` → Use for values coming from the route (e.g., ID)
+* `[FromBody]` → Use for values sent in the request body (e.g., creating/updating records)

@@ -1,0 +1,68 @@
+------------------------------
+AZURE CONTAINERS & RELATED SERVICES
+------------------------------
+
+WHAT IS A CONTAINER?
+
+- A container is a **package of an application** and **all its dependencies** (libraries, config files, runtime).
+- This package is called a **container image**.
+- Containers are:
+  - Portable
+  - Lightweight
+  - Faster to deploy than traditional apps
+  - Ideal for microservices
+
+------------------------------
+DOCKER (Container Runtime)
+------------------------------
+
+- Docker is the most commonly used **container runtime**.
+- You need Docker to:
+  - **Build** container images
+  - **Run** containers locally
+- Best runs on **Linux**, but can be run on **Windows (via WSL/Emulator)**
+
+------------------------------
+AZURE CONTAINER REGISTRY (ACR)
+------------------------------
+
+- Azure Container Registry (ACR) is a **private registry** to:
+  - Store
+  - Manage
+  - Secure container images
+- Similar to Docker Hub, but integrated with Azure
+
+------------------------------
+CONTAINER ORCHESTRATION
+------------------------------
+
+- For **large-scale container deployment**, orchestration is needed.
+- Azure provides: **Azure Kubernetes Service (AKS)**
+
+**Kubernetes (K8s):**
+- Manages container clusters
+- Handles scaling, load balancing, self-healing
+- Powerful but **complex and expensive**
+
+------------------------------
+AZURE CONTAINER INSTANCE (ACI)
+------------------------------
+
+- Azure Container Instance allows you to:
+  - Upload and run a container image without orchestration
+  - Good for short-running or simple container workloads
+
+💡 Azure App Service can also run container images (as an alternative to ACI or AKS)
+
+------------------------------
+STATELESS APPLICATIONS
+------------------------------
+
+- Stateless means:
+  - Every request to the container is **independent**
+  - No memory or session retained between requests
+- Implications:
+  - Authentication is needed on each request
+  - No caching or history available by default
+
+------------------------------

@@ -1,0 +1,90 @@
+----------------------------------------------------
+OBJECT INITIALIZERS
+----------------------------------------------------
+- Used to quickly initialize an object without explicitly writing a constructor.
+- Uses the default constructor under the hood.
+
+Example:
+var person = new Person
+{
+    FirstName = "name",
+    LastName = "lname"
+};
+
+----------------------------------------------------
+METHODS
+----------------------------------------------------
+Method Signature = Method name + Number of parameters + Type of parameters
+
+Example:
+public void Greet(string name, int age)
+
+----------------------------------------------------
+METHOD OVERLOADING
+----------------------------------------------------
+- Same method name, but different signatures (different parameter list).
+
+Example:
+public void Print(string message)
+public void Print(string message, int count)
+
+----------------------------------------------------
+REF MODIFIER
+----------------------------------------------------
+- Passes parameter by reference.
+- Changes inside the method are reflected outside.
+
+Example:
+public class Sample
+{
+    public void Add(ref int a)
+    {
+        a += 2;
+    }
+}
+
+var a = 1;
+sample.Add(ref a);  // a becomes 3
+
+----------------------------------------------------
+OUT MODIFIER
+----------------------------------------------------
+- Passes parameter by reference (like ref).
+- Difference: the variable does NOT need to be initialized before passing.
+- The method MUST assign a value before returning.
+
+Example:
+public class Sample
+{
+    public void Add(out int a)
+    {
+        a = 2;  // must assign before returning
+        a += 2;
+    }
+}
+
+int a; 
+sample.Add(out a);  // a = 4
+
+----------------------------------------------------
+PARAMS KEYWORD
+----------------------------------------------------
+- Allows passing variable number of arguments as an array.
+
+Example:
+static void Main(string[] args)
+{
+    Console.WriteLine(Add(1, 2, 3, 4, 5, 6));
+}
+
+public static int Add(params int[] ints)
+{
+    var output = 0;
+    foreach (int i in ints)
+    {
+        output += i;
+    }
+    return output;
+}
+// Output: 21
+----------------------------------------------------

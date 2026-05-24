@@ -1,0 +1,64 @@
+# Programming Concepts Notes
+
+## Synchronous vs Asynchronous Programming
+
+### Synchronous:
+- Execution stops during long operations
+- Poor performance
+- Handles fewer requests
+
+### Asynchronous (async/await):
+- Non-blocking execution
+- Better performance
+- Handles more requests
+
+Implementation Example:
+public async Task<IActionResult> GetStudents()
+{
+    var students = await dbContext.Students.ToListAsync();
+    return Ok(students);
+}
+
+Key Rules:
+1. Return type: Task<ReturnType>
+2. Add 'async' modifier
+3. Use 'await' for DB operations
+4. Note: Remove() has no async version
+
+## Repository Pattern
+
+### Purpose:
+- Separates data access layer
+- Hides implementation details
+- Provides abstraction
+
+Structure:
+Controller -> Repository -> Database
+
+Benefits:
+- Centralized data access
+- Easier testing
+- Reduced duplication
+
+## AutoMapper
+
+### Purpose:
+- Object-to-object mapping
+- Simplifies conversions between:
+  - DTOs and Domain Models
+  - ViewModels and Entities
+
+Implementation Steps:
+1. Create mapping Profile class
+2. Register in Program.cs
+3. Inject IMapper where needed
+
+Example Profile:
+public class AutoMapperProfile : Profile
+{
+    public AutoMapperProfile() 
+    {
+        CreateMap<Student, StudentDto>();
+        CreateMap<StudentDto, Student>();
+    }
+}

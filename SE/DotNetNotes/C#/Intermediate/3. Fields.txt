@@ -1,0 +1,122 @@
+----------------------------------------------------
+FIELDS
+----------------------------------------------------
+- Variables declared inside a class (but outside methods).
+- Used to store data for objects.
+
+readonly fields:
+- Can be initialized only once.
+- Either at declaration or in the constructor.
+- Once assigned, cannot be changed.
+
+Example:
+public class Sample
+{
+    public readonly int MyValue = 10;
+}
+
+----------------------------------------------------
+ACCESS MODIFIERS
+----------------------------------------------------
+public     -> Accessible everywhere.
+private    -> Accessible only within the same class.
+protected  -> Accessible within the same class and derived classes.
+internal   -> Accessible within the same assembly (project).
+protected internal -> Accessible within the same assembly OR in derived classes.
+private protected -> Accessible within the containing class OR derived classes in the same assembly.
+
+----------------------------------------------------
+OOPS PRINCIPLES
+----------------------------------------------------
+1. Encapsulation -> Information hiding (using private fields and public properties).
+2. Inheritance   -> Deriving one class from another (base → derived).
+3. Polymorphism  -> Many forms (method overloading and overriding).
+4. Abstraction   -> Hiding implementation details and showing only essential features.
+
+Example analogy (Waitress - Chef):
+- Customer orders food → Waitress takes order (interface).
+- Waitress passes order to chef → Chef cooks food (implementation hidden).
+- Customer gets food without knowing how it was cooked (abstraction + encapsulation).
+
+----------------------------------------------------
+NAMING CONVENTIONS
+----------------------------------------------------
+- Class names → PascalCase
+- Variables, method parameters → camelCase
+- Private fields → start with "_" (underscore)
+  Example: private int _count;
+
+----------------------------------------------------
+PROPERTIES
+----------------------------------------------------
+- Getter/Setter methods for accessing private fields.
+- Provide controlled access to fields.
+
+Auto-implemented Properties:
+- Compiler creates a hidden private field automatically.
+
+Example:
+public class Person
+{
+    public string Name { get; set; }
+}
+// Equivalent to having a hidden private field
+
+Tool:
+- ILDASM (Intermediate Language Disassembler)
+- Can be used to see the compiler-generated code.
+- Usage: ildasm consoleapp.dll
+
+----------------------------------------------------
+INDEXERS
+----------------------------------------------------
+- Allow objects to be indexed like arrays.
+- Provide array-like access to class objects.
+
+Example:
+public class Sample
+{
+    private string[] names = new string[5];
+
+    public string this[int index]
+    {
+        get { return names[index]; }
+        set { names[index] = value; }
+    }
+}
+
+Sample obj = new Sample();
+obj[0] = "Hello";
+Console.WriteLine(obj[0]);  // Output: Hello
+
+----------------------------------------------------
+DICTIONARY IN C#
+----------------------------------------------------
+- Collection of key-value pairs.
+- Keys must be unique.
+- Very fast lookups (like a hash table).
+
+Syntax:
+Dictionary<TKey, TValue> dict = new Dictionary<TKey, TValue>();
+
+Example:
+var dict = new Dictionary<int, string>();
+dict.Add(1, "Apple");
+dict.Add(2, "Banana");
+
+// Access
+Console.WriteLine(dict[1]); // Output: Apple
+
+// Iterate
+foreach (var kvp in dict)
+{
+    Console.WriteLine($"Key: {kvp.Key}, Value: {kvp.Value}");
+}
+
+Common methods:
+- Add(key, value)
+- Remove(key)
+- ContainsKey(key)
+- ContainsValue(value)
+- TryGetValue(key, out value)
+----------------------------------------------------

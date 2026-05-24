@@ -1,0 +1,110 @@
+\ 1. Azure Setup
+🔹 Create App Service
+Go to Azure Portal > App Services > Create
+
+Runtime stack: .NET Core (Choose your version)
+
+OS: Windows (recommended for most .NET apps)
+
+Region: closest to your users
+
+Pricing: Free/F1 (for testing) or Basic/Standard (for production)
+
+🔹 Create SQL Database
+Azure Portal > SQL databases > Create
+
+Choose SQL Authentication (username & password)
+
+Use locally-redundant backup
+
+Choose a basic tier (e.g., Basic or S0) for small apps
+
+🔹 Configure Networking
+Go to SQL Server (not database) > Networking
+
+Add client IP
+
+Turn ON "Allow Azure services and resources to access this server"
+
+✅ 2. Local Publish Preparation
+🔹 Add Your Azure Account in Visual Studio
+Go to Tools > Options > Accounts
+
+Sign in with your Azure account
+
+🔹 Publish the App
+Right-click on your .NET Web API project > Publish
+
+Select Azure > App Service (Windows) > Select or Create your App Service
+
+Click Finish
+
+✅ 3. Configure the Database Connection
+🔹 App Settings
+After publish, go to Azure Portal > App Services > Configuration
+
+Add ConnectionStrings:DefaultConnection with the SQL connection string:
+
+pgsql
+Copy
+Edit
+Server=tcp:<sql-server>.database.windows.net,1433;Initial Catalog=<db-name>;Persist Security Info=False;User ID=<your-user>;Password=<your-password>;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;
+In your Program.cs or appsettings.json, ensure you're reading the connection string from config:
+
+csharp
+Copy
+Edit
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+✅ 4. Apply EF Core Migrations on Azure
+🔹 Run EF Core Migrations
+After publishing:
+
+Go to App Service > Advanced Tools (Kudu) > Debug Console > CMD
+
+Navigate to your app directory, typically:
+
+bash
+Copy
+Edit
+cd site/wwwroot
+Run:
+
+nginx
+Copy
+Edit
+dotnet YourAppName.dll
+If configured to apply migrations on startup (via context.Database.Migrate();), it’ll update the DB.
+
+Or manually run dotnet ef database update if you’ve included EF CLI in the deployed build.
+
+✅ 5. Troubleshooting
+🔹 Check Logs
+App Service > Log Stream for live logs
+
+App Service > Diagnose and solve problems
+
+🔹 Kudu Debugging
+Use Kudu (App Service > Advanced Tools)
+
+Navigate to wwwroot and manually run:
+
+nginx
+Copy
+Edit
+dotnet YourApp.dll
+This helps catch any exceptions or misconfigurations during startup.
+
+✅ 6. Final Checklist
+✅ App Service created and linked
+
+✅ SQL DB created and firewall/networking configured
+
+✅ Publish succeeded
+
+✅ Connection string added in Configuration
+
+✅ Migrations run
+
+✅ Live app running and tested
+

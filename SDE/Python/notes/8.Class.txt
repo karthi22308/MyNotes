@@ -1,0 +1,110 @@
+------------------------
+PROCEDURAL PROGRAMMING
+------------------------
+- Approach: Step by step execution of instructions
+- Languages: C, Fortran, Pascal
+- Features:
+    - No access modifiers
+    - Code is executed sequentially
+    - Functions operate on data directly
+
+------------------------
+OBJECT-ORIENTED PROGRAMMING (OOP)
+------------------------
+- Approach: Organize code around objects and classes
+- Advantages:
+    - More secure than procedural programming
+    - Encourages code reuse through inheritance and composition
+    - Easier to maintain and scale
+- Languages: C++, Java, Python
+
+OOP CONCEPTS:
+1. Abstraction: Hides internal implementation, exposes only what is necessary
+2. Encapsulation: Bundles data (attributes) and methods; controls access
+3. Inheritance: Allows a class to acquire properties of another class
+4. Polymorphism: Ability to use objects of different classes interchangeably
+
+------------------------
+CLASSES AND OBJECTS
+------------------------
+- Class: Blueprint for creating objects
+- Object: Instance of a class
+- Syntax:
+
+    class ClassName:
+        pass
+
+- Creating an object:
+
+    obj = ClassName()
+
+------------------------
+CONSTRUCTORS
+------------------------
+- Special method called when object is created
+- Initializes instance variables
+- Syntax:
+
+    class Human:
+        def __init__(self, age):   # 'self' is mandatory
+            self.age = age         # Instance variable
+
+- Example:
+
+    person = Human(25)
+    print(person.age)   # Output: 25
+
+------------------------
+INSTANCE METHODS
+------------------------
+- Functions that operate on object data
+- Syntax:
+
+    class Human:
+        def introduce(self):
+            print(f"Hello, I am {self.age} years old")
+
+- Example:
+
+    person = Human(25)
+    person.introduce()   # Output: Hello, I am 25 years old
+
+------------------------
+CLASS VARIABLES
+------------------------
+- Instance variables: Each object has its own copy
+- Class variables: Shared among all objects
+- Created outside methods, inside class
+
+- Example:
+
+    class Human:
+        population = 0       # Class variable
+
+        def __init__(self, name):
+            self.name = name  # Instance variable
+            Human.population += 1
+
+    print(Human.population)   # Access via class
+
+------------------------
+DUNDER / MAGIC METHODS
+------------------------
+- Special methods automatically called by Python in specific situations
+- Example: __repr__ defines how an object is represented when printed
+- Example:
+
+    class Human:
+        def __init__(self, name):
+            self.name = name
+
+        def __repr__(self):
+            return f"Human({self.name})"
+
+    person = Human("Karthick")
+    print(person)   # Output: Human(Karthick)
+
+Other common dunder methods:
+- __str__: human-readable representation
+- __len__: define behavior for len()
+- __add__, __sub__: operator overloading

@@ -1,0 +1,56 @@
+# C# Lists (Generics)
+
+## Overview
+- **List<T>** is a generic collection.
+- Dynamic in size (can grow or shrink at runtime).
+- Belongs to **System.Collections.Generic** namespace.
+
+### Declaration
+var numbers = new List<int>();
+
+---
+
+## Common Methods
+
+- **Add(item)** → Adds a single element.
+- **AddRange(collection)** → Adds multiple elements from another collection.
+- **Remove(item)** → Removes the first occurrence of the element.
+- **RemoveAt(index)** → Removes the element at the specified index.
+- **IndexOf(item)** → Returns the index of the element (or -1 if not found).
+- **Contains(item)** → Checks if the element exists in the list.
+- **Count** (property) → Returns the number of elements.
+
+---
+
+## Example
+var numbers = new List<int>();
+numbers.Add(10);
+numbers.AddRange(new int[] { 20, 30, 40 });
+bool exists = numbers.Contains(20); // true
+int index = numbers.IndexOf(30);     // 2
+numbers.RemoveAt(1);                 // Removes element at index 1
+
+---
+
+## Important Note
+- **Do NOT remove items from a list inside a foreach loop** → causes `InvalidOperationException`.
+- Use a `for` loop or store items to remove in a separate list, then remove them after iteration.
+
+---
+1. The main difference between List<T> and ArrayList
+Feature	ArrayList	List<T>
+Namespace	System.Collections	System.Collections.Generic
+Type Safety	❌ Not type-safe (stores object)	✅ Type-safe (stores specific type T)
+Boxing/Unboxing	✅ Happens for value types	❌ No boxing/unboxing
+Performance	Slower (due to boxing/unboxing & casting)	Faster (no boxing/unboxing)
+Generics Support	❌ No	✅ Yes
+Compile-time Type Checking	❌ No	✅ Yes
+Introduced In	.NET Framework 1.0	.NET 2.0 (Generics introduced)
+---------
+🔹 4. Why We Prefer Generics (List<T>) Over Non-Generics (ArrayList)
+Reason	Explanation
+Type Safety	Prevents runtime casting errors.
+Performance	Avoids boxing/unboxing overhead for value types.
+Cleaner Code	No need for explicit casts.
+Reusability	List<T> can work for any type (int, string, custom classes).
+Compile-time Checking	Detects type mismatches before runtime.

@@ -1,0 +1,158 @@
+------------------------------
+AZURE COSMOS DB - COMPLETE NOTES
+------------------------------
+
+WHAT IS COSMOS DB?
+
+- Azure Cosmos DB is a **multi-model NoSQL database** service
+- Designed for **very low latency**, **global distribution**, and **massive scalability**
+- It is a **non-relational database**, supports schema-less JSON documents
+
+Supported APIs:
+- Core (SQL-like)
+- MongoDB
+- Cassandra
+- Gremlin (graph)
+- Table (Azure Table Storage replacement)
+
+------------------------------
+CAPACITY MODES
+------------------------------
+
+1. **Serverless**
+   - Automatically scales based on usage
+   - Good for burst or infrequent workloads
+
+2. **Provisioned Throughput**
+   - Set predefined **RU/s (Request Units per second)**
+   - Good for consistent high-traffic workloads
+
+💡 First 25 GB storage is **free** in Cosmos DB
+
+------------------------------
+ENCRYPTION
+------------------------------
+
+- Data is **encrypted at rest** by default using Microsoft-managed keys
+- When read, Microsoft automatically **decrypts the data**
+- You can use **Customer-Managed Keys (CMK)** stored in Azure Key Vault
+
+------------------------------
+GEO-REPLICATION
+------------------------------
+
+- Allows **replication of data globally** across Azure regions
+- Improves performance by serving users from their closest region
+
+✅ Benefits:
+- High availability
+- Reduced latency
+- Redundancy
+
+Types:
+- **Automatic Failover**
+- **Manual Failover**
+
+Conflict Resolution:
+- Required for **multi-region writes**
+- Cosmos DB offers **last-write-wins** and **custom logic** options
+
+------------------------------
+SECURITY & ACCESS CONTROL
+------------------------------
+
+- Anyone with the **account key** and **endpoint URL** can access data
+- For finer control, use **Role-Based Access Control (RBAC)**
+  - Define roles
+  - Assign to users or managed identities
+
+------------------------------
+COSMOS DB STRUCTURE
+------------------------------
+
+1. **Account** = Like a SQL Server instance  
+2. **Database** = Logical grouping of containers  
+3. **Container** = Like a table (stores JSON documents)  
+4. **Item (Document)** = A single JSON object  
+5. **Partition Key** = Used to distribute data horizontally (scale out)
+
+------------------------------
+ADDING DOCUMENTS TO A CONTAINER
+------------------------------
+
+- Documents are stored as **JSON**
+- Schema-less: No predefined structure
+- Easily add, update, or delete JSON documents
+
+------------------------------
+CONSISTENCY LEVELS
+------------------------------
+
+Cosmos DB provides **five consistency levels**:
+
+1. **Strong Consistency**
+   - Guarantees that reads always return the most recent committed write
+
+2. **Bounded Staleness**
+   - Allows a lag in time or number of versions
+   - Guarantees reads are consistent within that bound
+
+3. **Session Consistency**
+   - Guarantees consistency **within a session** (per user or connection)
+   - Most common and default option
+
+4. **Consistent Prefix**
+   - Ensures reads never see out-of-order writes
+   - If A, B, C were written, reads will see A → AB → ABC (never AC)
+
+5. **Eventual Consistency**
+   - No ordering or time guarantees
+   - Fastest, least strict (best for scenarios where data freshness is not critical)
+
+------------------------------
+CHANGE FEED + AZURE FUNCTIONS
+------------------------------
+
+- **Change Feed** in Cosmos DB allows you to **listen to changes (insert/update)**
+- Can be connected to an **Azure Function Trigger**
+- Enables event-driven architecture (e.g., send email when document inserted)
+
+Example: Trigger Azure Function when a new user signs up and store audit log
+
+------------------------------
+.NET SAMPLE TO CONNECT TO COSMOS DB
+------------------------------
+
+1️⃣ Install NuGet Package:
+
+2️⃣ Sample Code:
+```csharp
+using Azure.Cosmos;
+using System;
+using System.Threading.Tasks;
+
+class Program
+{
+    private static readonly string endpointUri = "<your-endpoint-uri>";
+    private static readonly string primaryKey = "<your-primary-key>";
+    private static CosmosClient cosmosClient;
+    private static CosmosContainer container;
+
+    static async Task Main()
+    {
+        cosmosClient = new CosmosClient(endpointUri, primaryKey);
+        var database = await cosmosClient.CreateDatabaseIfNotExistsAsync("MyDatabase");
+        container = await database.Database.CreateContainerIfNotExistsAsync("MyContainer", "/partitionKey");
+
+        var newItem = new
+        {
+            id = Guid.NewGuid().ToString(),
+            name = "Karthick",
+            partitionKey = "users",
+            email = "karthick@example.com"
+        };
+
+        await container.CreateItemAsync(newItem, new PartitionKey("users"));
+        Console.WriteLine("Item created successfully.");
+    }
+}

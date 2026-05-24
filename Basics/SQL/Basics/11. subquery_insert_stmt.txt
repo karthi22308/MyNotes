@@ -1,0 +1,89 @@
+SUBQUERY / NESTED QUERY
+--------------------
+- A subquery is a query nested inside another query.
+- Can be used in SELECT, INSERT, UPDATE, DELETE statements.
+- Subqueries return:
+  - Single value
+  - A row
+  - A table (result set)
+
+💡 Joins return rows; Subqueries return values/rows/tables depending on context.
+
+Rules:
+- Must be enclosed in parentheses.
+- Only one column allowed in subquery SELECT (unless used in EXISTS or main query handles multiple).
+- ORDER BY is not allowed in subquery (unless using TOP).
+- Use IN when subquery returns multiple values.
+- BETWEEN operator cannot be used with subqueries.
+
+Syntax Example:
+-- Subquery returning single value
+SELECT *  
+FROM employees  
+WHERE salary > (SELECT AVG(salary) FROM employees);
+
+-- Subquery returning a list
+SELECT name  
+FROM students  
+WHERE id IN (SELECT student_id FROM courses WHERE grade = 'A');
+
+--------------------
+
+SCHEMAS
+--------------------
+- A **Schema** is a logical container to group related database objects (tables, views, procedures).
+- Default schema in SQL Server is `dbo`.
+- Schema helps with organization and security.
+
+💡 If a table’s schema is not the default, reference it like:  
+SELECT * FROM `schema_name`.`table_name`
+
+--------------------
+
+INSERT STATEMENTS
+--------------------
+- Used to add one or more rows into a table or view.
+
+Basic Syntax:
+INSERT INTO table_name (column1, column2, ...)  
+VALUES (value1, value2, ...);
+
+Insert multiple rows:
+INSERT INTO table_name  
+VALUES  
+(value1, value2),  
+(value3, value4),  
+(value5, value6);
+
+Insert without specifying columns (only if inserting into all columns in order):
+INSERT INTO table_name  
+VALUES (value1, value2);
+
+Insert data from another table:
+INSERT INTO target_table (col1, col2)  
+SELECT col1, col2  
+FROM source_table  
+WHERE condition;
+
+Notes:
+- If inserting into a table with an IDENTITY column, skip that column or enable identity insert.
+- OUTPUT clause can be used to capture inserted data.
+
+--------------------
+
+SELECT INTO Statement
+--------------------
+- Creates a **new table** and inserts rows from a SELECT query.
+
+Syntax:
+SELECT * INTO new_table  
+FROM existing_table  
+WHERE condition;
+
+💡 Automatically creates `new_table` with same column types as `existing_table`.
+
+Example:
+SELECT name, salary  
+INTO high_salary_employees  
+FROM employees  
+WHERE salary > 100000;

@@ -1,0 +1,23 @@
+To find the first login date for each player using GROUP BY in MS SQL Server, you can use the MIN() aggregate function on the event_date column grouped by player_id.
+
+✅ SQL Query:
+sql
+Copy
+Edit
+SELECT 
+    player_id, 
+    MIN(event_date) AS first_login
+FROM 
+    Activity
+GROUP BY 
+    player_id;
+💡 Explanation:
+GROUP BY player_id groups the data by each player.
+
+MIN(event_date) returns the earliest login date for each player.
+
+📌 Output Based on Example:
+player_id	first_login
+1	2016-03-01
+2	2017-06-25
+3	2016-03-02

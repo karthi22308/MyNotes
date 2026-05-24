@@ -1,0 +1,123 @@
+INDEX
+-------------------------
+
+If a book doesn't have a contents or index, while searching something we need to scan through the entire book.
+
+Similarly, if a table doesn't have an index, it is called a Heap.
+
+Heap:
+- A heap is a table stored without any specific order.
+- When rows are inserted into a heap, there is no particular order where the pages will be written.
+- To find a row, SQL Server engine has to do a Table Scan.
+
+Table Scan:
+- It goes through from start to end; even if it finds the data early, it continues scanning.
+- This is a bad approach for large tables.
+- Table scan is faster if the table has very few rows.
+
+-------------------------
+INDEX DEFINITION
+-------------------------
+
+Primary reason: To provide faster access to specific data the query is trying to retrieve.
+
+- Types: Clustered Index, Non-Clustered Index.
+- Indexes can be created on Tables and Views.
+- Most columns can have indexes except types like image, text, varchar(max).
+
+Working:
+- If a table has an index on Primary Key, and a query filters on Primary Key, it finds the key from the index first and then fetches data.
+- Index structure is a **B-Tree**.
+
+-------------------------
+B-TREE STRUCTURE (Visual)
+-------------------------
+
+           (Root Node)
+               |
+           ------------
+           |          |
+    (Intermediate) (Intermediate)
+           |          |
+        -------    -------
+        |     |    |     |
+    (Leaf) (Leaf)(Leaf) (Leaf)
+
+- Root node: Top of the index.
+- Intermediate levels: Help to navigate.
+- Leaf node: Contains actual data (for clustered) or references (for non-clustered).
+
+-------------------------------------------------------------------------------------------------------------------------
+
+TYPES OF INDEXES
+-------------------------
+
+Clustered Index:
+- Clustered index stores the actual data rows at the leaf level.
+- Data is sorted (ascending/descending) according to the indexed column.
+- Only one clustered index allowed per table/view.
+
+Non-Clustered Index:
+- Leaf node contains only the value of the indexed column and a row locator to the actual data.
+- Requires an additional step to locate the actual row.
+- Not sorted like clustered indexes.
+
+-------------------------
+INDEX TYPES BASED ON CONFIGURATION
+-------------------------
+
+Composite Index:
+- Index containing more than one column.
+
+Unique Index:
+- Columns must have unique values.
+- Automatically created when a PRIMARY KEY or UNIQUE constraint is defined.
+
+Covering Index:
+- Covers all the columns needed to process a query, avoiding additional lookups.
+
+-------------------------
+INDEX DESIGN CONSIDERATIONS
+-------------------------
+
+- Indexes consume disk space.
+- Avoid over-indexing heavily updated tables.
+- On small tables, table scan is better than index scan.
+
+-------------------------
+SYNTAX TO CREATE INDEX
+-------------------------
+
+-- Create a non-clustered index:
+create index indexname on tablename(column);
+
+-- Create a clustered index:
+create clustered index indexname on tablename(column);
+
+-- Create a unique non-clustered index:
+create unique index indexname on tablename(column1 desc, column2 asc);
+
+-------------------------
+INDEX FRAGMENTATION
+-------------------------
+
+Index fragmentation is a common source of database performance degradation.
+
+Types of Fragmentation:
+
+Internal Fragmentation:
+- Occurs when there is a lot of empty space on a data page.
+- Wastes storage and reduces I/O performance.
+
+External Fragmentation:
+- Occurs when the logical order of pages in the index does not match the physical order in the data file.
+- Slows down range scans and overall query performance.
+
+-------------------------
+FIXING SQL SERVER INDEX FRAGMENTATION
+-------------------------
+
+- If fragmentation > 30% --> Rebuild the index.
+- If fragmentation between 11% and 30% --> Reorganize the index.
+- If fragmentation < 10% --> Ignore.
+

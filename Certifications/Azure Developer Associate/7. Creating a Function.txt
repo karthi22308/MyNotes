@@ -1,0 +1,94 @@
+Creating a function:
+------------------------------
+CREATING AN AZURE FUNCTION
+------------------------------
+
+Once the Function App is created:
+
+1. Go to the **Function App** in the Azure Portal
+2. In the left menu, click on **"Functions"** tab
+3. Click **"Create"** to add a new function
+
+You can create the function using:
+- Azure Portal
+- VS Code / Visual Studio
+- Azure CLI
+
+------------------------------
+STEPS TO CREATE A FUNCTION:
+------------------------------
+
+1. **Choose Development Environment**  
+   - Portal  
+   - VS Code  
+   - Local development
+
+2. **Select a Trigger Type**  
+   Triggers determine when your function executes. Examples:
+   - HTTP Trigger → runs on HTTP request
+   - Timer Trigger → runs on schedule (like cron jobs)
+   - Cosmos DB Trigger → runs when something is added/changed in DB
+   - Blob Storage Trigger → runs when file is uploaded
+
+3. **Configure the Trigger**  
+   - Provide a name for the function
+   - Set schedule or event source (depending on the trigger)
+
+4. **Write Code in Portal or Upload from Local**  
+   - Azure provides a built-in code editor
+   - Test directly in the portal (for quick demos or scripts)
+
+------------------------------
+NOTES:
+------------------------------
+
+- Portal is good for quick testing and learning
+- For real apps, prefer local development + CI/CD pipelines
+- Functions can be deployed directly from VS Code or GitHub
+
+------------------------------
+------------------------------
+BLOB OUTPUT BINDING
+------------------------------
+
+❓ INTERVIEW / AZ-204 EXAM PERSPECTIVE:
+
+- Blob Output Binding is used to **store function output as a Blob** in Azure Storage
+- It allows serverless functions to **automatically write data** to a blob container
+- Reduces the need to manually write code to interact with Azure Blob Storage SDK
+
+✅ Key Points:
+- Requires an **Azure Storage Account**
+- You configure the **output binding** in `function.json` or via attributes (C#)
+- Function output (like a string, file, or serialized object) is written to a blob file
+
+🧠 Example:
+- A function processes form data and saves the result as a JSON file to a blob
+- Very useful for **data archiving**, **logging**, or **storing transformation results**
+
+------------------------------
+TIMER TRIGGER FUNCTION
+------------------------------
+
+❓ INTERVIEW / AZ-204 EXAM PERSPECTIVE:
+
+- A Timer Trigger allows functions to **run on a schedule** without external input
+- It's based on a **CRON expression** to define when and how often it runs
+
+✅ Key Points:
+- Useful for running scheduled tasks like clean-ups, backups, or data sync
+- Timer trigger must be **defined with a CRON expression**
+- Works well for **stateless** scheduled jobs
+
+🧠 Example CRON Expression:
+- `"0 */5 * * * *"` → Every 5 minutes
+- `"0 0 0 * * *"` → Every day at midnight
+
+🛠️ In `function.json`:
+```json
+{
+  "schedule": "0 */5 * * * *"
+}
+
+
+

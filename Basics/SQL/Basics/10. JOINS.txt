@@ -1,0 +1,96 @@
+JOINS
+--------------------
+- RDBMS are designed to allow combining data from multiple tables.
+- A **JOIN** links two tables using a related column.
+- The join column should ideally be **unique or a primary key** in at least one of the tables.
+
+--------------------
+
+Types of Joins:
+--------------------
+1. INNER JOIN
+2. LEFT JOIN (LEFT OUTER JOIN)
+3. RIGHT JOIN (RIGHT OUTER JOIN)
+4. FULL JOIN (FULL OUTER JOIN)
+
+--------------------
+
+1. INNER JOIN
+--------------------
+- Returns **only the matching records** from both tables.
+- It is the **default JOIN type** if not specified.
+
+Syntax:
+SELECT a.col1, b.col2  
+FROM tableA a  
+INNER JOIN tableB b  
+ON a.common_column = b.common_column;
+
+Example:
+SELECT Orders.OrderID, Customers.CustomerName  
+FROM Orders  
+INNER JOIN Customers  
+ON Orders.CustomerID = Customers.CustomerID;
+
+--------------------
+
+2. LEFT JOIN (LEFT OUTER JOIN)
+--------------------
+- Returns **all records from the left table**, and the **matched records** from the right table.
+- If no match, NULLs are shown from the right side.
+
+Syntax:
+SELECT a.col1, b.col2  
+FROM tableA a  
+LEFT JOIN tableB b  
+ON a.common_column = b.common_column;
+
+Example:
+SELECT Customers.CustomerName, Orders.OrderID  
+FROM Customers  
+LEFT JOIN Orders  
+ON Customers.CustomerID = Orders.CustomerID;
+
+--------------------
+
+3. RIGHT JOIN (RIGHT OUTER JOIN)
+--------------------
+- Returns **all records from the right table**, and the **matched records** from the left table.
+- If no match, NULLs are shown from the left side.
+
+Syntax:
+SELECT a.col1, b.col2  
+FROM tableA a  
+RIGHT JOIN tableB b  
+ON a.common_column = b.common_column;
+
+Example:
+SELECT Orders.OrderID, Customers.CustomerName  
+FROM Customers  
+RIGHT JOIN Orders  
+ON Customers.CustomerID = Orders.CustomerID;
+
+--------------------
+
+4. FULL JOIN (FULL OUTER JOIN)
+--------------------
+- Returns **all records from both tables**.
+- Where there is no match, NULLs will appear for missing data.
+
+Syntax:
+SELECT a.col1, b.col2  
+FROM tableA a  
+FULL JOIN tableB b  
+ON a.common_column = b.common_column;
+
+Example:
+SELECT Customers.CustomerName, Orders.OrderID  
+FROM Customers  
+FULL JOIN Orders  
+ON Customers.CustomerID = Orders.CustomerID;
+
+--------------------
+
+💡 Notes:
+- Always use table aliases (`a`, `b`) for **readability**.
+- Use `IS NULL` to find unmatched rows (e.g., LEFT JOIN unmatched = `WHERE b.col IS NULL`).
