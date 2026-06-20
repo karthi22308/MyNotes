@@ -1,0 +1,258 @@
+# .NET Unit Testing Notes
+
+---
+
+# Why Unit Testing?
+
+Unit testing is used to test our code automatically.
+
+It helps developers verify that individual parts (units) of the application work correctly.
+
+---
+
+# Benefits of Unit Testing
+
+- Test code frequently in less time
+- Catch bugs before deployment
+- Deploy with confidence
+- Refactor code safely with confidence
+- Improves overall code quality
+- Reduces manual testing effort
+- Makes debugging easier
+
+---
+
+# Types of Tests
+
+## 1. Unit Tests
+- Tests a single unit/component of code
+- No external dependencies involved
+  - No database
+  - No API calls
+  - No file system
+- Cheap and fast to write/run
+
+### Example
+Testing a single method inside a service class.
+
+---
+
+## 2. Integration Tests
+- Tests multiple classes/modules together
+- Includes dependencies
+
+### Example
+- Database calls
+- API calls
+- External services
+
+Purpose:
+Checks whether different parts of the system work together correctly.
+
+---
+
+## 3. End-to-End (E2E) Tests
+- Tests the complete application flow
+- Drives the application through the UI
+
+### Example
+Login → Add Product → Checkout → Payment
+
+### Characteristics
+- Slowest type of testing
+- Expensive to maintain
+- Covers real user scenarios
+
+---
+
+# Test Pyramid
+
+The ideal testing structure:
+
+```text
+        E2E Tests
+    Integration Tests
+       Unit Tests
+```
+
+## Explanation
+
+### Unit Tests
+- Highest in number
+- Fast and cheap
+
+### Integration Tests
+- Moderate number
+
+### E2E Tests
+- Lowest in number
+- Very slow and costly
+
+Goal:
+Have more unit tests and fewer E2E tests.
+
+---
+
+# Unit Testing Frameworks in .NET
+
+Popular frameworks:
+
+- NUnit
+- MSTest
+- xUnit
+
+---
+
+# Test Method Naming Convention
+
+Recommended format:
+
+```text
+MethodName_ScenarioTested_ExpectedResult
+```
+
+## Example
+
+```text
+CanBeCancelledBy_AdminCancelling_ReturnsTrue
+```
+
+### Breakdown
+
+| Part | Meaning |
+|---|---|
+| CanBeCancelledBy | Method being tested |
+| AdminCancelling | Scenario |
+| ReturnsTrue | Expected result |
+
+---
+
+# AAA Pattern in Unit Testing
+
+AAA = Arrange → Act → Assert
+
+---
+
+## 1. Arrange
+Prepare test data and objects.
+
+## 2. Act
+Call the method being tested.
+
+## 3. Assert
+Verify the expected result.
+
+---
+
+# Sample NUnit Test
+
+```csharp
+[TestFixture] // Identifies the class as a test class
+public class ReservationTests
+{
+    [Test] // Identifies this method as a test case
+    public void CanBeCancelledBy_AdminCancelling_ReturnsTrue()
+    {
+        // Arrange
+        var reservation = new Reservation();
+
+        // Act
+        var result = reservation.CanBeCancelledBy(
+            new User { IsAdmin = true });
+
+        // Assert
+        Assert.That(result, Is.True);
+    }
+}
+```
+
+---
+
+# Important NUnit Attributes
+
+| Attribute | Purpose |
+|---|---|
+| [TestFixture] | Marks a class as a test class |
+| [Test] | Marks a method as a test method |
+
+---
+
+# Test Driven Development (TDD)
+
+In TDD, tests are written before production code.
+
+Idea:
+"Write tests first, then write code."
+
+---
+
+# Three Steps of TDD
+
+## 1. Write a Failing Test
+Create a test for functionality that does not yet exist.
+
+Result:
+Test should fail initially.
+
+---
+
+## 2. Write the Simplest Code
+Write minimal production code required to pass the test.
+
+---
+
+## 3. Refactor
+Improve code quality without changing behavior.
+
+Examples:
+- Remove duplication
+- Improve readability
+- Optimize structure
+
+---
+
+# Advantages of TDD
+
+- Produces highly testable code
+- Better code coverage
+- Simpler implementation
+- Cleaner design
+- Fewer bugs
+- Easier maintenance
+- Safer refactoring
+
+---
+
+# Quick Revision Summary
+
+## Unit Test
+- Tests single unit
+- No dependencies
+- Fast
+
+## Integration Test
+- Tests with dependencies
+- Database/API involved
+
+## E2E Test
+- Full application flow
+- UI based
+- Slow
+
+---
+
+# AAA Pattern
+
+```text
+Arrange → Act → Assert
+```
+
+---
+
+# TDD Cycle
+
+```text
+Fail → Pass → Refactor
+```
+
+---
