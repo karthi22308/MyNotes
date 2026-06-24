@@ -33,3 +33,48 @@ independently deployable
 
 
 template - asp . net core empty project
+
+0--------------------
+architectures:
+layered architecture
+ddd
+vertical slide architecture
+clean architecture
+
+
+patterns & principles
+solid
+cqrs
+mediator,decorator options
+pub/sub, caching
+apigateway
+
+
+Databases
+transactional document db
+postgres
+redis
+SQLite
+sql server
+
+
+libraries
+carter
+marten
+mediator
+mapstermasstransit
+fluentvalidTION
+ EF core, refit
+
+
+communications:
+sync: grpc
+async: pun;ish/subscribe pattern w/masstransit and rabbit mq
+yarp api gateway
+
+
+
+prepreuisites:
+.net 8
+visual studio
+docker desktop
